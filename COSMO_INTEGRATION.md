@@ -1,85 +1,85 @@
-## 自动启动与关闭（当前行为）
+## Automatic Startup and Shutdown (Current Behavior)
 
-打开 UE 并 Play 后，CosmoClient 自动检查默认本机服务的 /health。已有兼容 COSMO 服务时直接复用；未运行时使用插件资源中的独立 Python 启动随包 app/cosmo_service.py，无需先手动启动。启动期间游戏请求保持顺序排队，健康检查通过后发送。单次探测限时 1 秒，总启动预算 20 秒；运行文件缺失、端口返回不兼容服务、进程退出或超时会显示错误。编辑器日志位于 Saved/Logs/CosmoService.log；打包游戏写入用户本地应用数据目录 COSMO/Logs。
+After UE opens and Play starts, CosmoClient automatically checks /health on the default local service. It reuses an existing compatible COSMO service; otherwise, it uses the standalone Python in the plugin resources to launch the bundled app/cosmo_service.py, without a manual startup step. Game requests remain queued in order during startup and are sent after the health check passes. Each probe has a 1-second timeout, with a total startup budget of 20 seconds. Missing runtime files, an incompatible service on the port, process exit, or timeout produces an error. Editor logs are written to Saved/Logs/CosmoService.log; packaged games write to COSMO/Logs under the user's local application data directory.
 
-停止 Play / 退出游戏时取消探测和请求，并关闭本次启动的 COSMO 进程；手动启动的已有服务继续运行。UE 异常退出时，服务的父进程监控也会结束服务。手势识别继续使用原有自动启动与退出释放流程。
+Stopping Play / exiting the game cancels probes and requests and shuts down the COSMO process started by that session. Existing manually started services keep running. If UE exits unexpectedly, the service's parent-process monitor also shuts the service down. Gesture recognition retains its existing automatic startup and shutdown cleanup flow.
 
-服务继承启动 UE 时的环境变量：显式 COSMO_AI_PROVIDER 优先；未指定时，有 XAI_API_KEY 自动选 Grok，无密钥使用本地 mock。Grok 还需 XAI_MODEL；语音沿用 XAI_VOICE_MODEL / XAI_VOICE，否则使用已有默认值。在配置好环境的同一终端启动 UE；已经打开的 UE 无法继承后来在其他终端设置的变量。密钥不写入项目或启动参数。健康检查通过仅证明本机服务就绪，真实 Grok 可用性仍以实际回复为准。
+The service inherits the environment variables used to launch UE. An explicit COSMO_AI_PROVIDER takes priority; otherwise, XAI_API_KEY selects Grok automatically, and no key selects the local mock. Grok also requires XAI_MODEL; voice uses XAI_VOICE_MODEL / XAI_VOICE or the existing defaults. Launch UE from the same terminal after configuring the environment. An already running UE instance cannot inherit variables later set in another terminal. Keys are not written to the project or launch arguments. A passing health check confirms only that the local service is ready; actual responses determine real Grok availability.
 
-CosmoClient.AutoLaunchService 可关闭自动管理。自动启动适用于默认 http://127.0.0.1:8765 和交互式游戏；自定义地址、无人值守及 commandlet 测试继续使用外部服务。当前已提供完整 Win64 随包运行环境，UE 打包自动复制 Python、依赖、模型和配置，详见 [运行环境部署](RUNTIME_DEPLOYMENT.md)。
+CosmoClient.AutoLaunchService disables automatic management. Automatic startup applies to the default http://127.0.0.1:8765 address and interactive gameplay. Custom addresses, unattended runs, and commandlet tests continue to use external services. A complete bundled Win64 runtime is now available. UE packaging automatically copies Python, dependencies, models, and configuration; see [Runtime Deployment](RUNTIME_DEPLOYMENT.md).
 
-验证：UE Editor 编译通过；Python 187 项测试及 6 项子测试通过；角色集成 59 项通过；Scripts/test_cosmo_lifecycle_smoke.py 验证本地 mock 启动、健康就绪与父进程退出清理。尚未进行此次自动启动后的真人语音验收。
+Verification: UE Editor compiled successfully; 187 Python tests and 6 subtests passed; 59 character integration checks passed. Scripts/test_cosmo_lifecycle_smoke.py verifies local mock startup, health readiness, and cleanup after parent-process exit. Human voice acceptance testing after this automatic startup change has not yet been performed.
 
-以下手动启动方式保留用于独立调试。
-> 输入系统已更新为纯手势 / 面部控制。本文旧按键、文字聊天和后备输入说明已失效；当前动作与启动方式见 [GESTURE_ONLY.md](GESTURE_ONLY.md)。
+The manual startup instructions below are retained for standalone debugging.
+> The input system now uses gesture and face controls exclusively. The old key bindings, text chat, and fallback input instructions in this document are obsolete. See [GESTURE_ONLY.md](GESTURE_ONLY.md) for current gestures and startup instructions.
 
-# COSMO AI 接入
+# COSMO AI Integration
 
-角色蓝图已完成接线与运行实现，详见 [BP_FIRST_PERSON_AI.md](BP_FIRST_PERSON_AI.md)。
+The character Blueprint is wired and implemented. See [BP_FIRST_PERSON_AI.md](BP_FIRST_PERSON_AI.md).
 
-项目根目录运行 `./Scripts/StartCosmo.ps1`，服务默认监听 `127.0.0.1:8765`。
-打开 UE 默认 `Lvl_AlienPlanet` 关卡 Play，GameMode 已生成 `BP_FirstPersonCharacterAI`。
-手势接收使用 `127.0.0.1:5052`；当前游戏采用纯手势和面部控制。
+Run `./Scripts/StartCosmo.ps1` from the project root. By default, the service listens on `127.0.0.1:8765`.
+Open UE and Play in the default `Lvl_AlienPlanet` level. GameMode already spawns `BP_FirstPersonCharacterAI`.
+Gesture reception uses `127.0.0.1:5052`. The current game uses gesture and face controls exclusively.
 
-## 接口
+## Interfaces
 
-- `POST /events`：实际玩法确认。顺序为 `game_started` → `movement_completed` → `shield_activated` → `fire_activated` → `wave_activated` → `laser_activated` → `enemy_scanned` → `boss_encountered` → `tutorial_completed`。
-- `POST /game/state`：实时同步生命、技能可用性、目标等事实，不能完成教学或修改施法确认历史。
-- `POST /player/utterance`：文字或 STT 最终文本，只回答问题，不推进教学。
-- `GET /snapshot`、`/tutorial/status`、`/tutorial/step`、`/tutorial/hint`：状态、指令与提示。
-- 伤害/危险事件：`player_damaged`、`player_in_danger`、`danger_cleared`。
-- 蓝图已接入连接、响应、字幕、本地 TTS 和 speaking/listening/scanning/celebrating/warning 动画事件。
-- 默认使用本地 guide；服务端 `COSMO_AI_PROVIDER=xai`、`XAI_API_KEY`、`XAI_MODEL` 可启用真实 Grok 通路。
+- `POST /events`: actual gameplay confirmations, in this order: `game_started` -> `movement_completed` -> `shield_activated` -> `fire_activated` -> `wave_activated` -> `laser_activated` -> `enemy_scanned` -> `boss_encountered` -> `tutorial_completed`.
+- `POST /game/state`: synchronizes facts such as health, ability availability, and targets in real time. It cannot complete tutorials or modify ability confirmation history.
+- `POST /player/utterance`: text or final STT transcripts; answers questions without advancing the tutorial.
+- `GET /snapshot`, `/tutorial/status`, `/tutorial/step`, `/tutorial/hint`: state, instructions, and hints.
+- Damage/danger events: `player_damaged`, `player_in_danger`, `danger_cleared`.
+- The Blueprint connects connection status, responses, subtitles, local TTS, and speaking/listening/scanning/celebrating/warning animation events.
+- Uses the local guide by default. Server-side `COSMO_AI_PROVIDER=xai`, `XAI_API_KEY`, and `XAI_MODEL` enable real Grok integration.
 
-## Grok 接入与来源验收
+## Grok Integration and Response Source Verification
 
-复用项目根目录已有的 Python 3.12 `.venv`，依赖见 `External/CosmoSystem/requirements.txt`。
-服务目录是 `External/CosmoSystem`，当前项目版本为 `0.2.0`。
-真实问答使用 xAI 官方 `POST /v1/responses`，与官网 `grok-4.7` 示例一致。
-工具调用通过 `function_call` / `function_call_output` 交互，只提供已注册的四个状态/教程工具。
-同一次问答的工具循环会回传响应中的加密推理项；字幕只读取最终 `output_text`，未完成或错误响应会回退本地。
-已收到 `External/cosmo-system.zip`，其中不含 `README_zh-CN.txt`、`apply_patch.py` 或 `test_xai.py`。
-因此未执行所述补丁脚本；已检查包内 `0.2.0` 版本并按本次接入要求手动适配现有代码。
-原压缩包保留，逐文件 SHA-256 对比见 `Saved/Logs/GrokIntegration_ArchiveComparison.json`。
-现有文件修改前已备份到 `Saved/CodexBackups/GrokIntegration_20261018_004210`，包含原文件 SHA-256 清单。
+Reuse the existing Python 3.12 `.venv` in the project root. Dependencies are in `External/CosmoSystem/requirements.txt`.
+The service directory is `External/CosmoSystem`; the current project version is `0.2.0`.
+Real questions and answers use the official xAI `POST /v1/responses` endpoint, matching the official `grok-4.7` example.
+Tool calls use `function_call` / `function_call_output` and expose only the four registered state/tutorial tools.
+The tool loop for a question passes back encrypted reasoning items from the response. Subtitles read only the final `output_text`; incomplete or failed responses fall back locally.
+The received `External/cosmo-system.zip` does not contain `README_zh-CN.txt`, `apply_patch.py`, or `test_xai.py`.
+The referenced patch script was therefore not run. The archive's `0.2.0` version was inspected, and the existing code was adapted manually for this integration.
+The original archive is retained. Per-file SHA-256 comparisons are in `Saved/Logs/GrokIntegration_ArchiveComparison.json`.
+Existing files were backed up before modification to `Saved/CodexBackups/GrokIntegration_20261018_004210`, including an original-file SHA-256 inventory.
 
-先运行 mock：
+Start with mock mode:
 
 ```powershell
 ./Scripts/StartCosmo.ps1 -Mode mock
 Invoke-RestMethod http://127.0.0.1:8765/health
 ```
 
-在 Python 服务所在的 PowerShell 中设置 `XAI_API_KEY` 和账号可用的 `XAI_MODEL` 环境变量。
-密钥只放在服务端环境，不要填入 UE 蓝图、项目配置、聊天或命令行参数。
-可以用以下方式输入密钥，避免把密钥本身保存在 PowerShell 命令历史中：
+Set `XAI_API_KEY` and an `XAI_MODEL` available to your account in the PowerShell window running the Python service.
+Keep keys only in the server environment, outside UE Blueprints, project configuration, chat, and command-line arguments.
+Use the following to enter the key without storing the key itself in PowerShell command history:
 
 ```powershell
 $xaiSecret = Read-Host 'xAI API Key' -AsSecureString
 $env:XAI_API_KEY = [System.Net.NetworkCredential]::new('', $xaiSecret).Password
 Remove-Variable xaiSecret
-# 先用下面的 --list-models 查询，再把可用的模型 ID 写入 XAI_MODEL。
-$env:XAI_MODEL = '<账号可用的模型 ID>'
+# Query with --list-models below, then set XAI_MODEL to an available model ID.
+$env:XAI_MODEL = '<model-ID-available-to-your-account>'
 ```
 
-然后执行（以下命令从项目根目录运行）：
+Then run these commands from the project root:
 
 ```powershell
-# 只列出当前账号的可见模型，不生成回复。
+# List models visible to the current account without generating a response.
 ./.venv/Scripts/python.exe ./External/CosmoSystem/test_xai.py --list-models
-# 如果上一步列表包含 grok-4.7，可选择该模型。
+# Select grok-4.7 if it appears in the list above.
 $env:XAI_MODEL = 'grok-4.7'
-# XAI_MODEL 配好后，此步骤会进行一次真实模型问答，可能涉及多轮只读工具调用。
+# Once XAI_MODEL is configured, this makes a real model request and may use multiple read-only tool calls.
 ./.venv/Scripts/python.exe ./External/CosmoSystem/test_xai.py
 ```
 
-若 `--list-models` 返回 HTTP 400，先查看脚本显示的 `Server detail (credentials redacted)`。
-这一步是 `GET /v1/models`，不使用 `XAI_MODEL`，也不会生成模型回复。
-脚本会在发送前检查密钥是否误带引号、`Bearer`、空格或换行；服务器错误中的密钥会被替换为 `[REDACTED]`。
-需要排查时，在刚才配置密钥的同一个 PowerShell 窗口重新运行，将脱敏后的错误信息提供出来即可。
-该诊断显示和密钥遮蔽已通过 7 项离线检查；真实错误原因仍以服务器返回为准。
+If `--list-models` returns HTTP 400, first inspect the script's `Server detail (credentials redacted)` output.
+This step calls `GET /v1/models`, does not use `XAI_MODEL`, and does not generate a model response.
+Before sending, the script checks for accidental quotes, `Bearer`, spaces, or newlines in the key. Keys in server errors are replaced with `[REDACTED]`.
+For troubleshooting, rerun from the same PowerShell window where the key was configured and share the redacted error message.
+Diagnostic output and key redaction passed 7 offline checks; the server response remains authoritative for the actual error cause.
 
-关闭占用 8765 的 mock 服务，再启动：
+Stop the mock service using port 8765, then start:
 
 ```powershell
 ./Scripts/StartCosmo.ps1 -Mode grok
@@ -87,96 +87,96 @@ Invoke-RestMethod http://127.0.0.1:8765/player/utterance -Method Post `
   -ContentType 'application/json; charset=utf-8' -Body '{"text":"Which combat abilities can I use?"}'
 ```
 
-只有 `/player/utterance` 的回复带 `source: "grok"` 才代表收到真实模型内容。
-mock 返回 `source: "mock"`；上游断网/超时等失败后本地回复返回 `source: "fallback"` 和 `provider_error`。
-`/health` 的 `ok` 及 `provider: "xai"` 只说明本地服务及所选配置，不能证明上游已连通。
-UE 的 `FCosmoResponse.Source`、`GuideReplySource` 和 HUD 的 `reply` 同样显示实际回复来源，后续健康检查不会覆盖这个标记。
-角色蓝图已有 30 秒请求超时；新建客户端的默认值也已统一为 30 秒，大于 Python 的 20 秒模型请求预算。
+Only a `/player/utterance` response with `source: "grok"` confirms actual model content.
+Mock responses use `source: "mock"`. Local replies after upstream network failures, timeouts, or similar errors use `source: "fallback"` and include `provider_error`.
+The `/health` fields `ok` and `provider: "xai"` indicate only the local service and selected configuration; they do not prove upstream connectivity.
+UE's `FCosmoResponse.Source`, `GuideReplySource`, and HUD `reply` also show the actual response source. Subsequent health checks do not overwrite it.
+The character Blueprint already has a 30-second request timeout. New clients now also default to 30 seconds, exceeding Python's 20-second model request budget.
 
-Windows 接入验收跑通 47 项 UE5 自动运行检查，当时 Python 全套通过 100 项测试及 6 项子测试。
-随后 Responses API 适配完成，当前 Python 服务全套 83 项测试通过，日志见 `Saved/Logs/XaiResponses_Test.log`。
-UE 自动检查使用无画面、无音频设备的测试模式，不能代替现场听音或动画观感验收。
-已有 `BP_FirstPersonCharacterAI` 的实际技能成功事件、HTTP 完成回调、字幕、TextToSpeech 及动画委托已接线。
-`HttpBlueprint` 和 `JsonBlueprintUtilities` 已在项目中显式启用。
-已创建 `/Game/Blueprint/BP_AICompanionManager`，作为 `BP_FirstPersonCharacterAI` 的 Child Actor 组件 `AICompanionManager` 自动生成。
-它继承 `AAICompanionManager`，直接复用玩家的 `CosmoClient` 和 `FirstPersonAIIntegration`，不创建第二套会话、技能或朗读逻辑。
-外部输入可调用 `SubmitPlayerQuestion(Text)`；完成回调使用 `OnResponse`，字幕使用 `OnSpokenLine`，动画使用 `OnAnimation`。
-`LastResponse`、`Subtitle`、`ReplySource`、`AnimationEvent` 可直接供蓝图读取。
-技能成功事件已由现有玩法逻辑上报，绑定伙伴时不要再对同一次成功重复上报。
-伙伴 AnimBP 可从 Manager 的 `AnimationEvent.State` 读取 speaking/listening/scanning/celebrating/warning。
-玩家语音监听开始/结束时调用角色 Integration 的 `SetVoiceListening(bool)`；Manager 的 `OnAnimation` 同时转发该本地监听状态和服务回复动画。
-单独重建 Manager 资产可运行 `UnrealEditor-Cmd.exe VFX.uproject -run=CodexCompleteCharacter -CompanionManager -EnablePlugins=CodexBlueprintTools -unattended -nullrhi`。
-验证脚本已修正为构建 `VFXEditor`，并使用 UBT 的 `-EnablePlugin=CodexBlueprintTools` 确保验证工具与运行插件同步编译。
-伙伴专用 SkeletalMesh / AnimBP / Montage 仍未提供；现有 `CompanionMesh`、`CompanionMontages` 和
-`OnCompanionAnimationRequested` 是待映射入口，不代表已完成伙伴动画资源接入。
-真实 API 问答已由用户在本机运行 `test_xai.py` 验收：`source: "grok"`、`model: "grok-4.7"`，
-回复正确列出 Shield / Fire / Wave / Laser，`advanced: false`。该用户提供的结果记录在 `Saved/Logs/Grok_RealApi_UserAcceptance.json`。
-Grok 原生实时语音和 UE 麦克风采集现已接入，启动和验收见下节；现场听音仍需真人确认。
-密钥仅存在于用户已配置的 PowerShell 进程环境中，因此需在该窗口启动 `./Scripts/StartCosmo.ps1 -Mode grok -Model grok-4.7`。
+Windows integration acceptance testing passed 47 automated UE5 runtime checks. At that point, all 100 Python tests and 6 subtests passed.
+After the subsequent Responses API adaptation, all 83 current Python service tests passed; see `Saved/Logs/XaiResponses_Test.log`.
+Automated UE checks use a mode without rendering or audio devices and cannot replace in-person audio or animation acceptance testing.
+The actual ability-success events, HTTP completion callbacks, subtitles, TextToSpeech, and animation delegates of `BP_FirstPersonCharacterAI` are wired.
+`HttpBlueprint` and `JsonBlueprintUtilities` are explicitly enabled in the project.
+`/Game/Blueprint/BP_AICompanionManager` has been created and spawns automatically as the `AICompanionManager` Child Actor component of `BP_FirstPersonCharacterAI`.
+It inherits from `AAICompanionManager`, directly reuses the player's `CosmoClient` and `FirstPersonAIIntegration`, and creates no second session, ability implementation, or speech flow.
+External input can call `SubmitPlayerQuestion(Text)`. Completion callbacks use `OnResponse`, subtitles use `OnSpokenLine`, and animation uses `OnAnimation`.
+`LastResponse`, `Subtitle`, `ReplySource`, and `AnimationEvent` are directly readable in Blueprints.
+Existing gameplay logic already reports successful abilities; do not report the same success again when binding the companion.
+The companion AnimBP can read speaking/listening/scanning/celebrating/warning from the Manager's `AnimationEvent.State`.
+Call the character Integration's `SetVoiceListening(bool)` when voice listening starts/ends. The Manager's `OnAnimation` forwards both local listening state and service response animations.
+To rebuild only the Manager asset, run `UnrealEditor-Cmd.exe VFX.uproject -run=CodexCompleteCharacter -CompanionManager -EnablePlugins=CodexBlueprintTools -unattended -nullrhi`.
+The verification script now builds `VFXEditor` and uses UBT's `-EnablePlugin=CodexBlueprintTools` to compile verification tools and runtime plugins together.
+Dedicated companion SkeletalMesh / AnimBP / Montage assets were still unavailable at this stage. Existing `CompanionMesh`, `CompanionMontages`, and
+`OnCompanionAnimationRequested` are mapping entry points, not confirmation that companion animation assets are integrated.
+The user accepted real API questions and answers locally through `test_xai.py`: `source: "grok"`, `model: "grok-4.7"`,
+a correct listing of Shield / Fire / Wave / Laser, and `advanced: false`. The user-provided result is recorded in `Saved/Logs/Grok_RealApi_UserAcceptance.json`.
+Native Grok real-time voice and UE microphone capture are now integrated. See the next section for startup and verification; in-person listening still requires human confirmation.
+The key exists only in the user's configured PowerShell process environment, so run `./Scripts/StartCosmo.ps1 -Mode grok -Model grok-4.7` from that window.
 
-## UE 实时语音与右上角摄像头
+## UE Real-Time Voice and Top-Right Webcam Preview
 
-在已经配置 `XAI_API_KEY` 的 PowerShell 窗口中停止旧服务，再运行：
+Stop the old service in the PowerShell window with `XAI_API_KEY` configured, then run:
 
 ```powershell
 .\Scripts\StartCosmo.ps1 -Mode grok -Model grok-4.7 -VoiceModel grok-voice-latest -Voice eve
 ```
 
-服务保持运行，打开 UE 点击 Play。UE 自动启动同一份手势/面部识别程序；右上角显示镜像摄像头、手势标注、语音状态和玩家转写，COSMO 字幕显示在底部。摄像头保留原比例，断开后清除旧画面。无需额外打开浏览器或识别窗口。
+Keep the service running, open UE, and click Play. UE automatically starts the same gesture/face recognition program. The top-right corner displays a mirrored webcam preview, gesture annotations, voice status, and player transcripts; COSMO subtitles appear at the bottom. The webcam keeps its original aspect ratio, and stale frames are cleared on disconnection. No additional browser or recognition window is needed.
 
-等待 `Listening - speak to COSMO` 后直接说话，例如“COSMO，我现在应该做什么？”。服务端自动判断说话结束，返回 Grok 原生声音和字幕。默认在 COSMO 播放期间暂停麦克风采集，避免扬声器回声成为新的问题；COSMO 说完后恢复收音。若戴耳机并需要插话，可在角色 `FirstPersonAIIntegration` 上开启 `AllowVoiceInterruptions`。
+Wait for `Listening - speak to COSMO`, then speak directly, for example, "COSMO, what should I do now?" The server detects the end of speech and returns Grok's native audio and subtitles. By default, microphone capture pauses while COSMO speaks to prevent speaker echo from becoming a new question, then resumes afterward. With headphones, enable `AllowVoiceInterruptions` on the character's `FirstPersonAIIntegration` to allow interruptions.
 
-同一组件的 `VoiceVolume`（0–1）和 `VoicePitch`（0.5–2，默认 1）控制 UE 播放音量和音高。修改蓝图默认值后重新 Play；也可通过运行时 `Realtime` 组件调节。`SetMicrophoneMuted(bool)` 可供蓝图静音。切换音色用启动参数 `-Voice`，例如 `eve`；它和播放音高分别控制音色与音调。
+The same component's `VoiceVolume` (0-1) and `VoicePitch` (0.5-2, default 1) control UE playback volume and pitch. Restart Play after changing Blueprint defaults, or adjust them through the runtime `Realtime` component. `SetMicrophoneMuted(bool)` supports Blueprint muting. Select a voice with the `-Voice` launch argument, such as `eve`; voice selection and playback pitch control different aspects of the sound.
 
-若没有麦克风状态，检查 Windows“隐私和安全性 → 麦克风 → 允许桌面应用访问麦克风”，以及系统默认输入设备。`Grok Voice unavailable` 后显示的是服务端脱敏错误；`Voice offline` 表示需要检查 Python 服务。断线自动重连；语音服务不可用时，游戏真实事件、字幕和已有本地 TTS 仍可工作。停止 Play 会释放 UE 麦克风、语音连接、音频队列，并结束该局启动的摄像头进程。
+If microphone status is missing, check Windows Settings > Privacy & security > Microphone > Let desktop apps access your microphone, and the default input device. Text after `Grok Voice unavailable` is a redacted server error; `Voice offline` means the Python service needs checking. Disconnections reconnect automatically. Actual game events, subtitles, and existing local TTS continue working when voice is unavailable. Stopping Play releases the UE microphone, voice connection, and audio queue, and ends the webcam process started by that session.
 
-| 通路 | 地址 | 内容 |
+| Route | Address | Content |
 |---|---|---|
-| 原有游戏 HTTP | `http://127.0.0.1:8765` | 真实玩法事件、状态与文字问答 |
-| UE → Python → Grok Voice | `ws://127.0.0.1:8766` | 24 kHz、单声道 PCM16 音频、转写与字幕 |
-| 识别程序 → UE 预览 | `http://127.0.0.1:8767/frame.jpg` | 约 10 FPS、最大宽 480 的内存 JPEG |
+| Existing game HTTP | `http://127.0.0.1:8765` | Actual gameplay events, state, and text questions and answers |
+| UE -> Python -> Grok Voice | `ws://127.0.0.1:8766` | 24 kHz mono PCM16 audio, transcripts, and subtitles |
+| Recognition program -> UE preview | `http://127.0.0.1:8767/frame.jpg` | In-memory JPEG at approximately 10 FPS, maximum width 480 |
 
-长效 API Key 始终由 Python 持有。摄像头复用识别程序的同一个采集设备，仅在本机传给 UE，不保存图片、不传给 Grok；麦克风音频通过 Python 转给 Grok。原有浏览器测试页的系统朗读设置与 UE 原生语音设置分开。
+Python always holds the long-lived API key. The webcam reuses the recognition program's capture device and sends frames only to local UE, without saving images or sending them to Grok. Microphone audio is forwarded through Python to Grok. The original browser test page's system speech settings are separate from UE's native voice settings.
 
-语音只开放现有四个状态/教程查询工具，与 HTTP 共用同一份权威教程状态。玩家说“完成了”不会调用 `/events`、激活技能或推进教程；真实技能成功继续走现有事件链。实时字幕通过 Integration 和 `BP_AICompanionManager.OnSpokenLine` 转发，`ReplySource` 为 `grok`；它不会再触发第二次本地 TTS。语音事件不伪造 HTTP `OnResponse`，HTTP 完成回调仍用于原有请求。
+Voice exposes only the existing four state/tutorial query tools and shares the same authoritative tutorial state with HTTP. Saying "done" does not call `/events`, activate abilities, or advance the tutorial; actual ability successes continue through the existing event chain. Real-time subtitles are forwarded through Integration and `BP_AICompanionManager.OnSpokenLine`, with `ReplySource` set to `grok`, and do not trigger a second local TTS playback. Voice events do not fabricate HTTP `OnResponse`; HTTP completion callbacks remain for original requests.
 
-已对照 [xAI 实时语音说明](https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech) 和 [用户提供的 Voice Agent 示例](https://docs.x.ai/cookbook/examples/voice-agent-web) 接入。语音模型使用 `XAI_VOICE_MODEL`，默认 `grok-voice-latest`，与文字问答的 `XAI_MODEL=grok-4.7` 分开配置。`/health.realtime.status=listening` 仅表示本机端口已监听；完成真实音频回复才证明上游可用。
+Integration follows the [xAI real-time voice documentation](https://docs.x.ai/developers/model-capabilities/audio/speech-to-speech) and the [user-provided Voice Agent example](https://docs.x.ai/cookbook/examples/voice-agent-web). The voice model uses `XAI_VOICE_MODEL`, defaulting to `grok-voice-latest`, configured separately from the text model `XAI_MODEL=grok-4.7`. `/health.realtime.status=listening` indicates only that the local port is listening; a complete real audio response proves upstream availability.
 
-无需录音即可复查真实服务：
+Check the real service without recording:
 
 ```powershell
 .\.venv\Scripts\python.exe .\External\CosmoSystem\test_xai_voice.py
 ```
 
-它通过正在运行的本机服务发起一次真实语音问答，会产生 API 用量，输出 `source`、模型、音色、字幕和 `audio_bytes`，不会保存音频。2026-10-18 已收到 `source: "grok"`、`model: "grok-voice-latest"`、`voice: "eve"` 的完整声音与字幕。进一步通过 UE 原生 WebSocket 收到真实音频、更新字幕、转发伙伴蓝图回调，15 项在线 UE 验证全部通过；日志为 `Saved/Logs/RealtimeAV_LiveGrok.log`。此验证未录制麦克风，也不代替真人听音。
+This sends one real voice question through the running local service, consumes API usage, and outputs `source`, model, voice, subtitles, and `audio_bytes` without saving audio. On 2026-10-18, complete audio and subtitles were received with `source: "grok"`, `model: "grok-voice-latest"`, and `voice: "eve"`. Real audio was then received through UE's native WebSocket, subtitles updated, and companion Blueprint callbacks forwarded. All 15 online UE checks passed; log: `Saved/Logs/RealtimeAV_LiveGrok.log`. This verification did not record the microphone or replace human listening.
 
-当前 Python 全套 187 项测试、6 项子测试通过。离线 UE 回归包括 27 项音视频检查、59 项角色验证和 68 项关卡验证。`Scripts/VerifyRealtimeAV.ps1` 使用独立的 18766/18767 端口和合成音频/画面；测试中的 `source:grok` 只验证解析，不是上游接通证据。真实摄像头已经过手部/面部识别后成功提供 480×360 预览，并正常退出；检查未保存真实图像。1280×720、888×500 和 1024×768 布局使用合成摄像头画面验证。4:3 下原有关卡相机保持画面比例，HUD 位于游戏有效画面内。
+All 187 current Python tests and 6 subtests passed. Offline UE regressions include 27 audiovisual checks, 59 character checks, and 68 level checks. `Scripts/VerifyRealtimeAV.ps1` uses separate ports 18766/18767 and synthetic audio/images. Test values of `source:grok` verify parsing only and are not evidence of upstream connectivity. A real webcam successfully provided a 480 x 360 preview after hand/face recognition and exited normally; no actual images were saved. Layouts at 1280 x 720, 888 x 500, and 1024 x 768 were verified with synthetic webcam images. At 4:3, the existing level camera preserves its aspect ratio, and the HUD stays within the active game image.
 
-本次修改前备份：`Saved/CodexBackups/RealtimeAV_20261018_021441`。UE runtime 实现在 `CosmoRealtimeComponent`，Python 转发在 `companion/realtime_voice.py`，预览供给在 `dubhack_gestures/camera_preview.py`。
+Pre-change backup: `Saved/CodexBackups/RealtimeAV_20261018_021441`. UE runtime implementation: `CosmoRealtimeComponent`; Python forwarding: `companion/realtime_voice.py`; preview provider: `dubhack_gestures/camera_preview.py`.
 
-## 教程优先与地点台词
+## Tutorial Priority and Location Dialogue
 
-教程与地点预设台词高于实时对话。触发后立即清空当前闲聊音频，取消其生成并暂停玩家收音；字幕固定显示预设原文，迟到的闲聊字幕和音频不能覆盖它。连续触发的教程按顺序播放，上一句的音频在 UE 播完后才开始下一句；最后一句结束后恢复收音与新问答，不继续播放已取消的旧答案。`AllowVoiceInterruptions` 仅用于普通对话，不能打断教程。
+Tutorial and preset location lines take priority over real-time conversation. Triggering them immediately clears current conversation audio, cancels its generation, and pauses player microphone capture. Subtitles remain fixed to the preset text; late conversation subtitles or audio cannot overwrite them. Consecutive tutorial lines play in order, with each starting only after UE finishes playing the previous line. After the last line, microphone capture and new questions resume; canceled old answers do not resume. `AllowVoiceInterruptions` applies only to ordinary conversations and cannot interrupt tutorials.
 
-地点沿用当前星球关卡的路线与解锁条件，`路线进度 = -玩家 Y 坐标`：
+Locations follow the current planet level's route and unlock conditions, with `route progress = -player Y coordinate`:
 
-| 地点 ID | 真实触发条件 | 默认原有台词来源 |
+| Location ID | Actual Trigger | Existing Default Line Source |
 |---|---|---|
-| `landing` | 本局玩家接入落地区 | 原有 Welcome 教程原文 |
-| `training` | 首次通过路线进度 2150，进入训练检查点 | 原有 Shield 教程指令 |
-| `ruins` | 进度超过 5300，四个训练目标及两组峡谷敌人已完成 | 原有关卡“Starcore ruins”目标原文 |
-| `boss` | 进度超过 6200、两名遗迹守卫已击败，Boss 实际激活 | 原有关卡“Defeat the guardian”目标原文 |
+| `landing` | The player enters the landing area in this session | Original Welcome tutorial text |
+| `training` | First passes route progress 2150 and enters the training checkpoint | Original Shield tutorial instruction |
+| `ruins` | Progress exceeds 5300, with all four training targets and both canyon enemy groups completed | Original level objective text, "Starcore ruins" |
+| `boss` | Progress exceeds 6200, both ruins guards are defeated, and the boss actually activates | Original level objective text, "Defeat the guardian" |
 
-每个区域每局只播报一次。停留、来回走动和检查点重试不会重复播放；重新开始整局会恢复触发。到达地点只触发台词，不替代任何技能或教程完成事件；玩家说“完成了”仍不能推进教程。
+Each area announces once per session. Staying, walking back and forth, and checkpoint retries do not repeat it; restarting the entire game resets triggers. Reaching a location triggers only dialogue, never replacing an ability or tutorial completion event. Saying "done" still cannot advance the tutorial.
 
-修改地点台词：选中关卡里的 `BP_PlanetDirector`，在 `Tutorial → Locations → RegionTutorialLines` 修改对应 ID 的文本。新增蓝图触发器可在真实区域进入回调中调用 Director 的 `AnnounceRegion(Region)`；已有教程/游戏事件会自动进入相同优先队列。其他蓝图预设台词调用角色 Integration 的 `PlayTutorialLine(Line)`，不要使用实时问答入口发送预设台词。连续相同的待播台词会合并，避免重复播报。
+To edit location dialogue, select `BP_PlanetDirector` in the level and change the relevant ID's text under `Tutorial -> Locations -> RegionTutorialLines`. New Blueprint triggers can call the Director's `AnnounceRegion(Region)` from actual area-entry callbacks. Existing tutorial/game events automatically use the same priority queue. For other preset Blueprint lines, call the character Integration's `PlayTutorialLine(Line)` rather than sending preset lines through the real-time question endpoint. Consecutive identical pending lines are merged to prevent duplicate announcements.
 
-Grok 播报使用独立的原生语音连接，以 `force_message` 按原文合成、不经过聊天模型改写；普通对话连接保留上下文。只有 UE 确认播放完成后才释放教程优先级。网络失败时切换已有本地 TTS，原文字幕和优先级继续有效；本地 TTS 被关闭时保留字幕阅读时间。预设字幕来源为 `scripted`，普通真实 Grok 回答来源仍为 `grok`。
+Grok narration uses a separate native voice connection with `force_message` to synthesize the exact text without chat-model rewriting; the normal conversation connection retains its context. Tutorial priority is released only after UE confirms playback completion. Network failures switch to the existing local TTS while preserving exact subtitles and priority. If local TTS is disabled, subtitle reading time is retained. Preset subtitles use source `scripted`; ordinary real Grok answers remain `grok`.
 
-2026-10-18 已在 UE 中收到真实 Grok 预设教程音频（214560 字节 PCM），原文与蓝图回调一致；在线验证扩展为 17 项全部通过，日志 `Saved/Logs/TutorialPriority_LiveGrok.log`。未录制麦克风，真人听音仍由现场确认。教程修改前备份：`Saved/CodexBackups/TutorialPriority_20261018_025126`。更新后需重启 Python 服务并重新打开 UE，加载新的教程优先控制。
+On 2026-10-18, UE received actual Grok preset tutorial audio (214560 bytes of PCM), matching the original text and Blueprint callbacks. Online verification expanded to 17 passing checks; log: `Saved/Logs/TutorialPriority_LiveGrok.log`. The microphone was not recorded; in-person listening remains to be confirmed. Pre-tutorial-change backup: `Saved/CodexBackups/TutorialPriority_20261018_025126`. Restart the Python service and reopen UE after updating to load the new tutorial priority controls.
 
-## 需要项目资源/配置
+## Required Project Assets and Configuration
 
-关卡真正敌人/Boss、生命/伤害数值及完整胜负闭环现已接入 `/Game/AlienPlanet/Lvl_AlienPlanet`，见 [外星行星关卡说明](ALIEN_PLANET_LEVEL.md)。
-COSMO 伙伴专用动画资源仍需映射；Grok 账号需具备当前语音模型权限与额度。
-对应蓝图入口、资源映射和配置位置已完成，详见功能文档。本地教学不会冒充真实模型。
+Actual enemies/boss, health/damage values, and the full victory/defeat flow are now integrated into `/Game/AlienPlanet/Lvl_AlienPlanet`. See [Alien Planet Level](ALIEN_PLANET_LEVEL.md).
+Dedicated COSMO companion animation assets still require mapping. The Grok account needs access to the current voice model and sufficient quota.
+The corresponding Blueprint entry points, asset mapping hooks, and configuration locations are ready; see the feature documentation. Local tutorials do not impersonate a real model.

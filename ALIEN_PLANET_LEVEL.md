@@ -1,73 +1,73 @@
-> 输入系统已更新为纯手势 / 面部控制。本文旧按键、文字聊天和后备输入说明已失效；当前动作与启动方式见 [GESTURE_ONLY.md](GESTURE_ONLY.md)。
+> The input system now uses gesture and face controls exclusively. The old key bindings, text chat, and fallback input instructions in this document are obsolete. See [GESTURE_ONLY.md](GESTURE_ONLY.md) for current gestures and startup instructions.
 
-# 外星行星：普通难度关卡
+# Alien Planet: Normal-Difficulty Level
 
-默认游戏与编辑器地图已设为 `/Game/AlienPlanet/Lvl_AlienPlanet`。打开项目后点击 Play 即可进入，使用已完成的 `BP_FirstPersonCharacterAI`。键鼠和手势共用真实战斗规则；COSMO 服务离线时，关卡目标、训练、战斗、死亡重试和通关仍然可用。
+The default game and editor map is `/Game/AlienPlanet/Lvl_AlienPlanet`. Open the project and click Play to enter with the completed `BP_FirstPersonCharacterAI`. Keyboard/mouse and gesture inputs share the actual combat rules. Level objectives, training, combat, death retries, and completion remain available when the COSMO service is offline.
 
-场景包的 27 个独立模型及四张图集已导入 `Content/AlienPlanet`。布局由源 `scene_layout.json` 恢复，并对通行及战斗空间调整：飞船移至左侧，中央路线连续；静态 Boss 占位模型换成已绑定 ABP 的动画 Boss；平台坡道保留实际几何碰撞，岩壁阻挡路线边缘，植物和发光装饰不挡路。熔岩作为路边环境视觉，不叠加新手区的接触伤害。
+The scene pack's 27 individual models and four atlases have been imported into `Content/AlienPlanet`. The layout was restored from the source `scene_layout.json` and adjusted for traversal and combat: the spacecraft was moved left to keep the central route clear; the static boss placeholder was replaced with an animated boss bound to an ABP; platform ramps retain their actual geometry collision; rock walls block the route edges; and plants and glowing decorations do not block movement. Lava is an environmental visual beside the route, with no added contact damage in the beginner area.
 
-## 动线和遭遇
+## Route and Encounters
 
-地图长约 96 米，按出生区、能量峡谷、星核遗迹递进。地图坐标为厘米，沿 Unreal 的 -Y 前进。
+The map is approximately 96 meters long, progressing through the spawn area, energy canyon, and planetary core ruins. Map coordinates are in centimeters, with progress along Unreal's -Y axis.
 
-| 区域 | 布置与规则 |
+| Area | Layout and Rules |
 | --- | --- |
-| 飞船降落区 | 安全出生、青蓝导航装置、无主动敌人；飞船不会挡住中央通道。靠近峡谷时入口屏障自动开启。 |
-| 能量峡谷 | Shield / Fire / Wave / Laser 四个训练靶，第一检查点。训练分别需要真正挡住脉冲、火球撞击、范围伤害和持续射线命中；错误技能不完成训练。脉冲有预警，每次最多 4 伤害且不会把玩家打死。 |
-| 峡谷第一战 | 学会 Fire 并向前推进后，激活 1 只小怪。它位于 Wave 教学附近，可用 Wave 打断。 |
-| 峡谷第二战 | 完成四项训练并击杀第一只小怪后，靠近出口激活另外 2 只。清完三只小怪才开启出口屏障。旁边有水晶眼扫描对象及补给。 |
-| Boss 前整备 | 第二检查点、战前补给；死亡可从这里继续，保留峡谷三次击杀及已完成的技能训练。 |
-| 星核竞技场 | 先激活 2 只守卫，清完并靠近场内才激活 Boss。守卫已避开充能柱；Boss 战不会额外刷增援。圆形场地保留侧向躲避和绕行空间，两侧各有一份补给。 |
-| 收尾 | Boss 死亡后，靠近中央星核 3 秒完成充能并胜利；T 或结果界面的按钮重新开始。 |
+| Spacecraft landing zone | Safe spawn, cyan navigation devices, and no active enemies. The spacecraft does not block the central passage. The entrance barrier opens automatically as you approach the canyon. |
+| Energy canyon | Four training targets for Shield / Fire / Wave / Laser and the first checkpoint. Training requires actually blocking a pulse, hitting with a fireball, dealing area damage, and maintaining a beam hit, respectively. Incorrect abilities do not complete training. Pulses have warnings, deal at most 4 damage each, and cannot kill the player. |
+| First canyon encounter | Learning Fire and advancing activates 1 minion near the Wave tutorial. Wave can interrupt it. |
+| Second canyon encounter | After all four training tasks and the first minion are complete, approaching the exit activates 2 more minions. The exit barrier opens only after all three canyon minions are defeated. A Crystal Eye scan target and supplies are nearby. |
+| Pre-boss preparation | Second checkpoint and supplies. Retrying here preserves the three canyon kills and completed ability training. |
+| Planetary core arena | Activates 2 guards first. Defeating them and approaching the arena activates the boss. Guards are positioned clear of the charging pillars. No reinforcements spawn during the boss fight. The circular arena leaves room for sidestepping and circling, with one supply pickup on each side. |
+| Finale | After the boss dies, approach the central planetary core for 3 seconds to finish charging it and win. Restart with T or the button on the results screen. |
 
-共 5 只小怪、1 只 Boss、1 个非敌对水晶眼扫描对象、5 份恢复道具和 2 个检查点。敌人在该段战斗激活前不受伤害，避免提前远距离狙杀跳过节奏；不同遭遇不会同时激活。
+There are 5 minions, 1 boss, 1 non-hostile Crystal Eye scan target, 5 health pickups, and 2 checkpoints. Enemies cannot take damage before their encounter activates, preventing early long-range kills from skipping the encounter sequence. Separate encounters do not activate simultaneously.
 
-## 普通难度数值
+## Normal-Difficulty Values
 
-统一配置资产：`/Game/AlienPlanet/DA_NormalBalance`。在 UE 中双击该资产即可调整玩家技能、敌人生命/伤害/速度及补给。下面是当前设置，非真人难度测评结果。
+Shared configuration asset: `/Game/AlienPlanet/DA_NormalBalance`. Double-click it in UE to adjust player abilities, enemy health/damage/speed, and supplies. The values below are the current settings, not results from human difficulty testing.
 
-| 项目 | 当前数值 |
+| Item | Current Value |
 | --- | --- |
-| 玩家生命 | 100 |
-| 小怪 | 70 生命；8 近战伤害；140 cm/s；攻击结束后 1.9 秒冷却 |
-| Boss | 720 生命；18 近战伤害；26 扑击伤害；100 cm/s |
-| Boss 冷却 | 攻击结束后 4.5 秒；半血后 3.5 秒，不额外增加伤害 |
-| Boss 护甲 / 弱点 | 常态承受 65% 伤害；攻击后的 1.5 秒恢复期承受 150% 伤害 |
-| Fire | 60 伤害；0.85 秒冷却；正常小怪需要 2 发 |
-| Wave | 50 伤害；4 秒冷却；前方 5 米、受遮挡影响；打断并击退小怪，Boss 不会被击飞 |
-| Laser | 每秒 45 伤害；22 米射程；释放手势立即停止；普通小怪约需 1.56 秒连续命中 |
-| Shield | 正面 140° 防御；100 能量；持续消耗 24/秒，每次格挡再消耗 12；松开 1 秒后以 18/秒恢复；耗尽后 1.5 秒不能重开 |
-| 持续技能互斥 | Shield 与 Laser 不能同时维持；Fire / Wave 施放会收起 Shield |
-| 受伤保护 | 每次有效受伤后 0.55 秒，防止多只怪同一帧叠伤；重试出生额外保护 2 秒 |
-| 恢复道具 | 每份恢复 25，最多到满血；满血不会消耗；每次尝试仅能拾取一次 |
+| Player health | 100 |
+| Minion | 70 health; 8 melee damage; 140 cm/s; 1.9-second cooldown after an attack finishes |
+| Boss | 720 health; 18 melee damage; 26 pounce damage; 100 cm/s |
+| Boss cooldown | 4.5 seconds after an attack; 3.5 seconds below half health, with no additional damage increase |
+| Boss armor / weakness | Takes 65% damage normally; takes 150% damage during the 1.5-second recovery after an attack |
+| Fire | 60 damage; 0.85-second cooldown; 2 hits to defeat a normal minion |
+| Wave | 50 damage; 4-second cooldown; 5-meter area in front, subject to occlusion; interrupts and knocks back minions, but does not launch the boss |
+| Laser | 45 damage per second; 22-meter range; stops immediately when the gesture is released; approximately 1.56 seconds of continuous hits to defeat a normal minion |
+| Shield | Frontal 140-degree protection; 100 energy; drains 24/second plus 12 per block; regenerates at 18/second starting 1 second after release; cannot reactivate for 1.5 seconds after depletion |
+| Sustained ability exclusivity | Shield and Laser cannot be sustained simultaneously; casting Fire / Wave lowers Shield |
+| Damage protection | 0.55 seconds after each valid hit, preventing multiple enemies from stacking damage in one frame; 2 additional seconds of protection when respawning for a retry |
+| Health pickups | Restore 25 health up to maximum; not consumed at full health; each can be collected once per attempt |
 
-护盾的防御朝向跟随玩家视角，背面攻击仍会受伤。满能量无攻击时可维持约 4.17 秒，避免无限开盾输出。小怪攻击有约 0.77 秒的起手过程；Boss 的落点预警固定在攻击准备时的位置，不会追随已经躲开的玩家。Boss 扑击在实际动画 Launch / Hit_Controlled_1s 通知时执行位移和命中判定，不用 Tick 反复扣血。
+The shield faces the player's view; attacks from behind still deal damage. At full energy with no incoming attacks, it lasts approximately 4.17 seconds, preventing indefinite shielding while dealing damage. Minion attacks have an approximately 0.77-second windup. The boss's landing warning stays at the position selected during attack preparation rather than following a player who has dodged. Boss pounce movement and hit detection run on the actual animation's Launch / Hit_Controlled_1s notifications rather than repeatedly applying damage in Tick.
 
-当前技能伤害下，满血小怪也可用一次 Fire 加一次 Wave 击杀。Fire 对 Boss 常态造成 39 伤害、恢复期造成 90 伤害；Laser 对应每秒 29.25 / 67.5 伤害。
+With the current ability damage, one Fire plus one Wave also defeats a full-health minion. Fire deals 39 damage to the boss normally and 90 during recovery; Laser deals 29.25 / 67.5 damage per second, respectively.
 
-伤害和治疗始终限制在有效生命范围；死亡只计一次击杀，关闭碰撞并播放 Death，末帧保留后隐藏尸体。检查点重试会复原后续敌人和本段道具，恢复生命、护盾能量及技能冷却。
+Damage and healing always stay within valid health bounds. Death counts a kill only once, disables collision, plays Death, holds the final frame, and then hides the body. Checkpoint retries restore subsequent enemies and the current section's pickups, as well as health, shield energy, and ability cooldowns.
 
-## 操作与显示
+## Controls and Display
 
-当前为纯手势 / 面部控制：左手张掌前推 / 后拉移动，左手握拳停止，转头转向；右手稳定张掌护盾、握拳前推火球、横挥声波、拇指与食指捏合持续激光（松开停止）。右手单食指保持 0.6 秒开始扫描，右 V 保持 1 秒请求提示，左 V 保持 1 秒重复指令，双 V 保持 1.5 秒重新校准；死亡 / 胜利后双手张掌保持 1.5 秒重试 / 重开。完整说明见 [GESTURE_ONLY.md](GESTURE_ONLY.md)。
+Controls currently use gestures and face tracking exclusively: push / pull an open left hand to move, make a left fist to stop, and turn your head to turn. Hold your right palm open and steady for Shield, push a right fist forward for Fire, swipe sideways for Wave, and pinch your right thumb and index finger for a continuous Laser (release to stop). Hold only the right index finger out for 0.6 seconds to scan, a right V sign for 1 second to request a hint, a left V sign for 1 second to repeat an instruction, and both V signs for 1.5 seconds to recalibrate. After death / victory, hold both palms open for 1.5 seconds to retry / restart. See [GESTURE_ONLY.md](GESTURE_ONLY.md) for full instructions.
 
-HUD 显示当前区域目标、检查点、击杀数、威胁数、玩家生命条、护盾能量、技能冷却和 Boss 血条；失败时提示双手张掌保持 1.5 秒重试。真实生命、Boss 生命、目标、任务进度和星核能量同步给 COSMO，遥测不会伪造教程完成事件。
+The HUD displays the current area objective, checkpoint, kills, threats, player health bar, shield energy, ability cooldowns, and boss health bar. On failure, it prompts you to hold both palms open for 1.5 seconds to retry. Actual player health, boss health, objectives, mission progress, and core energy are synchronized with COSMO. Telemetry does not fabricate tutorial completion events.
 
-## 验证和再生成
+## Verification and Regeneration
 
-关卡自动检查 68 项全部通过，报告：`Saved/PlanetVerification.json`，本次增伤验证日志：`Saved/Logs/CombatBalance_Verify.log`。覆盖已保存地图加载、动画绑定、碰撞通行、真实导航追击、训练命中、增伤配置生效、两发火球击杀小怪、Boss 护甲及恢复期伤害、补给、死亡检查点恢复、Boss 预警躲避和星核胜利。额外检查了玩家仅剩 1 生命时仍能完成护盾训练，以及关闭的屏障确实阻挡玩家、开启后可通行。
+All 68 automated level checks passed. Report: `Saved/PlanetVerification.json`; damage-increase verification log: `Saved/Logs/CombatBalance_Verify.log`. Coverage includes saved map loading, animation bindings, collision and traversal, actual navigation pursuit, training hits, applied damage configuration, two-fireball minion kills, boss armor and recovery damage, supplies, checkpoint recovery after death, dodging boss warnings, and core victory. Additional checks confirmed that shield training remains possible at 1 health and that closed barriers block the player while open barriers allow passage.
 
-另已通过已有角色/手势/COSMO 的 47 项 UE 回归检查，以及 Python 服务的 113 项测试（另含 6 项子测试）。实际游戏模式的离屏预览检查了出生区到竞技场的完整导航路径、死亡界面和重试恢复 100 生命。截图位于 `Saved/Screenshots/Planet_*.png`。自动验证及离屏画面检查不包含真人连续手势试玩、难度问卷和 Windows 打包验收。
+The existing 47 UE character/gesture/COSMO regression checks and 113 Python service tests (plus 6 subtests) also passed. Offscreen previews in the actual game mode checked the full navigation path from spawn to arena, the death screen, and retry restoration to 100 health. Screenshots are in `Saved/Screenshots/Planet_*.png`. Automated verification and offscreen visual checks do not include a complete human gesture playthrough, difficulty surveys, or Windows package acceptance testing.
 
 ```powershell
-# 默认只构建并验证已保存地图，保留手工布局
+# By default, only build and verify the saved map, preserving manual layout edits.
 .\Scripts\VerifyPlanetLevel.ps1
 
-# 重建该生成地图的布局，然后验证；DA_NormalBalance 中的调整会保留
+# Rebuild the generated map layout, then verify; preserve DA_NormalBalance adjustments.
 .\Scripts\VerifyPlanetLevel.ps1 -RebuildLevel
 
-# 从已解压的模型与贴图补充导入，并重建、验证
+# Import missing assets from extracted models and textures, then rebuild and verify.
 .\Scripts\VerifyPlanetLevel.ps1 -ImportSources
 ```
 
-`-SkipBuild` 可复用当前插件构建；`-EngineRoot` 可指定 UE 5.7 路径。生成地图会替换该地图中的手工摆放，默认验证不会保存或改写地图。源包压缩文件哈希记录在 `External/AlienPlanet/source_manifest.json`，包内 Python 文件未执行。
+Use `-SkipBuild` to reuse the current plugin build and `-EngineRoot` to specify the UE 5.7 path. Regenerating the map replaces manual placements in that map; default verification does not save or modify it. Source archive hashes are recorded in `External/AlienPlanet/source_manifest.json`. Python files inside the archive were not executed.

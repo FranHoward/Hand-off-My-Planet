@@ -1,32 +1,33 @@
-当前映射更新验证 — 2026-10-17
+Current Mapping Update Verification - 2026-10-17
 
-本次已执行
-- 82 项 Python 单元测试通过，含 14 项新增的 STOP/Shield/PINCH 测试。
-- 左手前进与后退过程中，一帧 FIST 立即输出 STOP / move_axis=0，清除旧移动动作。
-- 左拳前后移动、短暂 NONE、单帧松拳均不会误恢复移动；稳定松拳后恢复推拉判断。
-- 握拳不会作为移动中立位置校准；真手部丢失时当前手为 NONE。
-- 左手张掌不再 Shield；右手静止张掌 Shield，快速竖向运动不是静止 Shield。
-- 右手横挥发 Wave 并停止 Shield，重新静止后可恢复 Shield。
-- 捏合关键点参考数据经原几何分类得到 PINCH，再映射为 LASER；pointer 使用捏合中点。
-- 捏合横向/纵深运动不发 Fire/Wave；单食指 POINT 不再激活 Laser；松开/丢手后释放。
-- 左 STOP + 右 Shield、左 STOP + 右 Laser、左 STOP + 右 Fire、左前进 + 右 Wave 独立输出。
-- 之前的手别、头部 yaw、Fire、静态姿态及 JSON 回归继续通过。
-- Python 3.9 语法兼容与 ZIP 字节完整性检查通过。
+Completed in This Update
+- All 82 Python unit tests passed, including 14 new STOP/Shield/PINCH tests.
+- During left-hand forward/backward movement, one FIST frame immediately outputs STOP / move_axis=0 and clears old movement actions.
+- Moving the left fist forward/backward, brief NONE, and a single release frame do not accidentally resume movement. A stable release restores push/pull detection.
+- A fist cannot calibrate the movement neutral position. Actual hand loss sets the current hand to NONE.
+- An open left palm no longer activates Shield. A stationary open right palm activates Shield; fast vertical movement does not count as stationary Shield.
+- A right-hand sideways swipe fires Wave and stops Shield. Shield can resume after the hand becomes stationary again.
+- Reference pinch landmarks classify as PINCH through the existing geometry classifier, then map to LASER. The pointer uses the pinch midpoint.
+- Sideways/depth pinch movement does not fire Fire/Wave. A single index-finger POINT no longer activates Laser. Releasing or losing the hand ends the ability.
+- Left STOP + right Shield, left STOP + right Laser, left STOP + right Fire, and left forward + right Wave output independently.
+- Previous handedness, head yaw, Fire, static pose, and JSON regressions continue to pass.
+- Python 3.9 syntax compatibility and ZIP byte integrity checks passed.
 
-未执行的实机验证
-没有接入用户摄像头。本轮没有重新运行 MediaPipe 实际图像推理；使用已有关键点
-样本和模拟时序验证改动。上一轮 40 帧双模型测试属于历史记录，不计作本轮实测。
-真实捏合、静止阈值和左右手跟踪质量仍需 Mac / Windows 摄像头现场验证。
+Hardware Verification Not Performed
+The user's webcam was not connected. This update did not rerun actual MediaPipe image inference;
+changes were verified with existing landmark samples and simulated timing. The previous 40-frame
+dual-model test is historical and is not counted as testing in this update.
+Actual pinch recognition, stillness thresholds, and left/right tracking quality still require on-site Mac / Windows webcam checks.
 
-手动验收
-1. 默认启动，头朝前，左手张掌自然中立约一秒完成校准（不要握拳校准）。
-2. 左手张掌前推应 FORWARD，后拉应 BACKWARD；任一位置握拳立即 STOP。
-3. 保持左拳再前后移动，move_axis 必须仍为 0；稳定松拳后可恢复移动。
-4. 左手张掌中立不出 Shield；右手张掌静止出 SHIELD。
-5. 右手拇指和食指指尖接触，保持短暂稳定后出 LASER；松开应结束。
-6. 捏合时移动手进行瞄准，不应出现 Wave/Fire。单独伸食指不应出 Laser。
-7. 右手握拳后推出仍 Fire，横挥仍 Wave；测试左手停止与右手技能并行。
-8. 头部左转/回中/右转、丢脸 NONE 应保持原行为。
+Manual Acceptance Checks
+1. Start with defaults, face forward, and hold the left palm open in a natural neutral position for about one second to calibrate (do not calibrate with a fist).
+2. Pushing the open left hand should produce FORWARD; pulling should produce BACKWARD. A fist at any position must immediately produce STOP.
+3. Keep the left fist closed and move it forward/backward. move_axis must remain 0; movement can resume after a stable release.
+4. An open left palm at neutral must not produce Shield. A stationary open right palm must produce SHIELD.
+5. Touch the right thumb and index fingertips together; a brief stable hold should produce LASER. Releasing should end it.
+6. Move the pinched hand to aim without triggering Wave/Fire. Extending only the index finger must not produce Laser.
+7. Right fist-then-push should still produce Fire, and sideways swipes should still produce Wave. Test left-hand stop alongside right-hand abilities.
+8. Head left/center/right and NONE on face loss should retain their previous behavior.
 
-本包没有新增引擎、WebSocket 或依赖。当前是识别/JSON 层，人物实际运动效果
-需要未来读取这些指令的游戏代码实现，不属于本次验证。
+This package adds no engine, WebSocket, or dependencies. It covers the recognition/JSON layer;
+actual character movement requires future game code to consume these commands and is outside this verification.

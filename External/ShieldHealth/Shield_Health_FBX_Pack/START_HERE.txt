@@ -1,59 +1,59 @@
-防御盾 + 补血包 / ENERGY SHIELD + HEALTH PICKUP
+ENERGY SHIELD + HEALTH PICKUP
 ================================================
 
-交给队友的两个模型
-  EnergyShield.fbx    青蓝色能量防御盾：六边形网格、金属框、背面握把。
-  HealthPickup.fbx    橙红色补血胶囊：正面白色加号、发光侧仓和电量条。
+Two Models for Teammates
+  EnergyShield.fbx    Cyan energy shield: hexagonal grid, metal frame, and rear grip.
+  HealthPickup.fbx    Orange-red health capsule: white front cross, glowing side compartments, and charge bars.
 
-两个文件都是独立的 Static Mesh，不带骨骼和动画。
-单位：厘米。导入比例：1。正面：-Y，竖直：+Z。
-盾牌约 116 × 32 × 152 cm，原点在盾面中心，用于挂接手部或角色。
-血包约 35 × 30 × 47 cm，原点在底部中心，用于摆放拾取物。
-血包可以在游戏中整体缩放，例如缩到 0.5 倍变成约 24 cm 高。
+Both files are standalone Static Meshes without skeletons or animations.
+Units: centimeters. Import scale: 1. Forward: -Y; up: +Z.
+Shield: approximately 116 x 32 x 152 cm, with origin at the shield face center for attachment to a hand or character.
+Health pickup: approximately 35 x 30 x 47 cm, with origin at the bottom center for placement as a pickup.
+Scale the health pickup in-game as needed; for example, scale 0.5 makes it approximately 24 cm tall.
 
-Unreal 导入
+Unreal Import
+-------------
+1. Drag both FBXs into the Content Browser, import as Static Meshes, and set scale to 1.
+2. Enable Import Materials / Import Textures as needed.
+   Each FBX embeds four textures, also available for manual import from the textures folder.
+3. Both models share M_Props_Atlas. Reuse the first model's material on the second to avoid duplicates.
+   Material connections:
+     Props_BaseColor.png -> Base Color (sRGB on)
+     Props_Emissive.png  -> Emissive Color (sRGB on; optionally multiply by 2-4)
+     Props_Roughness.png -> Roughness (sRGB off)
+     Props_Metallic.png  -> Metallic (sRGB off)
+   The FBX importer may not connect every channel automatically. Connect Emissive manually if glow is missing.
+4. The shield's second material slot, M_Shield_Field_Transparent, is an optional energy film.
+   In Unreal, set Blend Mode = Translucent and Two Sided = enabled.
+   Recommended Unlit setup: connect cyan (0.015, 0.21, 0.28) to Emissive, with Opacity = 0.20.
+   For only the metal frame and open grid, set this material's Opacity to 0.
+   Transparency and bloom are engine material/post-processing effects that require configuration in Unreal.
+5. Set dynamic props to Movable. Add simple collision as needed: Box for the shield, Sphere for the health pickup.
+   Blueprint components are convenient for collision control; the model files contain no collision meshes.
+
+Connect to Existing Gameplay
+----------------------------
+Shield: attach the Static Mesh to a character or hand component and show it while Shield is active.
+        Use your existing Blueprint for blocking, cooldown, durability, and hit feedback.
+Health pickup: place it in a pickup Actor with Sphere Collision for Overlap.
+        After confirming the player: Health = min(Health + HealAmount, MaxHealth), then destroy the pickup.
+        For an idle effect, slowly rotate the Actor or make it float up and down.
+These FBXs contain only models and materials; they do not execute healing or blocking logic.
+
+Other Files
 -----------
-1. 把两个 FBX 拖到 Content Browser，按 Static Mesh 导入，比例设为 1。
-2. 按需开启 Import Materials / Import Textures。
-   每个 FBX 内嵌了四张贴图，也可以从 textures 文件夹手动导入。
-3. 两个模型共享 M_Props_Atlas。避免重复材质，第二个模型可复用第一个材质。
-   材质连接：
-     Props_BaseColor.png -> Base Color（sRGB 开启）
-     Props_Emissive.png  -> Emissive Color（sRGB 开启，可乘 2～4 调发光）
-     Props_Roughness.png -> Roughness（sRGB 关闭）
-     Props_Metallic.png  -> Metallic（sRGB 关闭）
-   FBX 导入器未必自动连接所有通道；没有发光时手动连接 Emissive。
-4. 盾牌第二个材质槽 M_Shield_Field_Transparent 是可选能量薄膜。
-   在 Unreal 中设 Blend Mode = Translucent、Two Sided = 开启。
-   推荐使用 Unlit：青蓝色 (0.015, 0.21, 0.28) 接 Emissive，Opacity = 0.20。
-   如果你只想保留金属框和镂空网格，把这个材质的 Opacity 设为 0。
-   透明度和泛光是引擎材质/后处理效果，需要在 Unreal 中设置。
-5. 动态道具使用 Movable。按玩法添加简单碰撞即可：盾牌用 Box，血包用 Sphere。
-   碰撞由 Blueprint 组件控制更方便，模型文件未附加碰撞网格。
+Shield_Health.blend                  Blender 4.5 source with packed textures.
+textures/                           Four shared textures.
+preview/Shield_Health_Preview.png    Actual Blender render; health pickup enlarged 3x to show detail.
+source/build_props.py                Script to regenerate the models.
+source/validate_exports.py           FBX reimport validation script.
+model_manifest.json                 Dimensions, polygon counts, and material slot information.
+validation_report.json              Actual validation results.
 
-接入现有玩法
------------
-盾牌：把 Static Mesh 挂到角色或手部组件，Shield 技能启用时显示；
-      格挡、冷却、耐久和受击反馈由你们现有 Blueprint 处理。
-血包：放到拾取物 Actor 中，加一个 Sphere Collision 做 Overlap。
-      确认是玩家后：Health = min(Health + HealAmount, MaxHealth)，随后销毁拾取物。
-      如需待机效果，让 Actor 缓慢旋转/上下浮动即可。
-这些 FBX 只包含模型和材质，不会单独执行回血或格挡逻辑。
+The Blender source's 01_ASSETS_REAL_SCALE collection retains both models at actual scale,
+hidden by default to avoid overlapping the presentation scene. STUDIO_PREVIEW_ objects are preview-only.
+To re-export, unhide and select only SM_EnergyShield or SM_HealthPickup,
+enable Selected Objects, and exclude presentation stands, cameras, and preview copies.
 
-其他文件
---------
-Shield_Health.blend                  Blender 4.5 源文件，贴图已打包。
-textures/                           四张共享贴图。
-preview/Shield_Health_Preview.png    实际 Blender 渲染；血包为展示细节放大到 3 倍。
-source/build_props.py                可重新生成模型的脚本。
-source/validate_exports.py           FBX 重新导入校验脚本。
-model_manifest.json                 尺寸、面数、材质槽信息。
-validation_report.json              实际校验结果。
-
-Blender 源文件中的 01_ASSETS_REAL_SCALE 集合保留了两个实际比例模型，
-默认隐藏以免与展示场景重叠。STUDIO_PREVIEW_ 开头的对象仅用于预览。
-如要重新导出，请显示并只选择 SM_EnergyShield 或 SM_HealthPickup，
-勾选 Selected Objects；不要导出展示底座、相机和预览副本。
-
-已执行 Blender FBX 重新导入检查：三角面、UV、尺寸、原点、封闭网格和内嵌贴图。
-未在 Unreal Engine 中实际运行测试。模型为本次制作的原创风格化原型。
+Completed Blender FBX reimport checks cover triangles, UVs, dimensions, origins, closed meshes, and embedded textures.
+Actual runtime testing in Unreal Engine has not been performed. These models are original stylized prototypes created for this delivery.

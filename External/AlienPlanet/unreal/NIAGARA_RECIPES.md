@@ -1,47 +1,47 @@
-# Niagara 接入建议
+# Niagara Integration Suggestions
 
-以下是本项目的视觉设计起点，不是已编译的 Niagara System。FBX 仅提供静态网格；数值需要结合你们的移动速度、相机、曝光和性能预算调整。
+These are visual design starting points for the project, not compiled Niagara Systems. FBX supplies static meshes only. Adjust values for your movement speed, camera, exposure, and performance budget.
 
-Niagara 的 Mesh Renderer 可渲染静态模型，Ribbon Renderer 用于条带轨迹，Sprite Renderer 用于火花等面片粒子。材质需启用对应的 Niagara 使用标记。
+Niagara's Mesh Renderer renders static models, Ribbon Renderer handles trails, and Sprite Renderer handles billboard particles such as sparks. Enable the corresponding Niagara usage flags on materials.
 
-官方参考：[Niagara Renderers](https://dev.epicgames.com/documentation/en-us/unreal-engine/render-module-reference-for-niagara-effects-in-unreal-engine)。
+Official reference: [Niagara Renderers](https://dev.epicgames.com/documentation/en-us/unreal-engine/render-module-reference-for-niagara-effects-in-unreal-engine).
 
-## 四种战斗能力
+## Four Combat Abilities
 
-| 能力 | 复用模型/对象 | 建议效果构成 | 起始数值（设计建议） |
+| Ability | Reused Model / Object | Suggested Effect | Starting Values (Design Suggestions) |
 | --- | --- | --- | --- |
-| Shield | 你们已有盾牌 + FXM_CrystalShard | 受击短闪、少量青蓝碎晶、边缘波纹 | 碎晶 8～16 个，寿命 0.15～0.4 秒 |
-| Fire | FXM_FireBolt | 橙色发光主体 + Ribbon 拖尾 + 少量 ember Sprite | 拖尾寿命 0.12～0.25 秒；火花寿命 0.15～0.45 秒 |
-| Wave | FXM_WaveOrb + FXM_WaveRing | 紫色球体、扩散环、短暂波动；折射另做材质 | 扩散环 0.4～0.8 秒；半径约 0.5→3 米 |
-| Laser | FXM_TealBeamEndpoint | 青绿色光束、明亮细芯、终点粒子收敛 | 端点直径约 0.1～0.4 米；命中闪光约 0.1 秒 |
+| Shield | Existing shield + FXM_CrystalShard | Brief hit flash, a few cyan shards, and edge ripples | 8-16 shards; 0.15-0.4-second lifetime |
+| Fire | FXM_FireBolt | Orange glowing body + Ribbon trail + a few ember Sprites | Trail lifetime 0.12-0.25 seconds; spark lifetime 0.15-0.45 seconds |
+| Wave | FXM_WaveOrb + FXM_WaveRing | Purple orb, expanding rings, and brief distortion; separate material for refraction | Rings last 0.4-0.8 seconds; radius approximately 0.5 to 3 meters |
+| Laser | FXM_TealBeamEndpoint | Teal beam, bright narrow core, and particles converging at the endpoint | Endpoint diameter approximately 0.1-0.4 meters; hit flash approximately 0.1 seconds |
 
-`FXM_FireBolt` 的建模正面为 -Y。若 Niagara 的速度朝向按其他轴设置，请在 Mesh Renderer 或 Mesh Orientation 中补上旋转，使弹头朝前。
+`FXM_FireBolt` is modeled facing -Y. If Niagara uses another axis for velocity alignment, add a rotation in Mesh Renderer or Mesh Orientation so the projectile points forward.
 
-`FXM_WaveRing` 的原始半径为 1 米，可直接通过缩放形成扩散。不要把每个环的网格三角面数量乘以几千个粒子；原型只需少数几个环。
+`FXM_WaveRing` has an original radius of 1 meter; scaling can create expansion directly. Avoid multiplying each ring's triangle count by thousands of particles; only a few rings are needed for the prototype.
 
-`FXM_CrystalShard` 是青蓝环境碎片/盾牌受击碎片，不新增 Ice/Freeze 技能。冻结参考图中的晶体色彩可用作视觉参考。
+`FXM_CrystalShard` provides cyan environmental/shield-hit shards, without adding an Ice/Freeze ability. Crystal colors from freezing reference images can serve as visual references.
 
-## 星核充能 / 修复
+## Planetary Core Charging / Repair
 
-- 起点：玩家或充能装置。终点：StarCore 物体中的发光核心位置。
-- 模型的核心中心约位于自身原点上方 175 cm；装置顶部端点约上方 210 cm。
-- 使用青绿色细光束连接起终点；终点叠加 `FXM_TealBeamEndpoint`。
-- 粒子向终点收敛，随着充能值增加提高密度或亮度。
-- 进度来自真实游戏状态，不能靠播放粒子时间直接当作任务完成。
+- Start point: player or charging device. End point: the glowing core position in the StarCore object.
+- The model's core center is approximately 175 cm above its origin; the device's top endpoint is approximately 210 cm above its origin.
+- Connect the endpoints with a thin teal beam and overlay `FXM_TealBeamEndpoint` at the end.
+- Converge particles on the endpoint, increasing density or brightness as charge rises.
+- Progress must come from actual game state; elapsed particle playback time must not directly complete the objective.
 
-## 场景环境效果
+## Environmental Effects
 
-- 熔岩裂缝：沿 `LavaFissure_8m` 放低密度橙色余烬，向上慢飘。
-- 水晶：只在附近放少量缓慢上浮的微光；图集的发光已经提供主体辨识。
-- Boss：橙色心脏是视觉弱点，受击时局部闪亮；裂缝上可加少量火花。
-- 能量屏障：通过材质透明度/UV 扫描实现变化，碰撞开关独立控制。
+- Lava fissures: place sparse orange embers along `LavaFissure_8m`, drifting slowly upward.
+- Crystals: add only a few nearby, slowly rising glimmers; atlas emission already provides the main visual identity.
+- Boss: the orange heart is a visual weak point and flashes locally when hit; add a few sparks along cracks if desired.
+- Energy barrier: animate material opacity/UV scanning, with collision enabled/disabled independently.
 
-## HUD 风格对接
+## HUD Style Integration
 
-屏幕 HUD 和手势跟踪显示在 UMG 中制作，不属于 FBX 模型。
+Create the screen HUD and gesture tracking display in UMG; they are outside the FBX models.
 
-- 主色青蓝，提醒色琥珀；用简短标记展示当前技能和识别状态。
-- 四种能力分别为 Shield / Fire / Wave / Laser，与训练靶图案保持对应。
-- 手势置信度不足时显示“识别中”，不要直接触发技能。
-- 任务终端使用场景内显示；具体教程文字由 AI/任务状态驱动。
-- 不在素材中预设 Fire、Wave 或 Laser 的具体手势，以你们识别队友的定义为准。
+- Use cyan as the primary color and amber for warnings, with short labels for the current ability and tracking status.
+- Keep the four abilities Shield / Fire / Wave / Laser consistent with the training target symbols.
+- Display "Recognizing" when gesture confidence is insufficient rather than directly triggering an ability.
+- Use an in-world display for the mission terminal. AI/mission state drives the specific tutorial text.
+- The assets do not prescribe specific Fire, Wave, or Laser gestures; follow the definitions from your gesture recognition teammate.

@@ -1,65 +1,65 @@
-# 三种生物的动画蓝图
+# Animation Blueprints for Three Creatures
 
-UE 5.7。三套独立骨骼、16 段动画、材质和贴图已导入 `Content/Creatures`。ABP 内包含可编辑的 `CreatureStateMachine`、Sequence Player 和转换规则；共同父类为 `CosmoCreatureAnimInstance`，负责读取移动和维护动作优先级。
+UE 5.7. Three independent skeletons, 16 animations, materials, and textures have been imported into `Content/Creatures`. Each ABP includes an editable `CreatureStateMachine`, Sequence Players, and transition rules. Their shared parent class, `CosmoCreatureAnimInstance`, reads movement and maintains action priorities.
 
-| 生物 | 动画蓝图 | 状态 |
+| Creature | Animation Blueprint | States |
 | --- | --- | --- |
-| 水晶眼 | `/Game/Creatures/CrystalEye/ABP_CrystalEye` | Idle、Move（FloatForward）、Controlled |
-| 小怪 | `/Game/Creatures/Minion/ABP_Minion` | Idle、Move（Walk）、Attack、Hit、Jump、Death |
-| Boss | `/Game/Creatures/Boss/ABP_Boss` | Idle、Move（Walk）、Attack、Hit、Jump、Pounce、Death |
+| Crystal Eye | `/Game/Creatures/CrystalEye/ABP_CrystalEye` | Idle, Move (FloatForward), Controlled |
+| Minion | `/Game/Creatures/Minion/ABP_Minion` | Idle, Move (Walk), Attack, Hit, Jump, Death |
+| Boss | `/Game/Creatures/Boss/ABP_Boss` | Idle, Move (Walk), Attack, Hit, Jump, Pounce, Death |
 
-每个目录有一个 `BP_<生物>_AnimationPreview`，拖入关卡即可观察待机。预览 Actor 已绑定对应网格、材质和 ABP，没有碰撞和敌人逻辑。预览展示的是源资产外形，实际角色尺寸、碰撞和朝向由玩法角色设置。
+Each directory contains a `BP_<Creature>_AnimationPreview`. Drag it into a level to observe Idle. Preview Actors have the corresponding mesh, materials, and ABP assigned, with no collision or enemy logic. Previews show the source assets' appearance; gameplay characters define actual size, collision, and orientation.
 
-## 接到角色
+## Connect to a Character
 
-1. Skeletal Mesh 组件选用同一目录的 `SK_<生物>`，Animation Mode 选择 Use Animation Blueprint，Anim Class 选择对应 ABP。
-2. `Get Anim Instance` → Cast to `CosmoCreatureAnimInstance`。角色移动时默认读取拥有者的平面速度；Character 还会读取 `IsFalling` 并自动进入 Jump。
-3. 攻击、受击、主动跳跃、Boss 扑击分别调用 `RequestAttack`、`RequestHit`、`RequestJump`、`RequestPounce`。返回 true 表示请求已接受。不存在的动作返回 false；水晶眼没有攻击、受击和死亡动画，不会借用其他生物骨骼。
-4. 小怪或 Boss 死亡时调用 `SetDead`。死亡不可被普通动作打断，非循环播放后保持末帧。复活时先恢复角色生命值和死亡标记，再调用 `ResetForRespawn`。拥有者若有数值 `Health` 或布尔 `bDead`，也会自动读取死亡条件。
-5. 绑定实例的 `OnAnimationEvent(EventName)`，接入下表的碰撞窗口、脚步声和特效。伤害、位移、真实命中检测及敌人决策应由玩法 Actor / AI 执行。动画通知只发出事件，不直接扣血。
+1. Assign the same directory's `SK_<Creature>` to the Skeletal Mesh component. Set Animation Mode to Use Animation Blueprint and Anim Class to the corresponding ABP.
+2. `Get Anim Instance` -> Cast to `CosmoCreatureAnimInstance`. By default, movement reads the owner's planar speed. Characters also read `IsFalling` and automatically enter Jump.
+3. Call `RequestAttack`, `RequestHit`, `RequestJump`, and `RequestPounce` for attack, hit reaction, voluntary jump, and boss pounce. A true return value means the request was accepted. Unsupported actions return false. Crystal Eye has no attack, hit, or death animations and does not borrow another creature's skeleton.
+4. Call `SetDead` when a minion or boss dies. Normal actions cannot interrupt death; its non-looping animation holds the final frame. To respawn, restore character health and the death flag first, then call `ResetForRespawn`. If the owner has a numeric `Health` or boolean `bDead`, death conditions are also read automatically.
+5. Bind the instance's `OnAnimationEvent(EventName)` to the collision windows, footsteps, and effects below. Gameplay Actors / AI should handle damage, displacement, actual hit detection, and enemy decisions. Animation notifications emit events without applying damage directly.
 
-移动采用 5 cm/s 进入、2 cm/s 退出的滞回阈值，避免静止抖动。Move 播放倍率为速度 / `ReferenceMoveSpeed`，限制 0.1–4；小怪参考速度 80.882 cm/s，Boss 77.381 cm/s。水晶眼的默认参考速度暂为 80.882 cm/s，可在 ABP Class Defaults 按实际飞行速度调整。测试或非 Character 的自定义移动可使用 `SetManualMovement(Speed, IsInAir)`，通过 `ResumeOwnerMovement` 恢复读取拥有者。
+Movement uses hysteresis thresholds of 5 cm/s to enter and 2 cm/s to exit, preventing idle jitter. Move playback rate is speed / `ReferenceMoveSpeed`, clamped to 0.1-4. Reference speeds are 80.882 cm/s for minions and 77.381 cm/s for the boss. Crystal Eye currently defaults to 80.882 cm/s; adjust it in ABP Class Defaults for the actual flight speed. Tests or custom movement on non-Characters can use `SetManualMovement(Speed, IsInAir)` and return to owner-driven movement with `ResumeOwnerMovement`.
 
-动作优先级为 Death > Controlled > Hit > Pounce > Jump > Attack > 移动/待机。高优先级动作可打断低优先级动作；Attack/Pounce 不接受逐帧重复触发，重复 Hit 会重新开始受击。单次动作结束后恢复移动/待机，Jump 在仍悬空时保持末帧，落地后恢复。
+Action priority is Death > Controlled > Hit > Pounce > Jump > Attack > movement/idle. Higher-priority actions can interrupt lower-priority actions. Attack/Pounce reject repeated per-frame triggers; repeated Hit restarts the hit reaction. One-shot actions return to movement/idle when finished. Jump holds its final frame while airborne and resumes after landing.
 
-## 通知和水晶眼控制
+## Notifications and Crystal Eye Control
 
-所有源 `events.json` 的通知均在动画 `COSMO Events` 轨道中，按 30 fps 原始时间建立；根运动关闭，跳跃和扑击的世界位移由玩法处理。
+All notifications from the source `events.json` files are on the animations' `COSMO Events` track at their original 30 fps timing. Root motion is disabled; gameplay handles world displacement for jumps and pounces.
 
-| 动画 | 通知时间（秒） |
+| Animation | Notification Times (Seconds) |
 | --- | --- |
-| CrystalEye Controlled | ControlBegin 0；ControlEnd 1.0 |
-| Minion Walk | Footstep_LF 0；Footstep_LB 0.2；Footstep_RF 0.4；Footstep_RB 0.6 |
-| Minion Attack | Attack 11/30（0.366667） |
-| Minion Jump | TakeOff 0.2；Land 20/30（0.666667） |
-| Boss Walk | Footstep_LF / RM / LB 0；Footstep_RF / LM / RB 0.6 |
-| Boss Attack | Attack 17/30（0.566667） |
-| Boss Pounce | Launch 17/30；Hit_Controlled_1s 29/30；Land 1.1 |
-| Boss Jump | TakeOff 0.3；Land 0.9 |
+| CrystalEye Controlled | ControlBegin 0; ControlEnd 1.0 |
+| Minion Walk | Footstep_LF 0; Footstep_LB 0.2; Footstep_RF 0.4; Footstep_RB 0.6 |
+| Minion Attack | Attack 11/30 (0.366667) |
+| Minion Jump | TakeOff 0.2; Land 20/30 (0.666667) |
+| Boss Walk | Footstep_LF / RM / LB 0; Footstep_RF / LM / RB 0.6 |
+| Boss Attack | Attack 17/30 (0.566667) |
+| Boss Pounce | Launch 17/30; Hit_Controlled_1s 29/30; Land 1.1 |
+| Boss Jump | TakeOff 0.3; Land 0.9 |
 
-Boss 收到 `Hit_Controlled_1s` 时，玩法进行碰撞或范围检测，**确认命中后**对目标水晶眼的动画实例调用 `ApplyControlled(1.0)`。播放扑击本身不会自动判定命中。水晶眼的控制计时独立于 Boss：例如扑击 0.966667 秒命中，控制持续到 1.966667 秒，不会在 Boss 1.5 秒动画结束时提前解控。再次确认控制命中会从该次调用重新计算完整时长。
+When the boss receives `Hit_Controlled_1s`, gameplay performs collision or area detection and calls `ApplyControlled(1.0)` on the target Crystal Eye's animation instance **only after confirming a hit**. Playing Pounce alone does not confirm a hit. Crystal Eye's control timer is independent of the boss. For example, a hit at 0.966667 seconds keeps control active until 1.966667 seconds, even though the boss animation ends at 1.5 seconds. Another confirmed control hit restarts the full duration from that call.
 
-`ControlBegin` 在控制请求被接受时发出，`ControlEnd` 由独立计时器发出；动画首尾的同名通知用于标记，不会重复触发生命周期。被受击或死亡打断的旧攻击通知会被过滤。每次单次动作的同名玩法事件最多发出一次，脚步事件按移动循环发出。
+`ControlBegin` fires when a control request is accepted; an independent timer emits `ControlEnd`. Same-name notifications at the animation endpoints are markers and do not duplicate lifecycle events. Old attack notifications interrupted by hit reactions or death are filtered out. Each same-name gameplay event fires at most once per one-shot action; footsteps fire per movement cycle.
 
-在玩法角色中将 `ControlBegin` / `ControlEnd` 连接到移动、输入的禁用与恢复。ABP 管理姿态和计时事件，Actor 的实际移动限制仍由玩法角色执行。
+In the gameplay character, connect `ControlBegin` / `ControlEnd` to disabling and restoring movement and input. The ABP manages poses and timing events; the gameplay character enforces actual movement restrictions.
 
-## 重新生成与验证
+## Regeneration and Verification
 
-已通过三套 ABP/预览蓝图的编译（零错误、零警告）和 128 项 UE 实际骨骼播放检查，包括骨骼与时长、材质槽绑定、通知帧、移动倍率、受击打断、攻击事件去重、跳跃落地、扑击事件、一秒控制与刷新、死亡末帧和复活。
+All three ABPs/preview Blueprints compiled with zero errors and warnings. All 128 UE checks of actual skeletal playback passed, covering skeletons and durations, material slots, notification frames, movement rates, hit interruptions, attack event deduplication, jump landing, pounce events, one-second control and refresh, final death frames, and respawning.
 
 ```powershell
-# 默认仅构建插件并验证已有资产，保留手工编辑的 ABP
+# By default, only build the plugin and verify existing assets, preserving manual ABP edits.
 .\Scripts\VerifyCreatureAnimations.ps1
 
-# 显式重新生成状态机、预览 Actor 与 COSMO 通知轨道，然后验证
+# Explicitly regenerate state machines, preview Actors, and COSMO notification tracks, then verify.
 .\Scripts\VerifyCreatureAnimations.ps1 -RebuildAssets
 
-# 从已解压的源 FBX/贴图补充导入，再重新生成并验证
+# Import missing source FBX/textures, then regenerate and verify.
 .\Scripts\VerifyCreatureAnimations.ps1 -ImportSources
 ```
 
-`-SkipBuild` 可复用当前插件构建；引擎路径可用 `-EngineRoot` 指定。源包位于 `External/CreatureAnimations`，压缩包哈希见 `source_manifest.json`。导入脚本保留现有已导入资产；源内容改动需在编辑器中显式重导入后再生成。
+Use `-SkipBuild` to reuse the current plugin build and `-EngineRoot` to specify the engine path. Source packs are in `External/CreatureAnimations`; archive hashes are in `source_manifest.json`. Import scripts preserve existing imported assets. After changing source content, explicitly reimport it in the editor before regenerating.
 
-检查结果：`Saved/CreatureAnimationVerification.json`，完整过程：`Saved/Logs/CreatureAnimation_Verify.log`。离屏预览截图：`Saved/Screenshots/Creatures_Idle.png`、`Creatures_Move.png`、`Creatures_Actions.png`。
+Results: `Saved/CreatureAnimationVerification.json`; full log: `Saved/Logs/CreatureAnimation_Verify.log`. Offscreen previews: `Saved/Screenshots/Creatures_Idle.png`, `Creatures_Move.png`, and `Creatures_Actions.png`.
 
-可使用 `UnrealEditor.exe VFX.uproject "/Engine/Maps/Entry?game=/Script/Engine.GameModeBase" -game -CreatureAnimationPreview -RenderOffscreen -windowed -ResX=1600 -ResY=900 -ForceRes -NoSound -unattended -dx11` 重现截图。此预览仅在编辑器构建中启用，创建临时场景并自动退出，不更改游戏地图。
+Reproduce the screenshots with `UnrealEditor.exe VFX.uproject "/Engine/Maps/Entry?game=/Script/Engine.GameModeBase" -game -CreatureAnimationPreview -RenderOffscreen -windowed -ResX=1600 -ResY=900 -ForceRes -NoSound -unattended -dx11`. This preview is enabled only in editor builds, creates a temporary scene, exits automatically, and does not change game maps.

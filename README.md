@@ -1,175 +1,175 @@
 # Hand off My Planet
 
-**用双手施法，用转头探索，与 COSMO 一起踏上外星冒险。**
+**Cast spells with your hands, look around by turning your head, and embark on an alien adventure with COSMO.**
 
-Hand off My Planet 是一款基于 Unreal Engine 5.7 的第一人称游戏。普通摄像头识别玩家的双手和头部动作：左手控制前进与后退，转头改变视角，右手释放护盾、火球、冲击波和激光。你将在外星地表探索、与怪物战斗，并挑战星核守卫。
+Hand off My Planet is a first-person game built with Unreal Engine 5.7. A standard webcam tracks your hands and head movements: your left hand controls forward and backward movement, turning your head changes your view, and your right hand casts shields, fireballs, shockwaves, and lasers. Explore an alien landscape, fight monsters, and challenge the guardian of the planetary core.
 
-AI 伙伴 **COSMO** 支持 Grok 实时语音对话和互动教学。基础探索与战斗可以在没有 API Key 的情况下运行。
+Your AI companion, **COSMO**, supports real-time voice conversations through Grok and interactive tutorials. Basic exploration and combat work without an API key.
 
-![外星关卡开发预览：第一人称视角、敌人和四种技能 HUD](docs/images/gameplay.png)
+![Alien level development preview: first-person view, enemies, and the HUD for four abilities](docs/images/gameplay.png)
 
-## 游戏玩法
+## Gameplay
 
-从飞船降落区出发，探索能量峡谷和星核遗迹，在训练靶上熟悉技能，并利用场景中的补给和检查点继续推进。当前关卡包含 5 只小怪、1 只 Boss，以及可扫描的非敌对水晶眼；**击败全部敌对目标后进入胜利界面**。
+Start at the spacecraft landing zone, explore the energy canyon and planetary core ruins, practice your abilities on training targets, and use supplies and checkpoints to keep progressing. The current level contains 5 minions, 1 boss, and a scannable, non-hostile Crystal Eye. **Defeat all hostile targets to reach the victory screen.**
 
-四种技能各有用途：
+Each of the four abilities serves a different purpose:
 
-| 技能 | 战斗用途 |
+| Ability | Combat Use |
 | --- | --- |
-| Shield · 护盾 | 抵挡正面攻击；持续消耗能量，解除后恢复，注意来自背后的敌人。 |
-| Fire · 火球 | 发射远程投射物，适合对准目标进行单次打击。 |
-| Wave · 冲击波 | 攻击近距离前方区域，打断并击退小怪。 |
-| Laser · 激光 | 通过捏合持续发射，移动捏合位置瞄准，松开即停止。 |
+| Shield | Blocks frontal attacks. Continuously drains energy, which regenerates after you lower the shield. Watch for enemies behind you. |
+| Fire | Launches a ranged projectile for a single, aimed strike. |
+| Wave | Attacks the area directly in front of you at close range, interrupting and knocking back minions. |
+| Laser | Fires continuously while you pinch. Move the pinch position to aim, and release to stop. |
 
-留意 Boss 的攻击预警，在其攻击后的恢复阶段集中输出。HUD 会显示生命、护盾能量、技能冷却、击杀数和 Boss 血条。死亡后可以用双掌手势从检查点重试；胜利后可用同一手势重新开始。
+Watch for the boss's attack warnings and focus your damage during its recovery after each attack. The HUD displays health, shield energy, ability cooldowns, kills, and the boss's health bar. After dying, use the two-open-palms gesture to retry from a checkpoint; after winning, use the same gesture to restart.
 
-## 手势操作
+## Gesture Controls
 
-左右手均指**玩家自己的左右手**。让脸和双手处于摄像头取景范围，保持光线充足，并为手臂留出前推、后收和横挥的空间。
+Left and right always refer to **your own left and right hands**. Keep your face and both hands in the webcam's view, ensure adequate lighting, and leave enough room to push your arms forward, pull them back, and swipe sideways.
 
-### 开始前校准
+### Calibrate Before Playing
 
-面向摄像头，头部朝正前方，左手张掌自然停在身体前方，稳定保持约 1 秒，等待识别就绪。需要重新校准时，双手做 V 手势保持 1.5 秒，然后放下 V 手势，再次保持头部和左手稳定。
+Face the webcam with your head pointing straight ahead and your left hand open in a natural position in front of your body. Hold still for about 1 second until tracking is ready. To recalibrate, hold a V sign with both hands for 1.5 seconds, lower the V signs, then hold your head and left hand steady again.
 
-### 移动、战斗与交互
+### Movement, Combat, and Interaction
 
-| 身体动作 | 游戏行为 |
+| Gesture or Movement | In-Game Action |
 | --- | --- |
-| 左手张掌，向摄像头前推 | 前进 |
-| 左手张掌，向身体方向后收 | 后退 |
-| 左手握拳 | 立即停止移动 |
-| 头部向左 / 向右转动 | 左转 / 右转；回正后停止转向 |
-| 右手张掌并保持稳定 | 开启护盾；收手解除 |
-| 右手握拳后向摄像头推出 | 发射火球；收回后可再次准备 |
-| 右手横向挥动 | 释放冲击波 |
-| 右手拇指与食指捏合 | 持续激光，捏合中心用于瞄准；松开停止 |
-| 右手仅伸直食指，保持 0.6 秒 | 开始扫描准星指向的敌人或扫描对象 |
-| 双手 V 手势，保持 1.5 秒 | 重新校准 |
-| 死亡 / 胜利界面，双手张掌保持 1.5 秒 | 检查点重试 / 重新开始 |
+| Open your left hand and push it toward the webcam | Move forward |
+| Open your left hand and pull it toward your body | Move backward |
+| Make a fist with your left hand | Stop moving immediately |
+| Turn your head left / right | Turn left / right; return to center to stop turning |
+| Hold your right hand open and steady | Raise the shield; withdraw your hand to lower it |
+| Make a fist with your right hand and push it toward the webcam | Cast a fireball; pull your hand back to prepare another cast |
+| Swipe your right hand sideways | Cast a shockwave |
+| Pinch your right thumb and index finger together | Fire a continuous laser, aiming with the center of the pinch; release to stop |
+| Extend only your right index finger and hold for 0.6 seconds | Start scanning the enemy or scannable object under the crosshair |
+| Hold a V sign with both hands for 1.5 seconds | Recalibrate |
+| On the death / victory screen, hold both hands open for 1.5 seconds | Retry from the checkpoint / restart |
 
-识别层还保留了“右手 V 保持 1 秒请求教学提示”和“左手 V 保持 1 秒重复提示”。这两项用于教程指令模式；**当前星球关卡默认采用自由对话模式，不触发这两项教学指令**。启用 Grok 语音后，可以直接向 COSMO 提问。
+The recognition layer also retains two tutorial gestures: hold a right-hand V sign for 1 second to request a tutorial hint, or a left-hand V sign for 1 second to repeat the hint. These are used in tutorial command mode. **The current planet level defaults to free conversation mode, so these two tutorial commands are inactive.** With Grok voice enabled, you can ask COSMO questions directly.
 
-扫描和重试等保持手势，每次连续保持只触发一次；收手或更换姿势后才能再次触发。手部或面部丢失跟踪时，对应的移动、转向或持续技能会停止。
+Held gestures, such as scanning and retrying, trigger only once per continuous hold. Withdraw your hand or change your pose before triggering them again. If hand or face tracking is lost, the corresponding movement, turning, or sustained ability stops.
 
-### 菜单操作
+### Menu Controls
 
-移动和施法使用手势，菜单支持鼠标点击，也可用方向键 / Tab 选择、Enter / Space 确认。游戏中按 Esc 暂停，再按一次恢复；暂停菜单可调整语音音量、静音麦克风或返回主菜单。
+Use gestures to move and cast abilities. Navigate menus with the mouse or use the arrow keys / Tab to select and Enter / Space to confirm. Press Esc during gameplay to pause, and press it again to resume. The pause menu lets you adjust voice volume, mute the microphone, or return to the main menu.
 
-## 项目运行方法
+## Running the Project
 
-### 1. 准备环境
+### 1. Set Up Your Environment
 
-| 环境 | 要求 |
+| Component | Requirement |
 | --- | --- |
-| 操作系统 | Windows 64 位；当前自动运行与打包流程面向 Win64。 |
-| 游戏引擎 | Unreal Engine 5.7。 |
-| 编译工具 | Visual Studio 的 C++ 游戏开发工具及适配 Unreal 的 Windows SDK，用于编译项目插件。 |
-| Python | **CPython 3.12.10 x64**；运行包生成器会检查完整版本号。 |
-| 输入设备 | 摄像头；使用实时语音时还需要麦克风和音频输出设备。 |
-| 网络 | 首次安装 Python 依赖、下载内嵌 Python，以及使用 Grok 服务时需要联网。 |
+| Operating system | 64-bit Windows. The current automatic startup and packaging workflows target Win64. |
+| Game engine | Unreal Engine 5.7. |
+| Build tools | Visual Studio's Game development with C++ tools and a Windows SDK compatible with Unreal, required to compile the project plugins. |
+| Python | **CPython 3.12.10 x64**. The runtime builder checks the full version number. |
+| Input devices | A webcam. Real-time voice also requires a microphone and an audio output device. |
+| Network | Internet access is required for the initial Python dependency installation, the embedded Python download, and Grok services. |
 
-### 2. 克隆项目并生成运行环境
+### 2. Clone the Project and Build the Runtime
 
-在 PowerShell 中运行：
+Run the following in PowerShell:
 
 ```powershell
 git clone https://github.com/FranHoward/Hand-off-My-Planet.git
 Set-Location Hand-off-My-Planet
 
-# 确认这里显示 Python 3.12.10，并使用 64 位解释器。
+# Verify that this reports Python 3.12.10 and that you are using a 64-bit interpreter.
 python --version
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r Scripts/runtime-requirements.lock
 .\.venv\Scripts\python.exe Scripts/build_runtime.py
 ```
 
-生成结果位于 `Plugins/CosmoBridge/Resources/Runtime/Win64/`，包含独立 Python、依赖、服务代码和识别模型。游戏使用这份运行包，因此**必须先生成它，再打开或编译首次克隆的项目**。
+The output is written to `Plugins/CosmoBridge/Resources/Runtime/Win64/` and includes a standalone Python interpreter, dependencies, service code, and recognition models. The game uses this runtime, so **build it before opening or compiling a freshly cloned project**.
 
-可以在打开 Unreal 前进行离线运行包检查：
+You can check the runtime offline before opening Unreal:
 
 ```powershell
 .\Plugins\CosmoBridge\Resources\Runtime\Win64\python\python.exe -B `
   .\Plugins\CosmoBridge\Resources\Runtime\Win64\app\runtime_check.py
 ```
 
-运行包生成器会拒绝覆盖已有输出。修改服务或识别源码后需要重新生成，具体备份、重建和验证步骤见 [运行环境部署](RUNTIME_DEPLOYMENT.md)。
+The runtime builder refuses to overwrite existing output. Rebuild the runtime after changing the service or recognition source code. See [Runtime Deployment](RUNTIME_DEPLOYMENT.md) for backup, rebuild, and verification steps.
 
-### 3. 打开游戏并快速试玩
+### 3. Open the Game and Try It Out
 
-1. 用 UE 5.7 打开 `VFX.uproject`，出现编译插件提示时允许编译，等待资源和着色器准备完成。
-2. 默认地图是主菜单 `Content/UI/Maps/Lvl_MainMenu`。点击编辑器的 **Play**，再点击 **START MISSION**。
-3. 在 **SKIP TUTORIAL?** 弹窗选择 **CONFIRM**，即可跳过语音教程进入关卡；此路径不需要 API Key。
-4. 允许桌面应用使用摄像头，面向镜头完成校准，然后用手势移动和施法。
-5. 停止 Play 时，游戏会关闭本次自动启动的识别进程并释放摄像头。
+1. Open `VFX.uproject` with UE 5.7. Allow the plugins to compile when prompted, then wait for assets and shaders to finish preparing.
+2. The default map is the main menu, `Content/UI/Maps/Lvl_MainMenu`. Click **Play** in the editor, then click **START MISSION**.
+3. Select **CONFIRM** in the **SKIP TUTORIAL?** dialog to skip the voice tutorial and enter the level. This path requires no API key.
+4. Allow desktop apps to access the webcam, face the camera to calibrate, then use gestures to move and cast abilities.
+5. When you stop Play, the game shuts down the recognition process it automatically started for that session and releases the webcam.
 
-游戏会自动管理所需的本机 COSMO 服务和手势识别进程，无需单独打开识别窗口。没有 API Key 时使用本地 mock 服务，实时 Grok 对话不可用。
+The game automatically manages the required local COSMO service and gesture recognition processes. You do not need to open a separate recognition window. Without an API key, it uses a local mock service, and real-time Grok conversations are unavailable.
 
-### 4. 可选：开启 COSMO 语音与互动教程
+### 4. Optional: Enable COSMO Voice and the Interactive Tutorial
 
-要体验 Grok 实时对话和开场教学，配置可用的 `XAI_API_KEY`。`GROK_API_KEY` 也可作为别名。**仅使用实时语音时不要求设置 `XAI_MODEL`**；该变量用于额外启用 HTTP 文本问答模型。
+To use real-time Grok conversations and the introductory tutorial, configure a valid `XAI_API_KEY`. `GROK_API_KEY` is also accepted as an alias. **You do not need to set `XAI_MODEL` for real-time voice alone.** That variable enables an additional model for text questions and answers over HTTP.
 
-一种临时配置方式是在 PowerShell 中输入密钥，并从同一个窗口启动 Unreal。先关闭已打开的项目，再执行：
+For a temporary configuration, enter the key in PowerShell and launch Unreal from the same window. Close any open instance of the project first, then run:
 
 ```powershell
-$grokSecret = Read-Host '输入 xAI API Key' -AsSecureString
+$grokSecret = Read-Host 'Enter your xAI API key' -AsSecureString
 $env:XAI_API_KEY = [System.Net.NetworkCredential]::new('', $grokSecret).Password
 Remove-Variable grokSecret
 $env:COSMO_AI_PROVIDER = 'auto'
 
-# 修改为本机 UnrealEditor.exe 的实际路径。
+# Replace this with the actual path to UnrealEditor.exe on your machine.
 $unrealEditorPath = 'C:\Program Files\Epic Games\UE_5.7\Engine\Binaries\Win64\UnrealEditor.exe'
 & $unrealEditorPath (Resolve-Path .\VFX.uproject).Path
 ```
 
-也可以通过 Windows 的用户环境变量设置 `XAI_API_KEY`；服务启动时会读取持久化配置。密钥应保存在环境变量中，避免写入源码或提交到仓库。
+You can also set `XAI_API_KEY` as a Windows user environment variable. The service reads the saved configuration at startup. Store keys in environment variables; avoid writing them into source code or committing them to the repository.
 
-在主菜单点击 **START MISSION** 后：
+After clicking **START MISSION** in the main menu:
 
-- 选择 **CONFIRM**：直接进入游戏，可与 COSMO 自由语音交流。
-- 选择 **CANCEL**：进入 Grok 开场对话与 9 项互动教程，完成后进入同一关卡。教程会先朗读指令，等待你做出正确动作，再播放反馈并继续。
+- Select **CONFIRM** to enter the game directly and talk freely with COSMO.
+- Select **CANCEL** to begin the Grok opening conversation and 9 interactive tutorial tasks, then enter the same level. The tutorial reads each instruction aloud, waits for the correct action, plays feedback, and continues.
 
-如果语音连接或播放失败，界面会显示原因；Enter 重试，Esc 返回主菜单。进入关卡后等待语音状态就绪再说话，例如“COSMO，怎样使用护盾？”或“我应该怎样对付 Boss？”。
+If the voice connection or playback fails, the interface displays the reason. Press Enter to retry or Esc to return to the main menu. Once in the level, wait for voice status to indicate it is ready before speaking. For example, ask "COSMO, how do I use the shield?" or "How should I fight the boss?"
 
-默认语音模型和音色由 `Scripts/runtime-defaults.json` 配置，也可通过 `XAI_VOICE_MODEL`、`XAI_VOICE` 环境变量覆盖。更多连接、调试和服务端说明见 [COSMO 接入文档](COSMO_INTEGRATION.md)。
+The default voice model and voice are configured in `Scripts/runtime-defaults.json`. Override them with the `XAI_VOICE_MODEL` and `XAI_VOICE` environment variables. See [COSMO Integration](COSMO_INTEGRATION.md) for more information on connections, debugging, and the server.
 
-## 常见问题
+## Troubleshooting
 
-| 问题 | 处理方法 |
+| Issue | Solution |
 | --- | --- |
-| 编译提示 `Missing COSMO runtime` | 先完成运行包生成步骤，确认 `Plugins/CosmoBridge/Resources/Runtime/Win64/manifest.json` 存在。 |
-| 生成器提示 Python 版本不匹配 | 使用 CPython **3.12.10 x64** 创建构建环境，并安装锁定依赖。 |
-| 生成器提示 `Output exists` | 按 [运行环境部署](RUNTIME_DEPLOYMENT.md) 备份已有输出后重建。 |
-| 摄像头打不开或没有手势响应 | 检查 Windows 摄像头权限，关闭占用设备的应用，并查看 `Saved/Logs/GestureRecognition.log`。教程识别日志为 `TutorialGestureRecognition.log`。 |
-| 摄像头选错、左右手相反或转向相反 | 在角色 `FirstPersonAIIntegration` 组件调整 `CameraIndex`、`SwapHands`、`InvertHeadTurn`；教程阶段在 `BP_PlanetHUD` 的 `Tutorial/Camera` 中调整对应设置。 |
-| 开场教程停在语音连接页面 | 检查 API Key、网络和音频设备，查看 `Saved/Logs/CosmoService.log`；未配置语音时可返回主菜单并选择跳过教程。 |
-| 希望不使用 Grok 先试玩 | 在 `SKIP TUTORIAL?` 弹窗选择 **CONFIRM**。 |
+| Build reports `Missing COSMO runtime` | Complete the runtime build steps first and verify that `Plugins/CosmoBridge/Resources/Runtime/Win64/manifest.json` exists. |
+| Runtime builder reports a Python version mismatch | Create the build environment with CPython **3.12.10 x64** and install the locked dependencies. |
+| Runtime builder reports `Output exists` | Back up the existing output and rebuild as described in [Runtime Deployment](RUNTIME_DEPLOYMENT.md). |
+| Webcam does not open or gestures do not respond | Check Windows camera permissions, close apps using the device, and inspect `Saved/Logs/GestureRecognition.log`. Tutorial recognition logs are written to `TutorialGestureRecognition.log`. |
+| Wrong camera, reversed hands, or reversed turning | Adjust `CameraIndex`, `SwapHands`, and `InvertHeadTurn` in the character's `FirstPersonAIIntegration` component. For the tutorial, adjust the corresponding settings under `Tutorial/Camera` in `BP_PlanetHUD`. |
+| Introductory tutorial is stuck on the voice connection screen | Check the API key, network, and audio devices, and inspect `Saved/Logs/CosmoService.log`. If voice is not configured, return to the main menu and choose to skip the tutorial. |
+| You want to try the game without Grok | Select **CONFIRM** in the **SKIP TUTORIAL?** dialog. |
 
-本机默认端口为：COSMO HTTP `8765`、实时语音 `8766`、摄像头预览 `8767`、手势 UDP `5052`。停止其他测试实例，避免端口或摄像头被重复占用。
+The default local ports are COSMO HTTP `8765`, real-time voice `8766`, webcam preview `8767`, and gesture UDP `5052`. Stop other test instances to avoid conflicts over ports or the webcam.
 
-## 项目结构
+## Project Structure
 
-| 路径 | 内容 |
+| Path | Contents |
 | --- | --- |
-| `VFX.uproject` / `Config/` | Unreal 项目入口与默认配置。 |
-| `Content/` | 已导入的关卡、角色、蓝图、UI 和游戏素材。 |
-| `Plugins/CosmoBridge/` | 战斗与关卡逻辑、COSMO 服务管理、语音和 HUD。 |
-| `Plugins/GestureBridge/` | 接收识别结果并向 Unreal 传递动作。 |
-| `dubhack_gestures/` | 手部 / 面部识别、动作判定、配置、模型和测试。 |
-| `External/CosmoSystem/` | COSMO Python 服务、对话和教程逻辑。 |
-| `External/` | 原始美术、动画、UI 与可再导入资源。 |
-| `Scripts/` | 运行包生成、服务启动、资源导入与验证脚本。 |
+| `VFX.uproject` / `Config/` | Unreal project entry point and default configuration. |
+| `Content/` | Imported levels, characters, Blueprints, UI, and game assets. |
+| `Plugins/CosmoBridge/` | Combat and level logic, COSMO service management, voice, and HUD. |
+| `Plugins/GestureBridge/` | Receives recognition results and passes actions to Unreal. |
+| `dubhack_gestures/` | Hand / face recognition, gesture detection, configuration, models, and tests. |
+| `External/CosmoSystem/` | COSMO Python service, conversation logic, and tutorial logic. |
+| `External/` | Original artwork, animations, UI, and assets available for reimport. |
+| `Scripts/` | Scripts for runtime building, service startup, asset import, and verification. |
 
-仓库保留源码、关卡、游戏素材和原始识别模型。`.gitignore` 排除 Unreal 编译产物、缓存、日志、自动备份、Python 虚拟环境和可重新生成的独立运行包。
+The repository includes source code, levels, game assets, and original recognition models. `.gitignore` excludes Unreal build artifacts, caches, logs, automatic backups, Python virtual environments, and the standalone runtime that can be regenerated.
 
-分发 Windows 游戏时应提供完整打包目录，包含随包运行环境。打包方法与迁移验证见 [运行环境部署](RUNTIME_DEPLOYMENT.md)。
+When distributing the Windows game, provide the complete packaged directory, including the bundled runtime. Run `Scripts/BuildWindows.ps1` to generate the Shipping game directory, a ZIP archive, and checksum files. See [Windows Standalone Packaging and Validation](WINDOWS_PACKAGING.md) and [Runtime Deployment](RUNTIME_DEPLOYMENT.md) for details.
 
-## 开发文档
+## Developer Documentation
 
-- [手势配置与识别诊断](GESTURE_ONLY.md)
-- [COSMO、实时语音与接口](COSMO_INTEGRATION.md)
-- [AI 角色接入](BP_FIRST_PERSON_AI.md)
-- [关卡设计与战斗参数](ALIEN_PLANET_LEVEL.md)
-- [生物动画资源](CREATURE_ANIMATIONS.md)
-- [当前菜单与互动教程流程](Content/UI/README.txt)
+- [Gesture Configuration and Recognition Diagnostics](GESTURE_ONLY.md)
+- [COSMO, Real-Time Voice, and APIs](COSMO_INTEGRATION.md)
+- [AI Character Integration](BP_FIRST_PERSON_AI.md)
+- [Level Design and Combat Parameters](ALIEN_PLANET_LEVEL.md)
+- [Creature Animation Assets](CREATURE_ANIMATIONS.md)
+- [Current Menu and Interactive Tutorial Flow](Content/UI/README.txt)
 
-部分专题文档保留了早期实现记录；当前入口、教程选择、胜利条件和运行方法以本 README 及实际源码为准。
+Some topic-specific documents retain notes from earlier implementations. Refer to this README and the current source code for the current entry point, tutorial choices, victory conditions, and setup instructions.

@@ -1,13 +1,13 @@
-# VFX 识别端（纯手势 / 面部交互）
+# VFX Recognition Client (Gesture and Face Interaction Only)
 
-本目录来自本次提供的 Python 压缩包，已按当前 UE 项目完成接入。
+This directory comes from the supplied Python archive and has been integrated with the current UE project.
 
-完整启动、动作、配置和验证说明见 [GESTURE_ONLY.md](../GESTURE_ONLY.md)。UE Play 会自动启动识别；无需手动使用按键操控识别窗口。
+See [GESTURE_ONLY.md](../GESTURE_ONLY.md) for complete startup, gestures, configuration, and verification. UE Play starts recognition automatically; no manual keyboard control of the recognition window is needed.
 
-- `gesture_recognition.py`：MediaPipe 手部 / 面部模型、自动校准、UDP 和诊断预览。
-- `game_controls.py`、`gesture_logic.py`：保留本次压缩包的握拳停止、捏合激光、面部旋转矩阵转向等识别修正。
-- `interaction_controls.py`：增加扫描、提示、重复、重试与双 V 校准，并与战斗共享递增事件 ID。
-- `recognition_settings.json`：动作阈值；`gesture_bindings.json`：UE 动作开关、冷却和本机端口，key 必须为空。
-- `Unreal/Plugins/GestureBridge`：与项目实际插件一致的源码副本。
+- `gesture_recognition.py`: MediaPipe hand/face models, automatic calibration, UDP, and diagnostic preview.
+- `game_controls.py`, `gesture_logic.py`: retain the supplied archive's recognition fixes, including fist-to-stop, pinch laser, and head turning from the face rotation matrix.
+- `interaction_controls.py`: adds scanning, hints, repeats, retries, and two-hand V calibration, sharing incrementing event IDs with combat.
+- `recognition_settings.json`: gesture thresholds; `gesture_bindings.json`: UE action switches, cooldowns, and local port. The key must be empty.
+- `Unreal/Plugins/GestureBridge`: a source copy matching the actual project plugin.
 
-手动预览时先关闭 UE 组件的 AutoLaunchRecognition，执行 `python gesture_recognition.py --udp-port 5052`。不带 udp-port 时仅本地识别。
+For manual preview, first disable AutoLaunchRecognition on the UE component, then run `python gesture_recognition.py --udp-port 5052`. Without udp-port, recognition stays local.

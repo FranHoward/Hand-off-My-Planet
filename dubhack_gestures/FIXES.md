@@ -1,33 +1,33 @@
-# 当前动作映射更新（2026-10-17）
+# Current Action Mapping Update (2026-10-17)
 
-本次只修改 Python 识别和 JSON。头部 yaw、左右手镜像修复、Fire 握拳后推出、Wave 横挥保持原来的实现。
+This update changes only Python recognition and JSON. Head yaw, left/right hand mirroring fixes, fist-then-push Fire, and sideways-swipe Wave retain their original implementations.
 
-| 动作 | 当前结果 |
+| Gesture | Current Result |
 |---|---|
-| 左手张掌放在中立位置 | NONE，移动轴 0，不开盾 |
-| 左手张掌前推/后拉 | FORWARD / BACKWARD |
-| 左手握拳 | STOP，立即清零移动，不受距离影响 |
-| 右手张掌保持不动 | SHIELD |
-| 右手握拳后推出 | FIRE |
-| 右手横向挥动 | WAVE |
-| 右手拇指、食指指尖接触捏合 | LASER |
-| 右手只伸食指 | 不再触发 Laser |
+| Open left hand at the neutral position | NONE, movement axis 0, no shield |
+| Push / pull the open left hand | FORWARD / BACKWARD |
+| Left fist | STOP, immediately resets movement regardless of distance |
+| Hold the right palm open and still | SHIELD |
+| Make a right fist, then push | FIRE |
+| Swipe the right hand sideways | WAVE |
+| Pinch the right thumb and index fingertips together | LASER |
+| Extend only the right index finger | No longer triggers Laser |
 
-## 修改文件
+## Changed Files
 
-- game_controls.py：左拳停止优先于距离判断；握拳不用于中立校准；停止后短暂未知不恢复移动。Shield 移回右手并检查静止。Laser 从 POINT 改为 PINCH，瞄准坐标改为 pinch_center。Wave 排除捏合及捏合状态过渡。
-- gesture_recognition.py：更新命令帮助中的左右手分工。原调试界面自动显示新结果。
-- test_game_controls.py / test_recognition_fixes.py：按新要求更新动作映射测试；保留头部、Fire、双手路由、JSON 回归。
-- test_stop_shield_pinch.py：补充停止、距离无效化、重新张掌恢复、静止开盾、捏合瞄准、松开结束、指向不激活等 14 项回归测试。
-- README.md / VALIDATION.txt / sample_packet.json：同步当前操作说明与输出样例。
+- game_controls.py: left-fist stop takes priority over distance checks; fists are excluded from neutral calibration; brief unknown states after stopping do not resume movement. Shield returns to the right hand with a stillness check. Laser changes from POINT to PINCH, with aiming coordinates changed to pinch_center. Wave excludes pinches and pinch transitions.
+- gesture_recognition.py: updates command help for left/right hand roles. The existing debug interface automatically displays the new results.
+- test_game_controls.py / test_recognition_fixes.py: updates action mapping tests for the new requirements, retaining head, Fire, two-hand routing, and JSON regressions.
+- test_stop_shield_pinch.py: adds 14 regression tests for stopping, invalidating distance, resuming after reopening the hand, stationary shielding, pinch aiming, release termination, and pointing without activation.
+- README.md / VALIDATION.txt / sample_packet.json: synchronizes current controls and sample output.
 
-JSON version 仍为 3，原事件和状态字段保持。left_hand=STOP、left_hand_actions=[STOP]、movement=Stop、move_axis=0 是左拳停止的表示。STOP 不加入 held_actions，避免当成持续移动输入；其中只保留仍有效的右手技能和头部动作。
+JSON version remains 3, retaining existing event and state fields. left_hand=STOP, left_hand_actions=[STOP], movement=Stop, and move_axis=0 represent left-fist stop. STOP is excluded from held_actions to avoid treating it as sustained movement input; only still-valid right-hand abilities and head actions remain there.
 
-当前只有摄像头和 JSON，没有接入游戏。代码输出停止移动指令，不会直接修改游戏人物速度。
+At this stage, only camera recognition and JSON output were present, without game integration. The code outputs a stop command rather than directly modifying character speed.
 
-## 保留的上一轮修复
+## Retained Fixes from the Previous Update
 
-模型在未镜像画面上推理，自拍镜像仅用于预览；手别按玩家左右定义，不按画面位置或结果顺序分配。
-头部使用姿态矩阵估算角度，H 校准正中，具备平滑、迟滞、死区和丢脸立即 NONE。
-Fire 仍为握拳后推出，保留短暂 NONE 容错、尺度确认和保持不连发。
-既有 PINCH 几何分类和参考关键点回归保留，不新增模型或依赖。
+Models infer on unmirrored frames; selfie mirroring is for preview only. Handedness follows the player's own left/right, independent of image position or result order.
+Head angles use the pose matrix, with H to calibrate center, smoothing, hysteresis, a dead zone, and immediate NONE on face loss.
+Fire remains fist-then-push, with brief NONE tolerance, scale confirmation, and no repeated firing while held.
+Existing PINCH geometry classification and reference-landmark regressions remain, with no new models or dependencies.

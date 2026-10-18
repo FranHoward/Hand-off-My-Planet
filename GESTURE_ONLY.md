@@ -1,67 +1,67 @@
-# UE 手势与面部控制
+# UE Gesture and Face Controls
 
-当前 VFX 项目已接入本次压缩包中的识别程序，并切换为纯手势、面部游戏交互。
+The current VFX project integrates the recognition program from the supplied archive and uses gestures and face tracking exclusively for gameplay interaction.
 
-## 启动
+## Startup
 
-1. 用 UE 5.7 打开 `VFX.uproject`，进入默认星球关卡，点击 Play。
-2. UE 自动启动项目 `.venv` 中的 Python，加载手部和面部模型，发送到本机 UDP 5052；无需单独启动识别窗口。
-3. 面朝摄像头，左手掌自然停在身体前方，保持约一秒。HUD 显示 Hands and face ready 后开始。
-4. 停止 Play 会结束由该局游戏启动的识别进程，释放摄像头。
+1. Open `VFX.uproject` with UE 5.7, enter the default planet level, and click Play.
+2. UE automatically starts Python from the project's `.venv`, loads the hand and face models, and sends data to local UDP port 5052. No separate recognition window is needed.
+3. Face the webcam, hold your left palm naturally in front of your body, and stay still for about one second. Start when the HUD displays Hands and face ready.
+4. Stopping Play ends the recognition process started by that game session and releases the webcam.
 
-右上角现在同步显示镜像摄像头预览和手势标注，让玩家看到自己的手、脸及取景范围。画面来自同一个识别进程，不另开摄像头；断开时会清除旧帧。Grok 实时语音的服务启动与状态说明见 [COSMO_INTEGRATION.md](COSMO_INTEGRATION.md#ue-实时语音与右上角摄像头)。语音问答不替代玩法手势，也不推进教程。
+The top-right corner now shows a mirrored webcam preview and gesture annotations so players can see their hands, face, and framing. Frames come from the same recognition process without opening another camera, and stale frames are cleared on disconnection. See [COSMO_INTEGRATION.md](COSMO_INTEGRATION.md#ue-real-time-voice-and-top-right-webcam-preview) for Grok real-time voice startup and status. Voice questions do not replace gameplay gestures or advance the tutorial.
 
-## 动作
+## Gestures
 
-| 动作 | 游戏行为 |
+| Gesture | In-Game Action |
 |---|---|
-| 左手向镜头推 / 向身体拉 | 前进 / 后退 |
-| 左手握拳 | 立即停止移动 |
-| 转头向左 / 向右，回正 | 转向，回正后停止转向 |
-| 右手张掌并保持稳定 | 护盾；收手解除 |
-| 右手握拳，再向镜头推出 | 火球；收回后可再次准备 |
-| 右手横挥 | 冲击波 |
-| 右手拇指、食指捏合 | 持续激光；松开停止，捏合中心用于瞄准 |
-| 右手单食指伸直，保持 0.6 秒 | 扫描当前准星指向的敌人 |
-| 右手 V 手势，保持 1 秒 | 向 COSMO 请求提示 |
-| 左手 V 手势，保持 1 秒 | 重复当前提示，同时停止左手移动通道 |
-| 双手 V 手势，保持 1.5 秒 | 重新校准；随后放下 V、朝前看并保持左手掌稳定约一秒 |
-| 死亡或胜利界面，双手张掌保持 1.5 秒 | 检查点重试 / 重新开始 |
+| Push the left hand toward the camera / pull it toward your body | Move forward / backward |
+| Make a left fist | Stop moving immediately |
+| Turn your head left / right, then return to center | Turn; returning to center stops turning |
+| Hold the right palm open and steady | Shield; withdraw the hand to lower it |
+| Make a right fist, then push toward the camera | Fireball; pull back to prepare another cast |
+| Swipe the right hand sideways | Shockwave |
+| Pinch the right thumb and index finger together | Continuous laser; release to stop; aim with the pinch center |
+| Extend only the right index finger for 0.6 seconds | Scan the enemy under the crosshair |
+| Hold a right-hand V sign for 1 second | Request a hint from COSMO |
+| Hold a left-hand V sign for 1 second | Repeat the current hint and stop left-hand movement input |
+| Hold V signs with both hands for 1.5 seconds | Recalibrate; then lower the V signs, face forward, and hold the left palm steady for about one second |
+| On the death or victory screen, hold both palms open for 1.5 seconds | Retry from the checkpoint / restart |
 
-扫描、提示、重复提示、重试每次连续保持只触发一次；收手或换姿势后才能再次触发。正常游玩时的双掌重试事件被游戏忽略。双 V 校准优先于单手提示，校准期间不输出移动和技能。
+Scan, hint, repeat, and retry trigger once per continuous hold. Withdraw the hand or change the pose before triggering again. The game ignores the two-palms retry event during normal gameplay. Two-hand V calibration takes priority over single-hand hints; movement and abilities are suppressed during calibration.
 
-## 已移除的输入
+## Removed Inputs
 
-已删除项目内蓝图的 12 个旧输入节点，清空 `IMC_Default` 和 `IMC_MouseLook`，移除 C++ 的键鼠后备绑定、文字聊天框、鼠标重试按钮和按键提示。运行时还会清空 Enhanced Input 映射并关闭角色硬件输入。UE 编辑器自身的 Play/Stop 操作属于编辑器功能。
+The project's Blueprints had 12 old input nodes removed, `IMC_Default` and `IMC_MouseLook` cleared, and C++ keyboard/mouse fallback bindings, the text chat box, mouse retry button, and key prompts removed. At runtime, Enhanced Input mappings are also cleared and character hardware input disabled. UE editor Play/Stop controls remain editor functions.
 
-手势直接发送动作名；`gesture_bindings.json` 的 `key` 必须为空，不模拟键盘，也不触发 Enhanced Input。
+Gestures send action names directly. The `key` in `gesture_bindings.json` must be empty; no keyboard simulation or Enhanced Input triggering is used.
 
-## 识别丢失与配置
+## Tracking Loss and Configuration
 
-- 左手丢失：移动归零。右手丢失：释放护盾和激光。脸丢失：停止转向。
-- UDP 超过 400ms 没有有效数据：清零移动/转向并释放持续技能、取消扫描。
-- 游戏失去焦点或角色死亡：停止移动、释放技能。
-- 摄像头报错查看 `Saved/Logs/GestureRecognition.log`；恢复设备权限后重新 Play。
-- 摄像头、左右手或方向不对应时，在 `BP_FirstPersonCharacterAI` 的 `FirstPersonAIIntegration` 组件调整 `CameraIndex`、`SwapHands`、`InvertHeadTurn`。
-- 自动启动适用于当前 Windows UE 项目及项目内 `.venv`。尚未制作包含 Python 和模型的打包发布版本。
-- 手势阈值见 `recognition_settings.json`。推拉使用单目掌心尺度估计，需要固定摄像头，并尽量保持掌心朝向稳定。
+- Left hand lost: movement resets to zero. Right hand lost: Shield and Laser release. Face lost: turning stops.
+- No valid UDP data for more than 400 ms: movement/turning reset, sustained abilities release, and scanning cancels.
+- Window focus loss or character death: movement stops and abilities release.
+- For camera errors, inspect `Saved/Logs/GestureRecognition.log`; restart Play after restoring device permissions.
+- If the camera, hands, or directions do not match, adjust `CameraIndex`, `SwapHands`, and `InvertHeadTurn` on `BP_FirstPersonCharacterAI`'s `FirstPersonAIIntegration` component.
+- Automatic startup applies to the current Windows UE project and its `.venv`. A packaged release containing Python and the models had not yet been produced at this stage.
+- Gesture thresholds are in `recognition_settings.json`. Push/pull uses monocular palm-scale estimation; keep the camera fixed and palm orientation as steady as possible.
 
-## 手动诊断
+## Manual Diagnostics
 
-先将组件 `AutoLaunchRecognition` 关闭，避免两份程序争用摄像头，然后在项目目录运行：
+First disable the component's `AutoLaunchRecognition` to prevent two processes competing for the webcam, then run from the project directory:
 
 ```powershell
 .\.venv\Scripts\python.exe dubhack_gestures\gesture_recognition.py --udp-port 5052 --preview-port 8767
 ```
 
-预览只显示识别状态，没有键盘快捷控制；关闭预览窗口即可停止。单独运行脚本时默认不联网，必须指定 `--udp-port 5052`。若要复用此插件，请同时复制 UE 与 Python 代码。
+The preview shows recognition status only, with no keyboard shortcuts. Close the preview window to stop. Standalone scripts do not use networking by default; specify `--udp-port 5052`. To reuse this plugin, copy both the UE and Python code.
 
-## 验证
+## Verification
 
-UE 5.7.4 编译与反射代码生成通过。接入实时语音及摄像头预览后，185 项 Python 测试、6 项子测试、59 项角色运行验证、21 项音视频离线验证通过，并完成 15 项真实 Grok 语音回包验证；角色验证包含真实本机 UDP、键鼠无效、扫描、提示、持续技能释放与教学流程。此前 63 项关卡验证通过，包含死亡手势重试和胜利后手势重开。
+UE 5.7.4 compilation and reflection code generation passed. After real-time voice and webcam preview integration, 185 Python tests, 6 subtests, 59 character runtime checks, and 21 offline audiovisual checks passed, along with 15 actual Grok voice response checks. Character verification includes actual local UDP, disabled keyboard/mouse input, scanning, hints, sustained ability release, and tutorial flow. An earlier 63 level checks passed, including gesture retries after death and gesture restarts after victory.
 
-真实摄像头已完成手部/面部模型处理，并观测到面部姿态输出；独立游戏启动也已验证自动创建识别进程并正常退出。未完成真人逐一操作全部手势的整局试玩，识别灵敏度与光照、距离仍需现场调整。测试未保存摄像头画面。
+A real webcam completed hand/face model processing, with face pose output observed. Standalone game startup also verified automatic recognition process creation and clean exit. A complete human playthrough exercising every gesture has not been completed; sensitivity, lighting, and distance still need on-site adjustment. Tests did not save webcam images.
 
-运行回归检查：`Scripts/VerifyCharacterAI.ps1`、`Scripts/VerifyPlanetLevel.ps1`；已编译后可加 `-SkipBuild`。输入资源审计：`-run=CodexGestureOnly -Verify -EnablePlugins=CodexBlueprintTools`。
+Run regressions with `Scripts/VerifyCharacterAI.ps1` and `Scripts/VerifyPlanetLevel.ps1`; add `-SkipBuild` after compilation. Input asset audit: `-run=CodexGestureOnly -Verify -EnablePlugins=CodexBlueprintTools`.
 
-修改前备份：`Saved/CodexBackups/GestureOnly_20261018_014057`。
+Pre-change backup: `Saved/CodexBackups/GestureOnly_20261018_014057`.

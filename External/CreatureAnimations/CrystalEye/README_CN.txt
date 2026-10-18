@@ -1,76 +1,76 @@
-COSMO — 角色动画交付说明
+COSMO - Character Animation Delivery Notes
 ========================================
 
-内容
-CrystalEye：3 个动作。Minion：6 个动作。Boss：7 个动作。
-每个角色目录包含：SkeletalMesh FBX、独立动画 FBX、带材质/蒙皮/全部 Actions 的 Blender 源文件、Textures、Skeleton.json、events.json、独立 MP4 预览。
-Boss 保留原有六足岩甲兽结构；规范中的手臂/双腿动作按六足结构改编为前肢攻击与六足承重，没有添加人体器官或装备。
+Contents
+CrystalEye: 3 actions. Minion: 6 actions. Boss: 7 actions.
+Each character directory includes a SkeletalMesh FBX, separate animation FBXs, a Blender source file with materials/skinning/all Actions, Textures, Skeleton.json, events.json, and separate MP4 previews.
+The boss retains its original six-legged rock-armored creature structure. Arm/two-leg actions in the specification were adapted to forelimb attacks and six-legged support, without adding human body parts or equipment.
 
-时间与帧数
-统一 30 FPS。一个 N 帧时长的动作导出范围为 0..N，含 N+1 个采样点，实际时长严格为 N/30 秒。末端采样用于准确结束和无缝循环。
-Blender 循环播放使用 0..N-1；第 N 帧是闭环端点。
-Action 的第 -1 帧是中立绑定参考姿势，不属于动作、不导出。请勿以整个 Action 范围重新导出；按 events.json 的 0..N 范围导出。
-单次动作视频前后增加短暂停留，便于看清动作；这些停留不包含在动画 FBX 中。循环视频展示两个周期。
+Timing and Frame Counts
+All animations use 30 FPS. An N-frame action exports over 0..N, including N+1 samples, for an exact duration of N/30 seconds. The endpoint sample ensures precise endings and seamless loops.
+Use 0..N-1 for looping playback in Blender; frame N is the loop-closing endpoint.
+Frame -1 of each Action is a neutral bind reference pose, outside the animation and excluded from export. Do not re-export the entire Action range; use the 0..N range in events.json.
+One-shot preview videos add short holds before and after the action for clarity; these holds are not in the animation FBX. Loop videos show two cycles.
 
-动作清单（全部 30 FPS）
-CrystalEye_Idle          3.0s / 90 帧 / 循环
-CrystalEye_FloatForward  1.0s / 30 帧 / 循环
-CrystalEye_Controlled   1.0s / 30 帧 / 单次
-Minion_Idle             2.0s / 60 帧 / 循环
-Minion_Walk             0.8s / 24 帧 / 循环
-Minion_Attack           0.9s / 27 帧 / 单次
-Minion_Hit              0.5s / 15 帧 / 单次
-Minion_Death            1.2s / 36 帧 / 单次，保持最终姿势
-Minion_Jump             0.9s / 27 帧 / 单次
-Boss_Idle               3.0s / 90 帧 / 循环
-Boss_Walk               1.2s / 36 帧 / 循环
-Boss_Attack             1.2s / 36 帧 / 单次
-Boss_Hit                0.6s / 18 帧 / 单次
-Boss_Death              2.0s / 60 帧 / 单次，保持最终姿势
-Boss_Pounce             1.5s / 45 帧 / 单次
-Boss_Jump               1.3s / 39 帧 / 单次
+Action List (All at 30 FPS)
+CrystalEye_Idle          3.0s / 90 frames / loop
+CrystalEye_FloatForward  1.0s / 30 frames / loop
+CrystalEye_Controlled   1.0s / 30 frames / one-shot
+Minion_Idle             2.0s / 60 frames / loop
+Minion_Walk             0.8s / 24 frames / loop
+Minion_Attack           0.9s / 27 frames / one-shot
+Minion_Hit              0.5s / 15 frames / one-shot
+Minion_Death            1.2s / 36 frames / one-shot, hold final pose
+Minion_Jump             0.9s / 27 frames / one-shot
+Boss_Idle               3.0s / 90 frames / loop
+Boss_Walk               1.2s / 36 frames / loop
+Boss_Attack             1.2s / 36 frames / one-shot
+Boss_Hit                0.6s / 18 frames / one-shot
+Boss_Death              2.0s / 60 frames / one-shot, hold final pose
+Boss_Pounce             1.5s / 45 frames / one-shot
+Boss_Jump               1.3s / 39 frames / one-shot
 
-打开 Blender
-1. 打开角色目录中的 .blend。贴图已内嵌。
-2. 选中 Armature，在 Dope Sheet -> Action Editor 切换命名 Action。
-3. 设定时间范围 0..N（循环播放 0..N-1），按空格播放。
-4. 默认隐藏视图叠加以便看模型；打开 Overlays 可查看骨骼和控制器。
-5. 烘焙动作使用 FK。Armature 自定义属性 IK_LF、IK_RF 等默认为 0；为制作新姿势，可先取消当前 Action，将对应属性调至 1，然后移动 CTRL_Foot_*。腿部 IK 禁止伸缩。控制器不在 FBX 中。
-6. Root 为模型内部固定基准；body 是可活动节点。两者有意不强制首尾连接，防止 Blender FBX 自动连接时抹除 body 的位移。整体仍是唯一 Root 的完整父子层级。
+Opening in Blender
+1. Open the character directory's .blend file. Textures are packed.
+2. Select Armature and switch named Actions in Dope Sheet -> Action Editor.
+3. Set the time range to 0..N (0..N-1 for loops) and press Space to play.
+4. Viewport overlays are hidden by default for a clearer model view. Enable Overlays to see bones and controllers.
+5. Baked actions use FK. Armature custom properties such as IK_LF and IK_RF default to 0. To create a new pose, first unlink the current Action, set the relevant property to 1, and move CTRL_Foot_*. Leg IK stretching is disabled. Controllers are excluded from FBX.
+6. Root is a fixed internal reference; body is movable. They intentionally do not require connected endpoints, preventing Blender FBX automatic connection from erasing body translation. The overall hierarchy still has one Root and complete parent-child relationships.
 
-导入 Unreal Engine 5
-1. 每个角色先导入 *_SkeletalMesh.fbx：Skeletal Mesh 开启，Import Animations 关闭，Skeleton 留空创建该角色的 Skeleton。导入缩放 1，Convert Scene / Convert Scene Unit 开启。
-2. 再导入该角色独立动画 FBX：Import Mesh 关闭，Import Animations 开启，选择第一步创建的同一 Skeleton，Animation Length 用 Exported Time，采样率 30。
-3. 不启用 Use T0 As Ref Pose；不要用动画首帧覆盖 Skeleton 的绑定姿势。
-4. 全部是 In-Place：禁用 Root Motion。不要混用引擎位移和根运动。
-5. 模型采用厘米，Blender -Y 为前方、+Z 为上方；同一角色所有 FBX 使用同一坐标转换。若项目 MeshComponent 朝向需要调整，请统一调整组件相对旋转，不要对某一动画单独改导入轴向。
-6. Walk 匹配速度：Minion 约 80.882 cm/s，Boss 约 77.381 cm/s。需要更快时同步调整动画播放倍率与移动速度；否则会出现游戏中的滑步。
-7. Jump 的世界高度/抛物线和 Pounce 的向前距离由 UE 控制。预览视频中额外的整体跳跃/扑击轨迹仅用于展示，已明确标注，未写入 FBX。
-8. FloatForward 也是原地姿态循环。使用状态机混合恢复到 Idle，建议从约 0.1–0.2s 的混合时间开始调整。
-9. Death 不循环，播放完成保持最后一帧；不要回到 Idle。
-10. Skeleton 包含在 SkeletalMesh FBX 内；Skeleton.json 是可读骨骼结构说明，不是 Unreal .uasset。UE 的 Skeleton .uasset 在导入时生成。
+Importing into Unreal Engine 5
+1. Import each character's *_SkeletalMesh.fbx first: enable Skeletal Mesh, disable Import Animations, and leave Skeleton empty to create that character's Skeleton. Import scale 1; enable Convert Scene / Convert Scene Unit.
+2. Import that character's separate animation FBXs: disable Import Mesh, enable Import Animations, select the same Skeleton created in step 1, set Animation Length to Exported Time, and use sample rate 30.
+3. Do not enable Use T0 As Ref Pose or replace the Skeleton bind pose with the first animation frame.
+4. All animations are In-Place: disable Root Motion. Do not mix engine-driven displacement and root motion.
+5. Models use centimeters, Blender -Y forward, and +Z up. All FBXs for one character use the same coordinate conversion. If MeshComponent orientation needs adjustment, change the component's relative rotation consistently rather than changing import axes for an individual animation.
+6. Matching Walk speeds: Minion approximately 80.882 cm/s; Boss approximately 77.381 cm/s. For faster movement, adjust animation playback rate and movement speed together to prevent foot sliding in-game.
+7. UE controls Jump world height/trajectory and Pounce forward distance. Additional whole-body jump/pounce trajectories in preview videos are explicitly labeled as presentation-only and are not stored in FBX.
+8. FloatForward is also an in-place pose loop. Blend back to Idle through a state machine; start tuning at approximately 0.1-0.2s blend time.
+9. Death does not loop. Hold the last frame after playback rather than returning to Idle.
+10. Skeleton is included in the SkeletalMesh FBX. Skeleton.json is a readable bone hierarchy description, not an Unreal .uasset. UE creates the Skeleton .uasset during import.
 
-材质
-保留原始 BaseColor / Emissive / Roughness 图集；Textures 中提供原图。
-如果 UE 自动材质未接全：BaseColor -> Base Color；Emissive -> Emissive Color（乘以 2 可接近源文件强度）；Roughness -> Roughness，关闭 Roughness 的 sRGB。源材质 Metallic 约 0.18。亮度仍会受到 UE 的灯光、曝光和后处理影响。
+Materials
+Original BaseColor / Emissive / Roughness atlases are retained, with original images in Textures.
+If UE's automatic material connections are incomplete: BaseColor -> Base Color; Emissive -> Emissive Color (multiply by 2 to approximate source intensity); Roughness -> Roughness, with sRGB disabled for Roughness. Source Metallic is approximately 0.18. UE lighting, exposure, and post-processing still affect brightness.
 
-攻击事件与 1 秒控制同步
-FBX 不会将 Blender 标记变成 Unreal AnimNotify。交付包括每个 Action 的 pose markers 及 events.json，必须在 UE 动画编辑器按同名事件创建 Notify，并接入游戏逻辑。
-Minion_Attack：第 11 帧，0.366667s，Attack。
-Boss_Attack：第 17 帧，0.566667s，Attack。
-Boss_Pounce：第 17 帧 0.566667s Launch；第 29 帧 0.966667s Hit_Controlled_1s；第 33 帧 1.1s Land。
-Boss_Pounce 第 29 帧执行实际碰撞/命中检查。只有命中晶体眼睛才设置 Controlled，并从第 0 帧播放 CrystalEye_Controlled。
-CrystalEye_Controlled 在其本地 1.0s（第 30 帧）结束控制。推荐由游戏状态计时器管理精确的 1 秒持续时间，动画提供视觉反馈。不要在 Boss 动画结束时提前解除控制。
-同步例子：Pounce 开始 t=0；命中 t=0.966667；晶体眼睛解除控制 t=1.966667。Boss 自身在 t=1.5 完成动作。
-攻击伤害、控制、碰撞、VFX、镜头震动以及 Energy Wave 打断逻辑不包含在 FBX 中。没有增加新的武器或技能。
+Attack Events and One-Second Control Synchronization
+FBX does not convert Blender markers into Unreal AnimNotify events. The delivery includes pose markers for every Action and events.json. Create same-name Notifies in UE's animation editor and connect them to gameplay logic.
+Minion_Attack: frame 11, 0.366667s, Attack.
+Boss_Attack: frame 17, 0.566667s, Attack.
+Boss_Pounce: frame 17 at 0.566667s, Launch; frame 29 at 0.966667s, Hit_Controlled_1s; frame 33 at 1.1s, Land.
+Perform actual collision/hit detection at Boss_Pounce frame 29. Set Controlled and play CrystalEye_Controlled from frame 0 only if the Crystal Eye is hit.
+CrystalEye_Controlled ends control at its local 1.0s (frame 30). Use a gameplay state timer for the exact one-second duration, with animation providing visual feedback. Do not end control early when the boss animation finishes.
+Synchronization example: Pounce starts at t=0; hit at t=0.966667; Crystal Eye control ends at t=1.966667. The boss's own action ends at t=1.5.
+Attack damage, control, collision, VFX, camera shake, and Energy Wave interruption logic are outside FBX. No new weapons or abilities were added.
 
-验证范围
-详见 VALIDATION_REPORT.txt、FBX_Validation.json、Animation_Quality.json。
-验证包含实际 Blender 源文件重开、所有 FBX 回读、骨骼层级、绑定姿势、逐帧蒙皮位置比较、动画时长、固定 Root、循环端点、刚性部件不拉伸、地面高度及脚部接触。
-当前环境没有 Unreal Editor，未执行 UE 编辑器内导入或游戏运行测试；不要把 Blender 回读验证等同于已在你们的 UE 项目里联调通过。
-FBX 为 Blender 的真实二进制 FBX 7.4 (7400)。Epic 文档说明 UE FBX 管线基于 2020.2；本交付通过 Blender 的独立导入回读检查，仍应在项目中完成最终验收。
+Validation Scope
+See VALIDATION_REPORT.txt, FBX_Validation.json, and Animation_Quality.json.
+Validation includes reopening actual Blender source files, reimporting all FBXs, bone hierarchy, bind poses, per-frame skinned position comparisons, animation durations, fixed Root, loop endpoints, non-stretching rigid parts, ground height, and foot contact.
+Unreal Editor was unavailable in the delivery environment, so UE editor import and gameplay tests were not performed. Blender reimport validation does not mean integration in your UE project has passed.
+FBXs are actual Blender binary FBX 7.4 (7400). Epic documents the UE FBX pipeline as based on 2020.2. This delivery passed independent Blender reimport checks; final acceptance must still take place in the project.
 
-官方导入参考
+Official Import References
 https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-animation-pipeline-in-unreal-engine
 https://dev.epicgames.com/documentation/en-us/unreal-engine/fbx-import-options-reference-in-unreal-engine
 https://dev.epicgames.com/documentation/en-us/unreal-engine/python-api/class/AnimationLibrary?application_version=5.6
