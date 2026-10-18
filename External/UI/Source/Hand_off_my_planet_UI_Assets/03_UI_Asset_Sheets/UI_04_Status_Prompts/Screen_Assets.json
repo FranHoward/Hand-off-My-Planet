@@ -1,0 +1,163 @@
+{
+  "screen": "UI_04_Status_Prompts",
+  "rootNodeId": "4:194",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "103:37",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_FIRE_READY__103-37.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 45.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:39",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_WAVE_READY__103-39.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 338,
+        "y": 45.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:41",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_LASER_LOCKED__103-41.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 110.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:43",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_SHIELD_ACTIVE__103-43.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 338,
+        "y": 110.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:45",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_LOW_ENERGY__103-45.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 175.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:47",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_SHIELD_BREAK__103-47.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 338,
+        "y": 175.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:49",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_CORE_EXPOSED__103-49.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 240.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:51",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_WAVE_ATTACK__103-51.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 338,
+        "y": 240.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:53",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_INTERRUPTED_Plus15__103-53.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 305.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:55",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_Prompt_FINAL_PHASE__103-55.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 338,
+        "y": 305.5
+      },
+      "size": [
+        326,
+        59
+      ]
+    },
+    {
+      "id": "103:57",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Skin_HUD_Match_Timeline__103-57.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 16,
+        "y": 373.5
+      },
+      "size": [
+        648,
+        53
+      ]
+    },
+    {
+      "id": "9:270",
+      "file": "03_UI_Asset_Sheets/UI_04_Status_Prompts/Panels_HUD/Status_Prompts_Timeline_Rule__9-270.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 40,
+        "y": 413
+      },
+      "size": [
+        580,
+        7
+      ]
+    }
+  ]
+}

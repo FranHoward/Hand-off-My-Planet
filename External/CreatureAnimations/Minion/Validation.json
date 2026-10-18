@@ -1,0 +1,341 @@
+{
+  "model": {
+    "character": "Minion",
+    "source": "MoltenCarapace",
+    "topology": {
+      "vertices_before": 5094,
+      "vertices_after": 5056,
+      "faces_before": 9788,
+      "faces_after": 9732,
+      "internal_ring_cap_faces_removed": 56,
+      "coincident_seams_welded": true,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "uv_valid": true,
+      "unweighted_vertices": 0
+    },
+    "floor_correction_cm": 0.737811279296875,
+    "extreme_pose_tests": [
+      {
+        "body_angles_degrees": [
+          0,
+          0,
+          0
+        ],
+        "finite_vertices": true
+      },
+      {
+        "body_angles_degrees": [
+          8,
+          6,
+          0
+        ],
+        "finite_vertices": true
+      },
+      {
+        "body_angles_degrees": [
+          -6,
+          -5,
+          0
+        ],
+        "finite_vertices": true
+      }
+    ],
+    "bones": 28,
+    "bone_hierarchy": {
+      "root": null,
+      "body": "root",
+      "spine_front": "body",
+      "hip_LF": "spine_front",
+      "leg_LF_upper": "hip_LF",
+      "leg_LF_lower": "leg_LF_upper",
+      "leg_LF_foot": "leg_LF_lower",
+      "leg_LF_foot_tip": "leg_LF_foot",
+      "hip_RF": "spine_front",
+      "leg_RF_upper": "hip_RF",
+      "leg_RF_lower": "leg_RF_upper",
+      "leg_RF_foot": "leg_RF_lower",
+      "leg_RF_foot_tip": "leg_RF_foot",
+      "cannon_link": "spine_front",
+      "cannon": "cannon_link",
+      "muzzle": "cannon",
+      "muzzle_tip": "muzzle",
+      "spine_rear": "body",
+      "hip_LB": "spine_rear",
+      "leg_LB_upper": "hip_LB",
+      "leg_LB_lower": "leg_LB_upper",
+      "leg_LB_foot": "leg_LB_lower",
+      "leg_LB_foot_tip": "leg_LB_foot",
+      "hip_RB": "spine_rear",
+      "leg_RB_upper": "hip_RB",
+      "leg_RB_lower": "leg_RB_upper",
+      "leg_RB_foot": "leg_RB_lower",
+      "leg_RB_foot_tip": "leg_RB_foot"
+    },
+    "max_ik_reach_clamp_cm": 0,
+    "animations": {
+      "Minion_Idle": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.24983859062194824,
+        "max_rigid_edge_length_error_cm": 5.2659192277815237e-05,
+        "loop_endpoint_max_vertex_error_cm": 0.0,
+        "animated_vertex_displacement_cm": 7.662974182306736,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "Minion_Walk": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.2498180866241455,
+        "max_rigid_edge_length_error_cm": 0.00012582758154167095,
+        "loop_endpoint_max_vertex_error_cm": 0.0,
+        "animated_vertex_displacement_cm": 47.59363501949671,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "Minion_Attack": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.24983501434326172,
+        "max_rigid_edge_length_error_cm": 0.00012126544490342894,
+        "loop_endpoint_max_vertex_error_cm": null,
+        "animated_vertex_displacement_cm": 34.410292525668766,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "Minion_Hit": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.24981391429901123,
+        "max_rigid_edge_length_error_cm": 8.516018790771795e-05,
+        "loop_endpoint_max_vertex_error_cm": null,
+        "animated_vertex_displacement_cm": 34.825845064723396,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "Minion_Death": {
+        "max_ik_reach_clamp_cm": 5.345392280369651,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.2996692657470703,
+        "max_rigid_edge_length_error_cm": 0.00040136504945564866,
+        "loop_endpoint_max_vertex_error_cm": null,
+        "animated_vertex_displacement_cm": 249.69045270703123,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "Minion_Jump": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 0.2498234510421753,
+        "max_rigid_edge_length_error_cm": 0.00014827033800202116,
+        "loop_endpoint_max_vertex_error_cm": null,
+        "animated_vertex_displacement_cm": 37.69168301210151,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      }
+    }
+  },
+  "fbx": {
+    "skeletal_mesh": {
+      "bones": 28,
+      "hierarchy_matches": true,
+      "weights_normalized": true,
+      "rest_joint_max_error_cm": 0.0008088687536198948,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "animations": {
+      "Minion_Idle": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 2.0,
+        "baked_samples": 61,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.00020580150331536332,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.24973997473716736,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "Minion_Walk": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 0.8,
+        "baked_samples": 25,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.00036915943183624003,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.24975645542144775,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "Minion_Attack": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 0.9,
+        "baked_samples": 28,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.00025257790156931836,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.2497250735759735,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "Minion_Hit": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 0.5,
+        "baked_samples": 16,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.00025177001953125,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.24977082014083862,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "Minion_Death": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 1.2,
+        "baked_samples": 37,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.001338741360921104,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.2996368408203125,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "Minion_Jump": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 0.9,
+        "baked_samples": 28,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 0.0002966647658572934,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 0.2497507631778717,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      }
+    }
+  },
+  "animation_quality": {
+    "Minion_Idle": {
+      "loop_endpoint_error_cm": 0.0,
+      "seam_finite_difference_velocity_delta_cm_per_frame": 0.008379795070669402
+    },
+    "Minion_Walk": {
+      "loop_endpoint_error_cm": 0.0,
+      "seam_finite_difference_velocity_delta_cm_per_frame": 11.186352901754207,
+      "suggested_ue_speed_cm_s": 80.88235294117646,
+      "feet": {
+        "LF": {
+          "stance_slip_at_matching_actor_speed_cm_per_frame": 5.446529035047897e-05,
+          "stance_sole_z_range_cm": [
+            0.24985438585281372,
+            0.24991416931152344
+          ]
+        },
+        "RF": {
+          "stance_slip_at_matching_actor_speed_cm_per_frame": 6.096267432631333e-05,
+          "stance_sole_z_range_cm": [
+            0.24985027313232422,
+            0.24991178512573242
+          ]
+        },
+        "LB": {
+          "stance_slip_at_matching_actor_speed_cm_per_frame": 6.24861068964221e-05,
+          "stance_sole_z_range_cm": [
+            0.24985668063163757,
+            0.24995127320289612
+          ]
+        },
+        "RB": {
+          "stance_slip_at_matching_actor_speed_cm_per_frame": 7.60830461572312e-05,
+          "stance_sole_z_range_cm": [
+            0.2498180866241455,
+            0.24988806247711182
+          ]
+        }
+      }
+    },
+    "Minion_Attack": {
+      "end_to_start_pose_error_cm": 0.0
+    },
+    "Minion_Hit": {
+      "end_to_start_pose_error_cm": 0.0
+    },
+    "Minion_Death": {
+      "last_3_frames_max_displacement_cm": 0.0
+    },
+    "Minion_Jump": {
+      "end_to_start_pose_error_cm": 0.0
+    },
+    "authoring_IK_target_errors_cm": {
+      "LF": 0.0006668304684349733,
+      "LB": 0.0007128586337344866,
+      "RF": 0.0006532940545671386,
+      "RB": 0.0007002541591809918
+    }
+  },
+  "video": [
+    {
+      "name": "Minion_Idle",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "4.000000",
+      "nb_frames": "120",
+      "full_decode": "pass"
+    },
+    {
+      "name": "Minion_Walk",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "1.600000",
+      "nb_frames": "48",
+      "full_decode": "pass"
+    },
+    {
+      "name": "Minion_Attack",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "1.833333",
+      "nb_frames": "55",
+      "full_decode": "pass"
+    },
+    {
+      "name": "Minion_Hit",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "1.433333",
+      "nb_frames": "43",
+      "full_decode": "pass"
+    },
+    {
+      "name": "Minion_Death",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "2.133333",
+      "nb_frames": "64",
+      "full_decode": "pass"
+    },
+    {
+      "name": "Minion_Jump",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "1.833333",
+      "nb_frames": "55",
+      "full_decode": "pass"
+    }
+  ]
+}

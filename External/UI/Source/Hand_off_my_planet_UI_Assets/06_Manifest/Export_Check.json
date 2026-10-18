@@ -1,0 +1,17 @@
+{
+  "assetNodes": 150,
+  "uniquePNGFiles": 134,
+  "buttons": 32,
+  "sharedBackgroundNodes": 17,
+  "texts": 238,
+  "textPurposes": {
+    "design_note": 62,
+    "button_label_baked_into_png": 32,
+    "title_baked_into_png": 1,
+    "hidden_alternate": 2,
+    "game_text": 45,
+    "asset_sheet_text": 96
+  },
+  "allPngNonEmpty": true,
+  "uncoveredVisibleGraphicLeaves": 0
+}

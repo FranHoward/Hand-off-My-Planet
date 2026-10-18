@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_05_Victory",
+  "rootNodeId": "80:289",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:290",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:294",
+      "file": "01_Game_Screens/WBP_05_Victory/Panels_HUD/Victory_Panel_Dialogue__80-294.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 119,
+        "y": 260
+      },
+      "size": [
+        1675,
+        488
+      ]
+    },
+    {
+      "id": "80:302",
+      "file": "01_Game_Screens/WBP_05_Victory/Buttons/Button_PLAY_AGAIN__80-302.png",
+      "category": "Buttons",
+      "position": {
+        "x": 766,
+        "y": 741
+      },
+      "size": [
+        381,
+        144
+      ]
+    }
+  ]
+}

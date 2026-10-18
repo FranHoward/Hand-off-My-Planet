@@ -1,0 +1,72 @@
+{
+  "screen": "WBP_Tutorial_05_Wave",
+  "rootNodeId": "80:156",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:157",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:164",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_05_Wave/Panels_HUD/Tutorial_05_Wave_Panel_Outline_1__80-164.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:179",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_05_Wave/Images/Tutorial_05_Wave_Arrow_Left__80-179.png",
+      "category": "Images",
+      "position": {
+        "x": 11,
+        "y": 424
+      },
+      "size": [
+        242,
+        121
+      ]
+    },
+    {
+      "id": "80:181",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_05_Wave/Images/Tutorial_05_Wave_Arrow_Right__80-181.png",
+      "category": "Images",
+      "position": {
+        "x": 663,
+        "y": 424
+      },
+      "size": [
+        242,
+        121
+      ]
+    },
+    {
+      "id": "80:173",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_05_Wave/Images/Tutorial_05_Wave_Gesture_Right_Open__80-173.png",
+      "category": "Images",
+      "position": {
+        "x": 178,
+        "y": 178
+      },
+      "size": [
+        521,
+        626
+      ]
+    }
+  ]
+}

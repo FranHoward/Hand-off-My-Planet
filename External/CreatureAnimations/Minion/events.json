@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Minion_Idle",
+    "fps": 30,
+    "duration_seconds": 2.0,
+    "frame_intervals": 60,
+    "blender_range_inclusive": [
+      0,
+      60
+    ],
+    "baked_samples": 61,
+    "loop": true,
+    "in_place": true,
+    "root_motion": false,
+    "events": [],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "Minion_Walk",
+    "fps": 30,
+    "duration_seconds": 0.8,
+    "frame_intervals": 24,
+    "blender_range_inclusive": [
+      0,
+      24
+    ],
+    "baked_samples": 25,
+    "loop": true,
+    "in_place": true,
+    "root_motion": false,
+    "events": [
+      {
+        "name": "Footstep_LF",
+        "frame": 0,
+        "time_seconds": 0.0
+      },
+      {
+        "name": "Footstep_RF",
+        "frame": 12,
+        "time_seconds": 0.4
+      },
+      {
+        "name": "Footstep_LB",
+        "frame": 6,
+        "time_seconds": 0.2
+      },
+      {
+        "name": "Footstep_RB",
+        "frame": 18,
+        "time_seconds": 0.6
+      }
+    ],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "Minion_Attack",
+    "fps": 30,
+    "duration_seconds": 0.9,
+    "frame_intervals": 27,
+    "blender_range_inclusive": [
+      0,
+      27
+    ],
+    "baked_samples": 28,
+    "loop": false,
+    "in_place": true,
+    "root_motion": false,
+    "events": [
+      {
+        "name": "Attack",
+        "frame": 11,
+        "time_seconds": 0.36666666666666664
+      }
+    ],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "Minion_Hit",
+    "fps": 30,
+    "duration_seconds": 0.5,
+    "frame_intervals": 15,
+    "blender_range_inclusive": [
+      0,
+      15
+    ],
+    "baked_samples": 16,
+    "loop": false,
+    "in_place": true,
+    "root_motion": false,
+    "events": [],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "Minion_Death",
+    "fps": 30,
+    "duration_seconds": 1.2,
+    "frame_intervals": 36,
+    "blender_range_inclusive": [
+      0,
+      36
+    ],
+    "baked_samples": 37,
+    "loop": false,
+    "in_place": true,
+    "root_motion": false,
+    "events": [],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "Minion_Jump",
+    "fps": 30,
+    "duration_seconds": 0.9,
+    "frame_intervals": 27,
+    "blender_range_inclusive": [
+      0,
+      27
+    ],
+    "baked_samples": 28,
+    "loop": false,
+    "in_place": true,
+    "root_motion": false,
+    "events": [
+      {
+        "name": "TakeOff",
+        "frame": 6,
+        "time_seconds": 0.2
+      },
+      {
+        "name": "Land",
+        "frame": 20,
+        "time_seconds": 0.6666666666666666
+      }
+    ],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  }
+]

@@ -1,0 +1,293 @@
+{
+  "screen": "UI_01_CombatHUD",
+  "rootNodeId": "4:11",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "103:3",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_HUD_Player_Status__103-3.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 10,
+        "y": 17.5
+      },
+      "size": [
+        206,
+        75
+      ]
+    },
+    {
+      "id": "9:9",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_HP_track__9-9.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 31,
+        "y": 60
+      },
+      "size": [
+        92,
+        7
+      ]
+    },
+    {
+      "id": "9:10",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_HP_fill__9-10.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 26,
+        "y": 55
+      },
+      "size": [
+        102,
+        17
+      ]
+    },
+    {
+      "id": "9:13",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_ENERGY_track__9-13.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 31,
+        "y": 82
+      },
+      "size": [
+        92,
+        7
+      ]
+    },
+    {
+      "id": "9:14",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_ENERGY_fill__9-14.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 27,
+        "y": 78
+      },
+      "size": [
+        100,
+        15
+      ]
+    },
+    {
+      "id": "103:5",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_HUD_Encounter_Status__103-5.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 461,
+        "y": 17.5
+      },
+      "size": [
+        210,
+        75
+      ]
+    },
+    {
+      "id": "9:22",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_PHASE_I_track__9-22.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 484,
+        "y": 62
+      },
+      "size": [
+        144,
+        7
+      ]
+    },
+    {
+      "id": "9:23",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_PHASE_I_fill__9-23.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 480,
+        "y": 58
+      },
+      "size": [
+        152,
+        15
+      ]
+    },
+    {
+      "id": "103:7",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_HUD_Objective__103-7.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 127,
+        "y": 109.75
+      },
+      "size": [
+        436,
+        84
+      ]
+    },
+    {
+      "id": "103:9",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_HUD_Timer__103-9.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 562,
+        "y": 105.5
+      },
+      "size": [
+        109,
+        55
+      ]
+    },
+    {
+      "id": "9:37",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Reticle_Combat__9-37.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 224.5,
+        "y": 228
+      },
+      "size": [
+        80,
+        80
+      ]
+    },
+    {
+      "id": "103:12",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_Ability_Fire__103-12.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 138,
+        "y": 355.5
+      },
+      "size": [
+        108,
+        68
+      ]
+    },
+    {
+      "id": "24:4",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Images/CombatHUD_Icon_Ability_Fire__24-4.png",
+      "category": "Images",
+      "position": {
+        "x": 184,
+        "y": 373
+      },
+      "size": [
+        31,
+        30
+      ]
+    },
+    {
+      "id": "103:15",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_Ability_Wave__103-15.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 237,
+        "y": 355.5
+      },
+      "size": [
+        108,
+        68
+      ]
+    },
+    {
+      "id": "103:14",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Icons/CombatHUD_Icon_Ability_Wave__103-14.png",
+      "category": "Icons",
+      "position": {
+        "x": 291,
+        "y": 376
+      },
+      "size": [
+        26,
+        26
+      ]
+    },
+    {
+      "id": "27:7",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Images/Image_Ability_Wave__27-7.png",
+      "category": "Images",
+      "position": {
+        "x": 291,
+        "y": 376
+      },
+      "size": [
+        26,
+        26
+      ]
+    },
+    {
+      "id": "103:18",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_Ability_Laser__103-18.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 337,
+        "y": 355.5
+      },
+      "size": [
+        108,
+        68
+      ]
+    },
+    {
+      "id": "103:17",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Icons/CombatHUD_Icon_Ability_Laser__103-17.png",
+      "category": "Icons",
+      "position": {
+        "x": 395,
+        "y": 378
+      },
+      "size": [
+        26,
+        25
+      ]
+    },
+    {
+      "id": "27:10",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Images/Image_Ability_Laser__27-10.png",
+      "category": "Images",
+      "position": {
+        "x": 395,
+        "y": 378
+      },
+      "size": [
+        26,
+        25
+      ]
+    },
+    {
+      "id": "103:21",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Panels_HUD/CombatHUD_Skin_Ability_Shield__103-21.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 437,
+        "y": 355.5
+      },
+      "size": [
+        108,
+        68
+      ]
+    },
+    {
+      "id": "103:20",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Icons/CombatHUD_Icon_Ability_Shield__103-20.png",
+      "category": "Icons",
+      "position": {
+        "x": 494,
+        "y": 374
+      },
+      "size": [
+        24,
+        22
+      ]
+    },
+    {
+      "id": "27:13",
+      "file": "03_UI_Asset_Sheets/UI_01_CombatHUD/Images/Image_Ability_Shield__27-13.png",
+      "category": "Images",
+      "position": {
+        "x": 494,
+        "y": 374
+      },
+      "size": [
+        24,
+        22
+      ]
+    }
+  ]
+}

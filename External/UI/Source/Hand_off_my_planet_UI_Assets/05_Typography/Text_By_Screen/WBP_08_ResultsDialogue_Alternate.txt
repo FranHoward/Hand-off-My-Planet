@@ -1,0 +1,15 @@
+[46:117 | Text_Cosmo_Results | game_text]
+"WE DID IT!"  
+> "Haha! I knew you could do it!"  
+> "Look at that. The Star Core is ours."  
+> "Not bad for our first day on an alien planet."  
+> "Now... let's go home, partner."
+
+[46:123 | Text_Label | button_label_baked_into_png]
+PLAY AGAIN
+
+[46:129 | Text_Label | button_label_baked_into_png]
+VIEW STATS
+
+[46:135 | Text_Label | button_label_baked_into_png]
+MAIN MENU

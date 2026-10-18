@@ -1,0 +1,89 @@
+[9:2 | Value_COMBAT_HUD_120_SEC_RUN | asset_sheet_text]
+COMBAT HUD / 120 SEC RUN
+
+[9:7 | Label_GUARDIAN | asset_sheet_text]
+GUARDIAN
+
+[9:8 | Label_HP | asset_sheet_text]
+HP
+
+[9:11 | Value_HP | asset_sheet_text]
+100
+
+[9:12 | Label_ENERGY | asset_sheet_text]
+ENERGY
+
+[9:15 | Value_Energy | asset_sheet_text]
+100
+
+[9:20 | Label_BOSS_340_HP | asset_sheet_text]
+BOSS // 340 HP
+
+[9:21 | Label_PHASE_I | asset_sheet_text]
+PHASE I
+
+[9:24 | Label_HOSTILES_2_3 | asset_sheet_text]
+HOSTILES 2/3
+
+[9:29 | Label_OBJECTIVE | asset_sheet_text]
+OBJECTIVE
+
+[9:30 | Label_ELIMINATE_HOSTILES | asset_sheet_text]
+ELIMINATE HOSTILES
+
+[9:35 | Label_TIME | asset_sheet_text]
+TIME
+
+[9:36 | Value_Timer | asset_sheet_text]
+01:45
+
+[9:42 | Label_TARGET_READY | asset_sheet_text]
+TARGET READY
+
+[9:47 | Value_Fire_Slot | asset_sheet_text]
+01
+
+[9:48 | Label_FIRE | asset_sheet_text]
+FIRE
+
+[9:49 | Value_14_EN | asset_sheet_text]
+14 EN
+
+[9:50 | Value_1_0_SEC | asset_sheet_text]
+1.0 SEC
+
+[9:55 | Value_Wave_Slot | asset_sheet_text]
+02
+
+[9:56 | Label_WAVE | asset_sheet_text]
+WAVE
+
+[9:57 | Value_25_EN | asset_sheet_text]
+25 EN
+
+[9:58 | Value_4_0_SEC | asset_sheet_text]
+4.0 SEC
+
+[9:63 | Value_Laser_Slot | asset_sheet_text]
+03
+
+[9:64 | Label_LASER | asset_sheet_text]
+LASER
+
+[9:65 | Value_18_EN_S | asset_sheet_text]
+18 EN/S
+
+[9:66 | Value_MAX_2_5_SEC | asset_sheet_text]
+MAX 2.5 SEC
+
+[9:71 | Value_Shield_Slot | asset_sheet_text]
+04
+
+[9:72 | Label_SHIELD | asset_sheet_text]
+SHIELD
+
+[9:73 | Value_10_10_EN_S | asset_sheet_text]
+10 + 10 EN/S
+
+[9:74 | Value_5_0_SEC | asset_sheet_text]
+5.0 SEC

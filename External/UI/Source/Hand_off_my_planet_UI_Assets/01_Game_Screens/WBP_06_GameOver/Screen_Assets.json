@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_06_GameOver",
+  "rootNodeId": "80:303",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:304",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:308",
+      "file": "01_Game_Screens/WBP_06_GameOver/Panels_HUD/GameOver_Panel_Dialogue__80-308.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 119,
+        "y": 260
+      },
+      "size": [
+        1667,
+        419
+      ]
+    },
+    {
+      "id": "80:312",
+      "file": "01_Game_Screens/WBP_06_GameOver/Buttons/Button_TRY_AGAIN__80-312.png",
+      "category": "Buttons",
+      "position": {
+        "x": 766,
+        "y": 741
+      },
+      "size": [
+        381,
+        144
+      ]
+    }
+  ]
+}

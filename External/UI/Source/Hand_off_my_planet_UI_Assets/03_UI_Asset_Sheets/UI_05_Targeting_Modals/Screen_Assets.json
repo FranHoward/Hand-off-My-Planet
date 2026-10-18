@@ -1,0 +1,111 @@
+{
+  "screen": "UI_05_Targeting_Modals",
+  "rootNodeId": "4:258",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "9:276",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Panels_HUD/Targeting_Modals_Reticle_Laser_Lock__9-276.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 40,
+        "y": 60
+      },
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "id": "9:287",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Panels_HUD/Targeting_Modals_Reticle_Wave_Range__9-287.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 29,
+        "y": 276
+      },
+      "size": [
+        324,
+        135
+      ]
+    },
+    {
+      "id": "103:68",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Panels_HUD/Targeting_Modals_Skin_Modal_Restart_Confirmation__103-68.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 387,
+        "y": 51.5
+      },
+      "size": [
+        278,
+        212
+      ]
+    },
+    {
+      "id": "103:60",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Buttons/Button_Confirm__103-60.png",
+      "category": "Buttons",
+      "position": {
+        "x": 407,
+        "y": 162
+      },
+      "size": [
+        119,
+        48
+      ]
+    },
+    {
+      "id": "103:62",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Buttons/Button_Cancel__103-62.png",
+      "category": "Buttons",
+      "position": {
+        "x": 532,
+        "y": 169
+      },
+      "size": [
+        105,
+        34
+      ]
+    },
+    {
+      "id": "103:66",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Panels_HUD/Targeting_Modals_Skin_HUD_Boss_Phase__103-66.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 387,
+        "y": 280.5
+      },
+      "size": [
+        278,
+        123
+      ]
+    },
+    {
+      "id": "103:65",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Icons/Targeting_Modals_Icon_HUD_Boss_Phase__103-65.png",
+      "category": "Icons",
+      "position": {
+        "x": 545,
+        "y": 310
+      },
+      "size": [
+        70,
+        74
+      ]
+    },
+    {
+      "id": "27:16",
+      "file": "03_UI_Asset_Sheets/UI_05_Targeting_Modals/Images/Image_HUD_Boss_Phase__27-16.png",
+      "category": "Images",
+      "position": {
+        "x": 545,
+        "y": 310
+      },
+      "size": [
+        70,
+        74
+      ]
+    }
+  ]
+}

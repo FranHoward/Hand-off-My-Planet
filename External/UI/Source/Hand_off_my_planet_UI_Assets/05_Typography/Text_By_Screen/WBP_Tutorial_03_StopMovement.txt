@@ -1,0 +1,7 @@
+[80:151 | Text_Instruction_01 | game_text]
+Make a fist with your left hand
+
+
+
+[80:152 | Text_Action_Label | game_text]
+STAY STILL

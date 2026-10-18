@@ -1,0 +1,13 @@
+[68:36 | Text_Label | button_label_baked_into_png]
+QUIT
+
+[68:43 | Text_Label | button_label_baked_into_png]
+START MISSION
+
+[56:5 | T_UI_MainMenu_Text_Game_Title | title_baked_into_png]
+HAND OFF
+
+MY PLANET
+
+[56:6 | Text_Game_Subtitle | hidden_alternate]
+PLANETARY DEFENSE PROTOCOL

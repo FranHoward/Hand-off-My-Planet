@@ -1,0 +1,59 @@
+{
+  "screen": "WBP_Tutorial_02_MoveBackward",
+  "rootNodeId": "80:125",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:126",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:133",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_02_MoveBackward/Panels_HUD/Tutorial_02_MoveBackward_Panel_Outline_1__80-133.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:137",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_02_MoveBackward/Images/Tutorial_02_MoveBackward_Gesture_Left_Open__80-137.png",
+      "category": "Images",
+      "position": {
+        "x": 143,
+        "y": 71
+      },
+      "size": [
+        665,
+        700
+      ]
+    },
+    {
+      "id": "80:140",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_02_MoveBackward/Images/Tutorial_02_MoveBackward_Arrow_Left_Open__80-140.png",
+      "category": "Images",
+      "position": {
+        "x": 314,
+        "y": 562.0001220703125
+      },
+      "size": [
+        148,
+        289
+      ]
+    }
+  ]
+}

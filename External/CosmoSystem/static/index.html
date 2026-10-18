@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COSMO — Local Tutorial Test</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #151c31;
+      --ink: #e8eefc;
+      --muted: #9aa8c7;
+      --accent: #7cd4ff;
+      --ok: #7dffb3;
+      --warn: #ffd27c;
+      --bad: #ff8d8d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1b2a55, var(--bg));
+      color: var(--ink);
+    }
+    main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 1.4rem; margin: 0 0 8px; }
+    p.lead { color: var(--muted); margin-top: 0; }
+    .grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 16px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    section {
+      background: var(--panel);
+      border: 1px solid #2a3558;
+      border-radius: 14px;
+      padding: 16px;
+    }
+    button, .chip {
+      border: 0;
+      border-radius: 10px;
+      padding: 10px 12px;
+      background: #243056;
+      color: var(--ink);
+      cursor: pointer;
+    }
+    button.primary { background: #2b6cff; }
+    button.mic { background: #b42318; min-width: 160px; }
+    button.mic.live { background: #e11d48; }
+    .events { display: flex; flex-wrap: wrap; gap: 8px; }
+    .events button { font-size: 12px; }
+    #log {
+      height: 280px;
+      overflow: auto;
+      background: #0d1426;
+      border-radius: 10px;
+      padding: 12px;
+      font-size: 14px;
+    }
+    .you { color: var(--accent); }
+    .ai { color: var(--ok); }
+    .sys { color: var(--warn); }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #2a3558;
+      background: #0d1426;
+      color: var(--ink);
+    }
+    .row { display: flex; gap: 8px; margin-top: 10px; }
+    .status dt { color: var(--muted); font-size: 12px; }
+    .status dd { margin: 0 0 10px; }
+    .state { font-weight: 700; color: var(--accent); }
+    .voice-settings {
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px solid #34466f;
+      border-radius: 12px;
+      background: #0d1426;
+    }
+    .voice-settings header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .voice-settings h3 { margin: 0; font-size: 1rem; }
+    .voice-badge { color: var(--accent); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    .voice-note { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 8px 0 12px; }
+    .voice-settings label { display: block; font-size: 12px; color: var(--muted); }
+    .voice-settings select {
+      display: block;
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px;
+      border: 1px solid #34466f;
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      text-overflow: ellipsis;
+      color-scheme: dark;
+    }
+    .voice-sliders { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
+    .voice-slider label { display: flex; justify-content: space-between; gap: 4px; }
+    .voice-slider output { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .voice-slider input { display: block; width: 100%; margin: 10px 0 0; accent-color: var(--accent); cursor: pointer; }
+    .voice-actions { align-items: center; flex-wrap: wrap; margin-top: 16px; }
+    .voice-feedback { font-size: 12px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; overflow-wrap: anywhere; }
+    .voice-feedback[data-tone="warning"] { color: var(--warn); }
+    button:disabled, .voice-settings select:disabled, .voice-settings input:disabled { opacity: .55; cursor: not-allowed; }
+    button:focus-visible, .voice-settings select:focus-visible, .voice-settings input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .grid > section { min-width: 0; }
+    @media (max-width: 600px) {
+      .voice-sliders { grid-template-columns: 1fr; gap: 12px; }
+      .grid > section > .row { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>COSMO local tester</h1>
+    <p class="lead">No Unreal required. Speak with your microphone or type. Gameplay events are buttons. The tutorial only advances on events, never on speech.</p>
+    <div class="grid">
+      <section>
+        <h2>Voice</h2>
+        <p id="micStatus">Microphone: checking…</p>
+        <div class="row">
+          <button class="mic" id="holdTalk">Hold to talk</button>
+          <button id="toggleSpeak" aria-pressed="true">Voice replies: on</button>
+          <button id="reset">Reset tutorial</button>
+        </div>
+        <div class="row">
+          <input id="typed" type="text" placeholder='Try: "What should I do?" or "How do I use my shield?"' />
+          <button class="primary" id="send">Send</button>
+        </div>
+        <div id="log" aria-live="polite"></div>
+        <aside class="voice-settings" aria-labelledby="voiceSettingsTitle">
+          <header>
+            <h3 id="voiceSettingsTitle">Voice Settings</h3>
+            <span class="voice-badge">Browser TTS</span>
+          </header>
+          <p class="voice-note" id="voiceScope">Local testing only. These settings do not change xAI Grok Realtime Voice API voices.</p>
+          <label for="voiceSelect">Voice selection</label>
+          <select id="voiceSelect" aria-describedby="voiceScope voiceStatus">
+            <option value="">Browser default — loading voices…</option>
+          </select>
+          <div class="voice-sliders">
+            <div class="voice-slider">
+              <label for="speechRate">Speech rate <output id="speechRateValue" for="speechRate">1.00×</output></label>
+              <input id="speechRate" type="range" min="0.7" max="1.5" step="0.05" value="1" />
+            </div>
+            <div class="voice-slider">
+              <label for="speechPitch">Pitch <output id="speechPitchValue" for="speechPitch">1.00</output></label>
+              <input id="speechPitch" type="range" min="0.7" max="1.5" step="0.05" value="1" />
+            </div>
+            <div class="voice-slider">
+              <label for="speechVolume">Volume <output id="speechVolumeValue" for="speechVolume">1.00</output></label>
+              <input id="speechVolume" type="range" min="0" max="1" step="0.05" value="1" />
+            </div>
+          </div>
+          <div class="row voice-actions">
+            <button class="primary" id="testVoice" type="button">Test Voice</button>
+            <button id="stopSpeaking" type="button" disabled>Stop Speaking</button>
+          </div>
+          <p class="voice-feedback" id="voiceStatus" role="status">Loading browser voices…</p>
+          <p class="voice-feedback" id="playbackStatus" role="status">Ready to preview.</p>
+          <p class="voice-feedback" id="voiceStorageStatus" role="status" data-tone="warning" hidden></p>
+        </aside>
+      </section>
+      <section>
+        <h2>Tutorial</h2>
+        <dl class="status">
+          <dt>Stage</dt><dd id="stage">—</dd>
+          <dt>Expected event</dt><dd id="expected">—</dd>
+          <dt>COSMO state</dt><dd class="state" id="compState">—</dd>
+          <dt>Complete</dt><dd id="complete">—</dd>
+        </dl>
+        <h3>Simulate Unreal events</h3>
+        <div class="events" id="events"></div>
+      </section>
+    </div>
+  </main>
+  <script>
+    const EVENTS = [
+      "game_started", "movement_completed", "shield_activated", "fire_activated",
+      "wave_activated", "laser_activated", "enemy_scanned", "boss_encountered", "tutorial_completed",
+      "player_in_danger", "danger_cleared"
+    ];
+    const logEl = document.getElementById("log");
+    const speakReplies = { on: true };
+    const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = null;
+    let listening = false;
+
+    function addLog(cls, label, text) {
+      const p = document.createElement("p");
+      p.className = cls;
+      p.textContent = label + ": " + text;
+      logEl.appendChild(p);
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    // Browser-only output adapter. A future Grok Realtime integration can supply
+    // its own speak(text)/stop() implementation at the speechOutput boundary.
+    // Voice identities and settings here are never sent to the Python/Grok layer.
+    function createBrowserTTS() {
+      const STORAGE_KEY = "ai-companion.browser-tts.v1";
+      const PREVIEW = "Hello, explorer! I'm COSMO. Are you ready to discover a new world?";
+      const synth = window.speechSynthesis;
+      const supported = Boolean(synth && typeof window.SpeechSynthesisUtterance === "function");
+      const select = document.getElementById("voiceSelect");
+      const voiceStatus = document.getElementById("voiceStatus");
+      const playbackStatus = document.getElementById("playbackStatus");
+      const storageStatus = document.getElementById("voiceStorageStatus");
+      const testButton = document.getElementById("testVoice");
+      const stopButton = document.getElementById("stopSpeaking");
+      const controls = [
+        { key: "rate", id: "speechRate", min: 0.7, max: 1.5, suffix: "×" },
+        { key: "pitch", id: "speechPitch", min: 0.7, max: 1.5, suffix: "" },
+        { key: "volume", id: "speechVolume", min: 0, max: 1, suffix: "" }
+      ];
+      const settings = { voice: null, rate: 1, pitch: 1, volume: 1 };
+      let voices = [];
+      let selectedVoice = null;
+      let activeUtterance = null;
+
+      function storageWarning(message) {
+        storageStatus.textContent = message;
+        storageStatus.hidden = false;
+      }
+
+      try {
+        const saved = JSON.parse(window.localStorage.getItem(STORAGE_KEY));
+        if (saved && typeof saved === "object") {
+          if (saved.voice && typeof saved.voice.voiceURI === "string" &&
+              typeof saved.voice.name === "string" && typeof saved.voice.lang === "string") {
+            settings.voice = { voiceURI: saved.voice.voiceURI, name: saved.voice.name, lang: saved.voice.lang };
+          }
+          for (const control of controls) {
+            const value = saved[control.key];
+            if (typeof value === "number" && Number.isFinite(value)) {
+              settings[control.key] = Math.min(control.max, Math.max(control.min, value));
+            }
+          }
+        }
+      } catch (error) {
+        storageWarning(error instanceof SyntaxError
+          ? "Saved voice settings could not be read. Using defaults."
+          : "Browser storage is unavailable. Voice settings will work for this visit.");
+      }
+
+      function voiceIdentity(voice) {
+        return voice ? { voiceURI: voice.voiceURI, name: voice.name, lang: voice.lang } : null;
+      }
+
+      function saveSettings() {
+        try {
+          // Whitelist only voice preferences: no transcripts, credentials or API keys.
+          window.localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            voice: settings.voice || voiceIdentity(selectedVoice),
+            rate: settings.rate, pitch: settings.pitch, volume: settings.volume
+          }));
+          storageStatus.hidden = true;
+        } catch (error) {
+          storageWarning("Voice settings work now, but this browser could not save them for next time.");
+        }
+      }
+
+      for (const control of controls) {
+        const input = document.getElementById(control.id);
+        const output = document.getElementById(control.id + "Value");
+        input.value = settings[control.key];
+        // Use the range input's sanitized value (including its step) on restore.
+        settings[control.key] = Number(input.value);
+        const showValue = () => {
+          output.value = settings[control.key].toFixed(2) + control.suffix;
+          input.setAttribute("aria-valuetext", output.value);
+        };
+        showValue();
+        input.disabled = !supported;
+        input.addEventListener("input", () => {
+          settings[control.key] = Number(input.value);
+          showValue();
+          saveSettings();
+        });
+      }
+
+      function refreshVoices() {
+        voices = synth.getVoices();
+        const preferred = settings.voice;
+        const match = preferred && (
+          voices.find((v) => v.voiceURI === preferred.voiceURI && v.name === preferred.name && v.lang === preferred.lang) ||
+          voices.find((v) => v.name === preferred.name && v.lang === preferred.lang)
+        );
+        const isEnglish = (v) => /^en(?:[-_]|$)/i.test(v.lang);
+        selectedVoice = match || voices.find((v) => isEnglish(v) && v.default) ||
+          voices.find(isEnglish) || voices.find((v) => v.default) || voices[0] || null;
+        select.replaceChildren();
+        if (!selectedVoice) {
+          select.add(new Option("Browser default — voice list unavailable", ""));
+          select.disabled = true;
+          voiceStatus.textContent = "No voices listed yet. Trying the browser default; this list updates automatically.";
+        } else {
+          voices.forEach((voice, index) => {
+            select.add(new Option(`${voice.name} — ${voice.lang}`, String(index)));
+          });
+          select.value = String(voices.indexOf(selectedVoice));
+          select.disabled = false;
+          const label = `${selectedVoice.name} — ${selectedVoice.lang}`;
+          voiceStatus.textContent = preferred && !match
+            ? `Saved voice unavailable. Using ${label}.`
+            : `Selected: ${label}`;
+        }
+        voiceStatus.dataset.tone = (!selectedVoice || (preferred && !match)) ? "warning" : "";
+        // Keep the saved preference if voices are only partially loaded, so a
+        // later voiceschanged event can restore it instead of losing the choice.
+      }
+
+      function playbackMessage(message, warning = false) {
+        playbackStatus.textContent = message;
+        playbackStatus.dataset.tone = warning ? "warning" : "";
+      }
+
+      function stop() {
+        // Invalidate old callbacks before cancel(), which can emit error/end.
+        activeUtterance = null;
+        if (supported) synth.cancel();
+        stopButton.disabled = true;
+        if (supported) playbackMessage("Speech stopped.");
+      }
+
+      function play(text) {
+        if (!supported || !text) return;
+        stop();
+        const utterance = new window.SpeechSynthesisUtterance(text);
+        if (selectedVoice) {
+          utterance.voice = selectedVoice;
+          utterance.lang = selectedVoice.lang;
+        } else {
+          utterance.lang = "en-US";
+        }
+        utterance.rate = settings.rate;
+        utterance.pitch = settings.pitch;
+        utterance.volume = settings.volume;
+        activeUtterance = utterance; // Retain the utterance until playback ends.
+        stopButton.disabled = false;
+        const muted = settings.volume === 0;
+        playbackMessage(muted ? "Volume is 0 — playback is silent." : "Preparing speech…", muted);
+        utterance.onstart = () => {
+          if (activeUtterance === utterance) {
+            playbackMessage(muted ? "Speaking silently — volume is 0." : "Speaking…", muted);
+          }
+        };
+        utterance.onend = () => {
+          if (activeUtterance !== utterance) return;
+          activeUtterance = null;
+          stopButton.disabled = true;
+          playbackMessage("Speech finished.");
+        };
+        utterance.onerror = (event) => {
+          if (activeUtterance !== utterance) return;
+          activeUtterance = null;
+          stopButton.disabled = true;
+          playbackMessage(event.error === "not-allowed"
+            ? "Click Test Voice to enable audio, then try again."
+            : `Speech could not play (${event.error || "unknown error"}). Try another voice.`, true);
+        };
+        try {
+          if (synth.paused) synth.resume();
+          synth.speak(utterance);
+        } catch (error) {
+          stop();
+          playbackMessage("Speech could not start. Try Test Voice or select another voice.", true);
+        }
+      }
+
+      select.addEventListener("change", () => {
+        selectedVoice = voices[Number(select.value)] || null;
+        settings.voice = voiceIdentity(selectedVoice);
+        saveSettings();
+        refreshVoices();
+      });
+      // Explicit previews work even when automatic COSMO replies are off.
+      testButton.addEventListener("click", () => play(PREVIEW));
+      stopButton.addEventListener("click", stop);
+      testButton.disabled = !supported;
+      if (supported) {
+        synth.addEventListener("voiceschanged", refreshVoices);
+        refreshVoices();
+        window.addEventListener("pagehide", stop);
+      } else {
+        select.replaceChildren(new Option("Speech synthesis unavailable", ""));
+        select.disabled = true;
+        voiceStatus.textContent = "Speech synthesis is unavailable in this browser. COSMO text and gameplay controls still work.";
+        voiceStatus.dataset.tone = "warning";
+        playbackMessage("Voice preview unavailable.", true);
+        const toggle = document.getElementById("toggleSpeak");
+        toggle.disabled = true;
+        toggle.textContent = "Voice replies: unavailable";
+        toggle.setAttribute("aria-pressed", "false");
+      }
+      return { speak: play, stop };
+    }
+
+    const speechOutput = createBrowserTTS();
+
+    function speak(text) {
+      if (speakReplies.on && text) speechOutput.speak(text);
+    }
+
+    async function api(path, opts) {
+      const res = await fetch(path, opts);
+      return res.json();
+    }
+
+    async function refresh() {
+      const snap = await api("/snapshot");
+      const t = snap.tutorial || {};
+      document.getElementById("stage").textContent = t.current_stage_name || "(complete)";
+      document.getElementById("expected").textContent = t.expected_event || "—";
+      document.getElementById("compState").textContent = (snap.companion && snap.companion.state) || "—";
+      document.getElementById("complete").textContent = String(Boolean(t.is_complete));
+    }
+
+    async function sendUtterance(text) {
+      if (!text.trim()) return;
+      addLog("you", "You", text);
+      const data = await api("/player/utterance", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text })
+      });
+      addLog("ai", "COSMO", data.line || "(no line)");
+      speak(data.line);
+      await refresh();
+    }
+
+    async function fireEvent(name) {
+      const data = await api("/events", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ event: name })
+      });
+      const advanced = data.tutorial && data.tutorial.advanced;
+      addLog("sys", "Event", name + (advanced ? " → advanced" : " → ignored"));
+      if (data.spoken_line) {
+        addLog("ai", "COSMO", data.spoken_line);
+        speak(data.spoken_line);
+      }
+      await refresh();
+    }
+
+    document.getElementById("events").innerHTML = EVENTS.map((ev) =>
+      `<button data-ev="${ev}" title="${ev}">${ev.split("_").map((word) => word[0].toUpperCase() + word.slice(1)).join(" ")}</button>`
+    ).join("");
+    document.getElementById("events").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-ev]");
+      if (btn) fireEvent(btn.dataset.ev);
+    });
+
+    document.getElementById("send").onclick = () => {
+      const input = document.getElementById("typed");
+      const text = input.value;
+      input.value = "";
+      sendUtterance(text);
+    };
+    document.getElementById("typed").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") document.getElementById("send").click();
+    });
+    document.getElementById("toggleSpeak").onclick = (e) => {
+      speakReplies.on = !speakReplies.on;
+      e.target.textContent = "Voice replies: " + (speakReplies.on ? "on" : "off");
+      e.target.setAttribute("aria-pressed", String(speakReplies.on));
+      if (!speakReplies.on) speechOutput.stop();
+    };
+    document.getElementById("reset").onclick = async () => {
+      await api("/reset", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" });
+      addLog("sys", "System", "Tutorial reset");
+      await refresh();
+    };
+
+    const micBtn = document.getElementById("holdTalk");
+    const micStatus = document.getElementById("micStatus");
+    if (!SpeechRec) {
+      micStatus.textContent = "Microphone: this browser has no Web Speech API. Use Chrome/Edge, or type instead.";
+      micBtn.disabled = true;
+    } else {
+      micStatus.textContent = "Microphone: hold the button and speak. Works on http://127.0.0.1 (allow mic when asked).";
+      recognition = new SpeechRec();
+      recognition.lang = "en-US";
+      recognition.interimResults = false;
+      recognition.continuous = false;
+      recognition.onresult = (ev) => {
+        const text = ev.results[0][0].transcript;
+        sendUtterance(text);
+      };
+      recognition.onerror = (ev) => {
+        addLog("sys", "Mic", ev.error);
+      };
+      recognition.onend = () => {
+        listening = false;
+        micBtn.classList.remove("live");
+        micBtn.textContent = "Hold to talk";
+      };
+      const start = () => {
+        if (listening) return;
+        listening = true;
+        micBtn.classList.add("live");
+        micBtn.textContent = "Listening…";
+        try { recognition.start(); } catch (err) { addLog("sys", "Mic", String(err)); }
+      };
+      const stop = () => { try { recognition.stop(); } catch (err) {} };
+      micBtn.addEventListener("mousedown", start);
+      micBtn.addEventListener("mouseup", stop);
+      micBtn.addEventListener("mouseleave", stop);
+      micBtn.addEventListener("touchstart", (e) => { e.preventDefault(); start(); });
+      micBtn.addEventListener("touchend", (e) => { e.preventDefault(); stop(); });
+    }
+
+    refresh().then(() => api("/tutorial/step")).then((step) => {
+      if (step && step.instruction) {
+        addLog("ai", "COSMO", step.instruction);
+        speak(step.instruction);
+      }
+    });
+  </script>
+</body>
+</html>

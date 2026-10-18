@@ -1,0 +1,59 @@
+{
+  "screen": "WBP_Tutorial_04_Fire",
+  "rootNodeId": "80:227",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:228",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:235",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_04_Fire/Panels_HUD/Tutorial_04_Fire_Panel_Outline_1__80-235.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:240",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_04_Fire/Images/Tutorial_04_Fire_Arrow_Right_Fist__80-240.png",
+      "category": "Images",
+      "position": {
+        "x": 234,
+        "y": 150
+      },
+      "size": [
+        215,
+        301
+      ]
+    },
+    {
+      "id": "80:238",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_04_Fire/Images/Tutorial_04_Fire_Gesture_Right_Fist__80-238.png",
+      "category": "Images",
+      "position": {
+        "x": 115,
+        "y": 132
+      },
+      "size": [
+        705,
+        767
+      ]
+    }
+  ]
+}

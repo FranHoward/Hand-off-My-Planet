@@ -1,0 +1,33 @@
+{
+  "screen": "WBP_02_IntroDialogue",
+  "rootNodeId": "46:31",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "46:32",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "46:35",
+      "file": "01_Game_Screens/WBP_02_IntroDialogue/Panels_HUD/IntroDialogue_Panel_Dialogue__46-35.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 177,
+        "y": 212
+      },
+      "size": [
+        1452,
+        585
+      ]
+    }
+  ]
+}

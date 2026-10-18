@@ -1,0 +1,176 @@
+{
+  "screen": "UI_03_MenuButtons",
+  "rootNodeId": "4:157",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "102:2",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_START_MISSION__102-2.png",
+      "category": "Buttons",
+      "position": {
+        "x": 17,
+        "y": 61
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:4",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_HOW_TO_PLAY__102-4.png",
+      "category": "Buttons",
+      "position": {
+        "x": 24,
+        "y": 108
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:6",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_SETTINGS__102-6.png",
+      "category": "Buttons",
+      "position": {
+        "x": 24,
+        "y": 148
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:8",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_QUIT__102-8.png",
+      "category": "Buttons",
+      "position": {
+        "x": 17,
+        "y": 181
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:10",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_RESUME__102-10.png",
+      "category": "Buttons",
+      "position": {
+        "x": 238,
+        "y": 61
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:12",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_RESTART__102-12.png",
+      "category": "Buttons",
+      "position": {
+        "x": 238,
+        "y": 101
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:14",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_CONTROLS__102-14.png",
+      "category": "Buttons",
+      "position": {
+        "x": 245,
+        "y": 148
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:16",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_SETTINGS_Pause__102-16.png",
+      "category": "Buttons",
+      "position": {
+        "x": 245,
+        "y": 188
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:18",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_MAIN_MENU_Pause__102-18.png",
+      "category": "Buttons",
+      "position": {
+        "x": 238,
+        "y": 221
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:20",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_PLAY_AGAIN__102-20.png",
+      "category": "Buttons",
+      "position": {
+        "x": 459,
+        "y": 61
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "102:22",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_VIEW_STATS__102-22.png",
+      "category": "Buttons",
+      "position": {
+        "x": 466,
+        "y": 108
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:24",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_MAIN_MENU_Results__102-24.png",
+      "category": "Buttons",
+      "position": {
+        "x": 466,
+        "y": 148
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "102:26",
+      "file": "03_UI_Asset_Sheets/UI_03_MenuButtons/Buttons/Button_RETRY__102-26.png",
+      "category": "Buttons",
+      "position": {
+        "x": 459,
+        "y": 199
+      },
+      "size": [
+        204,
+        48
+      ]
+    }
+  ]
+}

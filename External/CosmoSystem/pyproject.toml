@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cosmo-system"
+version = "0.2.0"
+description = "Python mock of the Grok-powered AI guide COSMO, including a Dynamic AI Tutorial Guide."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["websockets>=15.0.1,<17"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+companion = "companion.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["companion*"]
+
+[tool.setuptools.package-data]
+companion = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

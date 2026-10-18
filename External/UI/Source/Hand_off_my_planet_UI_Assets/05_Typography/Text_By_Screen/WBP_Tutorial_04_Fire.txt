@@ -1,0 +1,5 @@
+[80:236 | Text_Instruction_01 | game_text]
+Make a fist and push your right hand forward
+
+[80:237 | Text_Action_Label | game_text]
+FIRE LAUNCHED

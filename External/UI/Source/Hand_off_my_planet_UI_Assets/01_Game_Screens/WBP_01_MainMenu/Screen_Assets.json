@@ -1,0 +1,85 @@
+{
+  "screen": "WBP_01_MainMenu",
+  "rootNodeId": "46:2",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "46:3",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "56:3",
+      "file": "01_Game_Screens/WBP_01_MainMenu/Panels_HUD/MainMenu_Overlay_1__56-3.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "56:4",
+      "file": "01_Game_Screens/WBP_01_MainMenu/Panels_HUD/MainMenu_Overlay_2__56-4.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 580,
+        "y": 459
+      },
+      "size": [
+        784,
+        525
+      ]
+    },
+    {
+      "id": "68:31",
+      "file": "01_Game_Screens/WBP_01_MainMenu/Buttons/Button_QUIT__68-31.png",
+      "category": "Buttons",
+      "position": {
+        "x": 629,
+        "y": 785
+      },
+      "size": [
+        665,
+        169
+      ]
+    },
+    {
+      "id": "68:38",
+      "file": "01_Game_Screens/WBP_01_MainMenu/Buttons/Button_START_MISSION__68-38.png",
+      "category": "Buttons",
+      "position": {
+        "x": 629,
+        "y": 500
+      },
+      "size": [
+        665,
+        223
+      ]
+    },
+    {
+      "id": "56:5",
+      "file": "01_Game_Screens/WBP_01_MainMenu/Titles/MainMenu_Text_Game_Title__56-5.png",
+      "category": "Titles",
+      "position": {
+        "x": 468.8798828125,
+        "y": 143
+      },
+      "size": [
+        941,
+        388
+      ]
+    }
+  ]
+}

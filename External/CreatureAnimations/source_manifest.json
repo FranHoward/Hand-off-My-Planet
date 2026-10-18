@@ -1,0 +1,17 @@
+[
+  {
+    "archive": "COSMO_CrystalEye_Animations.zip",
+    "sha256": "ae7d35c5944a1ab19989cd71416a690b3f1381fead173b21dea04866b4a96b82",
+    "species": "CrystalEye"
+  },
+  {
+    "archive": "COSMO_Minion_Animations(1).zip",
+    "sha256": "bac6836dec8a4f8943cd7b80451defc89c1dadde74dac1f02d05b9a4c0b1c985",
+    "species": "Minion"
+  },
+  {
+    "archive": "COSMO_Boss_Animations.zip",
+    "sha256": "12fe184f4b663b227cf01add70be8dfb059635a6e21515a0940a964de53070f3",
+    "species": "Boss"
+  }
+]

@@ -1,0 +1,6 @@
+[80:194 | Text_Instruction_01 | game_text]
+Keep your right hand still 
+
+
+[80:195 | Text_Action_Label | game_text]
+SHIELD

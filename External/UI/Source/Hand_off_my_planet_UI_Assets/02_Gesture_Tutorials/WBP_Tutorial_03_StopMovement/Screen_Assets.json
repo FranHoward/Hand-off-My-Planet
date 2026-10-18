@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_Tutorial_03_StopMovement",
+  "rootNodeId": "80:142",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:143",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:150",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_03_StopMovement/Panels_HUD/Tutorial_03_StopMovement_Panel_Outline_1__80-150.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:153",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_03_StopMovement/Images/Tutorial_03_StopMovement_Gesture_Left_Fist__80-153.png",
+      "category": "Images",
+      "position": {
+        "x": 194,
+        "y": 207
+      },
+      "size": [
+        597,
+        666
+      ]
+    }
+  ]
+}

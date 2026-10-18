@@ -1,0 +1,50 @@
+[9:121 | Label_GAME_BUTTON_INVENTORY | asset_sheet_text]
+GAME BUTTON INVENTORY
+
+[9:122 | Label_MAIN_MENU | asset_sheet_text]
+MAIN MENU
+
+[9:127 | Label_START_MISSION | button_label_baked_into_png]
+START MISSION
+
+[9:132 | Label_HOW_TO_PLAY | button_label_baked_into_png]
+HOW TO PLAY
+
+[9:137 | Label_SETTINGS | button_label_baked_into_png]
+SETTINGS
+
+[9:142 | Label_QUIT | button_label_baked_into_png]
+QUIT
+
+[9:143 | Label_PAUSE | asset_sheet_text]
+PAUSE
+
+[9:148 | Label_RESUME | button_label_baked_into_png]
+RESUME
+
+[9:153 | Label_RESTART | button_label_baked_into_png]
+RESTART
+
+[9:158 | Label_CONTROLS | button_label_baked_into_png]
+CONTROLS
+
+[9:163 | Label_SETTINGS | button_label_baked_into_png]
+SETTINGS
+
+[9:168 | Label_MAIN_MENU | button_label_baked_into_png]
+MAIN MENU
+
+[9:169 | Label_RESULTS | asset_sheet_text]
+RESULTS
+
+[9:174 | Label_PLAY_AGAIN | button_label_baked_into_png]
+PLAY AGAIN
+
+[9:179 | Label_VIEW_STATS | button_label_baked_into_png]
+VIEW STATS
+
+[9:184 | Label_MAIN_MENU | button_label_baked_into_png]
+MAIN MENU
+
+[9:189 | Label_RETRY | button_label_baked_into_png]
+RETRY

@@ -1,0 +1,14 @@
+[4:290 | Label_SOURCE_COMPONENTS_EDITABLE | asset_sheet_text]
+SOURCE COMPONENTS / EDITABLE
+
+[4:292 | Label_PRIMARY | button_label_baked_into_png]
+PRIMARY
+
+[4:294 | Value_SECONDARY | button_label_baked_into_png]
+SECONDARY
+
+[4:296 | Label_CAUTION | button_label_baked_into_png]
+CAUTION
+
+[4:298 | Label_DANGER | button_label_baked_into_png]
+DANGER

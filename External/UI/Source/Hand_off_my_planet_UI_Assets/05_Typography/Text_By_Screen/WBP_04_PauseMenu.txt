@@ -1,0 +1,17 @@
+[46:81 | Text_Pause_Title | game_text]
+MISSION PAUSED
+
+[46:82 | Text_Pause_Subtitle | game_text]
+COMBAT STATE PRESERVED
+
+[46:88 | Text_Label | button_label_baked_into_png]
+RESUME
+
+[46:94 | Text_Label | button_label_baked_into_png]
+RESTART
+
+[46:100 | Text_Label | button_label_baked_into_png]
+SETTINGS
+
+[46:106 | Text_Label | button_label_baked_into_png]
+MAIN MENU

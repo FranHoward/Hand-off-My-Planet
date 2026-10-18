@@ -1,0 +1,61 @@
+[
+  {
+    "name": "CrystalEye_Idle",
+    "fps": 30,
+    "duration_seconds": 3.0,
+    "frame_intervals": 90,
+    "blender_range_inclusive": [
+      0,
+      90
+    ],
+    "baked_samples": 91,
+    "loop": true,
+    "in_place": true,
+    "root_motion": false,
+    "events": [],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "CrystalEye_FloatForward",
+    "fps": 30,
+    "duration_seconds": 1.0,
+    "frame_intervals": 30,
+    "blender_range_inclusive": [
+      0,
+      30
+    ],
+    "baked_samples": 31,
+    "loop": true,
+    "in_place": true,
+    "root_motion": false,
+    "events": [],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  },
+  {
+    "name": "CrystalEye_Controlled",
+    "fps": 30,
+    "duration_seconds": 1.0,
+    "frame_intervals": 30,
+    "blender_range_inclusive": [
+      0,
+      30
+    ],
+    "baked_samples": 31,
+    "loop": false,
+    "in_place": true,
+    "root_motion": false,
+    "events": [
+      {
+        "name": "ControlBegin",
+        "frame": 0,
+        "time_seconds": 0.0
+      },
+      {
+        "name": "ControlEnd",
+        "frame": 30,
+        "time_seconds": 1.0
+      }
+    ],
+    "notify_delivery": "Blender Action pose markers + events.json; UE AnimNotifies must be created after import (not carried by FBX)."
+  }
+]

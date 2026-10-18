@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "provider": "auto",
+  "voice_model": "grok-voice-latest",
+  "voice": "eve"
+}

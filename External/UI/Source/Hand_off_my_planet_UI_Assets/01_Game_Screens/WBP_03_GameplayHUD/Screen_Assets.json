@@ -1,0 +1,189 @@
+{
+  "screen": "WBP_03_GameplayHUD",
+  "rootNodeId": "46:44",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "56:7",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "56:8",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Overlay_1__56-8.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "46:56",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Reticle_Target__46-56.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 906,
+        "y": 486
+      },
+      "size": [
+        108,
+        108
+      ]
+    },
+    {
+      "id": "105:44",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Skin_Ability_Fire__105-44.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 454,
+        "y": 867.54931640625
+      },
+      "size": [
+        225,
+        158
+      ]
+    },
+    {
+      "id": "47:34",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Images/GameplayHUD_Icon_Ability_Fire__47-34.png",
+      "category": "Images",
+      "position": {
+        "x": 547,
+        "y": 900
+      },
+      "size": [
+        74,
+        73
+      ]
+    },
+    {
+      "id": "105:47",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Skin_Ability_Wave__105-47.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 679,
+        "y": 867.54931640625
+      },
+      "size": [
+        225,
+        158
+      ]
+    },
+    {
+      "id": "105:46",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Icons/GameplayHUD_Icon_Ability_Wave__105-46.png",
+      "category": "Icons",
+      "position": {
+        "x": 774,
+        "y": 900
+      },
+      "size": [
+        60,
+        60
+      ]
+    },
+    {
+      "id": "47:14",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Images/Image_Ability_Wave__47-14.png",
+      "category": "Images",
+      "position": {
+        "x": 774,
+        "y": 900
+      },
+      "size": [
+        60,
+        60
+      ]
+    },
+    {
+      "id": "105:50",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Skin_Ability_Laser__105-50.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 905,
+        "y": 867.54931640625
+      },
+      "size": [
+        225,
+        158
+      ]
+    },
+    {
+      "id": "105:49",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Icons/GameplayHUD_Icon_Ability_Laser__105-49.png",
+      "category": "Icons",
+      "position": {
+        "x": 1000,
+        "y": 900
+      },
+      "size": [
+        60,
+        57
+      ]
+    },
+    {
+      "id": "47:23",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Images/Image_Ability_Laser__47-23.png",
+      "category": "Images",
+      "position": {
+        "x": 1000,
+        "y": 900
+      },
+      "size": [
+        60,
+        57
+      ]
+    },
+    {
+      "id": "105:53",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Panels_HUD/GameplayHUD_Skin_Ability_Shield__105-53.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 1132,
+        "y": 867.54931640625
+      },
+      "size": [
+        225,
+        158
+      ]
+    },
+    {
+      "id": "105:52",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Icons/GameplayHUD_Icon_Ability_Shield__105-52.png",
+      "category": "Icons",
+      "position": {
+        "x": 1251.315185546875,
+        "y": 883
+      },
+      "size": [
+        55,
+        51
+      ]
+    },
+    {
+      "id": "47:32",
+      "file": "01_Game_Screens/WBP_03_GameplayHUD/Images/Image_Ability_Shield__47-32.png",
+      "category": "Images",
+      "position": {
+        "x": 1251.315185546875,
+        "y": 883
+      },
+      "size": [
+        55,
+        51
+      ]
+    }
+  ]
+}

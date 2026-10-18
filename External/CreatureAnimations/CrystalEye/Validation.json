@@ -1,0 +1,189 @@
+{
+  "model": {
+    "character": "CrystalEye",
+    "source": "CrystalEye",
+    "topology": {
+      "vertices_before": 2639,
+      "vertices_after": 2623,
+      "faces_before": 4970,
+      "faces_after": 4946,
+      "internal_ring_cap_faces_removed": 24,
+      "coincident_seams_welded": true,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "uv_valid": true,
+      "unweighted_vertices": 0
+    },
+    "floor_correction_cm": 0,
+    "extreme_pose_tests": [
+      {
+        "body_angles_degrees": [
+          0,
+          0,
+          0
+        ],
+        "finite_vertices": true
+      },
+      {
+        "body_angles_degrees": [
+          8,
+          6,
+          0
+        ],
+        "finite_vertices": true
+      },
+      {
+        "body_angles_degrees": [
+          -6,
+          -5,
+          0
+        ],
+        "finite_vertices": true
+      }
+    ],
+    "bones": 14,
+    "bone_hierarchy": {
+      "root": null,
+      "body": "root",
+      "eye_link": "body",
+      "eye": "eye_link",
+      "eye_tip": "eye",
+      "crystal_1_link": "body",
+      "crystal_1": "crystal_1_link",
+      "crystal_1_tip": "crystal_1",
+      "crystal_2_link": "body",
+      "crystal_2": "crystal_2_link",
+      "crystal_2_tip": "crystal_2",
+      "crystal_3_link": "body",
+      "crystal_3": "crystal_3_link",
+      "crystal_3_tip": "crystal_3"
+    },
+    "max_ik_reach_clamp_cm": 0,
+    "animations": {
+      "CrystalEye_Idle": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 8.950456619262695,
+        "max_rigid_edge_length_error_cm": 3.1790916807494796e-05,
+        "loop_endpoint_max_vertex_error_cm": 9.402201239794294e-16,
+        "animated_vertex_displacement_cm": 10.349353174961143,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "CrystalEye_FloatForward": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 7.871739387512207,
+        "max_rigid_edge_length_error_cm": 2.934758484940403e-05,
+        "loop_endpoint_max_vertex_error_cm": 0.0,
+        "animated_vertex_displacement_cm": 5.426045885273014,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      },
+      "CrystalEye_Controlled": {
+        "max_ik_reach_clamp_cm": 0,
+        "finite_vertices": true,
+        "min_mesh_z_cm": 3.226335048675537,
+        "max_rigid_edge_length_error_cm": 3.8908322757436054e-05,
+        "loop_endpoint_max_vertex_error_cm": null,
+        "animated_vertex_displacement_cm": 34.23600441973793,
+        "status": "PASS_BLENDER_ROUNDTRIP_AND_LOCAL_QA"
+      }
+    }
+  },
+  "fbx": {
+    "skeletal_mesh": {
+      "bones": 14,
+      "hierarchy_matches": true,
+      "weights_normalized": true,
+      "rest_joint_max_error_cm": 0.0002580249755403549,
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "animations": {
+      "CrystalEye_Idle": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 3.0,
+        "baked_samples": 91,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 6.291913281345213e-05,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 8.95044994354248,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "CrystalEye_FloatForward": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 1.0,
+        "baked_samples": 31,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 6.296823799184746e-05,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 7.871737957000732,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      },
+      "CrystalEye_Controlled": {
+        "fbx_roundtrip": "pass",
+        "fps": 30,
+        "duration_seconds": 1.0,
+        "baked_samples": 31,
+        "hierarchy_matches": true,
+        "max_mesh_roundtrip_error_cm": 7.691133557760602e-05,
+        "root_matrix_variation": 0.0,
+        "min_mesh_z_cm": 3.2263314723968506,
+        "ue_editor_import": "not_run; Unreal Editor unavailable in execution environment"
+      }
+    }
+  },
+  "animation_quality": {
+    "CrystalEye_Idle": {
+      "loop_endpoint_error_cm": 9.402201239794294e-16,
+      "seam_finite_difference_velocity_delta_cm_per_frame": 0.018260451263706047
+    },
+    "CrystalEye_FloatForward": {
+      "loop_endpoint_error_cm": 0.0,
+      "seam_finite_difference_velocity_delta_cm_per_frame": 0.010536430450837918
+    },
+    "CrystalEye_Controlled": {
+      "end_to_start_pose_error_cm": 0.0
+    },
+    "authoring_IK_target_errors_cm": {}
+  },
+  "video": [
+    {
+      "name": "CrystalEye_Idle",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "6.000000",
+      "nb_frames": "180",
+      "full_decode": "pass"
+    },
+    {
+      "name": "CrystalEye_FloatForward",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "2.000000",
+      "nb_frames": "60",
+      "full_decode": "pass"
+    },
+    {
+      "name": "CrystalEye_Controlled",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "duration": "1.933333",
+      "nb_frames": "58",
+      "full_decode": "pass"
+    }
+  ]
+}

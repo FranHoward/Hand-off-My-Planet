@@ -1,0 +1,9 @@
+[68:50 | Text_Instruction_Alternate_Copy | hidden_alternate]
+Move left hand toward camera 
+
+
+[80:110 | Text_Action_Label | game_text]
+MOVE FORWARD
+
+[83:2 | Text_Instruction_Primary | game_text]
+Move your left hand toward the camera

@@ -1,0 +1,1910 @@
+{
+  "units": "centimeters",
+  "coordinates": "Blender right-handed; X right, Y route, Z up",
+  "player_start_cm": [
+    0,
+    -850,
+    120
+  ],
+  "zone_centers_cm": {
+    "01_Spawn": [
+      0,
+      0,
+      0
+    ],
+    "02_Training": [
+      0,
+      3400,
+      0
+    ],
+    "03_Arena": [
+      0,
+      6700,
+      0
+    ]
+  },
+  "instances": [
+    {
+      "object": "VolcanicGround_24m_Placed",
+      "asset": "VolcanicGround_24m",
+      "zone": "01_Spawn",
+      "location_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "VolcanicGround_24m_Placed.001",
+      "asset": "VolcanicGround_24m",
+      "zone": "02_Training",
+      "location_cm": [
+        0.0,
+        2400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "VolcanicGround_24m_Placed.002",
+      "asset": "VolcanicGround_24m",
+      "zone": "02_Training",
+      "location_cm": [
+        0.0,
+        4800.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "VolcanicGround_24m_Placed.003",
+      "asset": "VolcanicGround_24m",
+      "zone": "03_Arena",
+      "location_cm": [
+        0.0,
+        7200.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "CrashedShip_Placed",
+      "asset": "CrashedShip",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -300.0,
+        -50.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -24
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed",
+      "asset": "MissionBeacon",
+      "zone": "01_Spawn",
+      "location_cm": [
+        220.0,
+        -650.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -14
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.001",
+      "asset": "MissionBeacon",
+      "zone": "01_Spawn",
+      "location_cm": [
+        0.0,
+        900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed",
+      "asset": "BasaltRock_B",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -800.0,
+        -600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        84.42778844690507
+      ],
+      "scale": [
+        0.9205414652824402,
+        0.9205414652824402,
+        0.9205414652824402
+      ]
+    },
+    {
+      "object": "BasaltRock_A_Placed",
+      "asset": "BasaltRock_A",
+      "zone": "01_Spawn",
+      "location_cm": [
+        700.0,
+        -700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        2.9666405133591978
+      ],
+      "scale": [
+        0.7975608110427856,
+        0.7975608110427856,
+        0.7975608110427856
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.001",
+      "asset": "BasaltRock_B",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -800.0,
+        500.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        21.304195210643407
+      ],
+      "scale": [
+        1.3116739988327026,
+        1.3116739988327026,
+        1.3116739988327026
+      ]
+    },
+    {
+      "object": "BasaltRock_A_Placed.001",
+      "asset": "BasaltRock_A",
+      "zone": "01_Spawn",
+      "location_cm": [
+        800.0,
+        600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        180.36955278628102
+      ],
+      "scale": [
+        0.741125762462616,
+        0.741125762462616,
+        0.741125762462616
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.002",
+      "asset": "BasaltRock_B",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -600.0,
+        900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        112.08637235762066
+      ],
+      "scale": [
+        0.958686351776123,
+        0.958686351776123,
+        0.958686351776123
+      ]
+    },
+    {
+      "object": "BasaltRock_A_Placed.002",
+      "asset": "BasaltRock_A",
+      "zone": "01_Spawn",
+      "location_cm": [
+        700.0,
+        900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        291.41881797596034
+      ],
+      "scale": [
+        1.2539433240890503,
+        1.2539433240890503,
+        1.2539433240890503
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -600.0,
+        -500.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        195.43726882353664
+      ],
+      "scale": [
+        1.0415488481521606,
+        1.0415488481521606,
+        1.0415488481521606
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.001",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -500.0,
+        -700.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        102.30223264288522
+      ],
+      "scale": [
+        1.2465615272521973,
+        1.2465615272521973,
+        1.2465615272521973
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.002",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        400.0,
+        -600.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        251.13633099051492
+      ],
+      "scale": [
+        1.2873003482818604,
+        1.2873003482818604,
+        1.2873003482818604
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.003",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        600.0,
+        400.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        274.81146609634106
+      ],
+      "scale": [
+        0.8273361921310425,
+        0.8273361921310425,
+        0.8273361921310425
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.004",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -700.0,
+        700.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        346.90862198488895
+      ],
+      "scale": [
+        1.3672564029693604,
+        1.3672564029693604,
+        1.3672564029693604
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.005",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        400.0,
+        800.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        41.117439639478846
+      ],
+      "scale": [
+        1.285834789276123,
+        1.285834789276123,
+        1.285834789276123
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.006",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -800.0,
+        -100.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        146.1356720591605
+      ],
+      "scale": [
+        0.9052521586418152,
+        0.9052521586418152,
+        0.9052521586418152
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.007",
+      "asset": "GlowPlant",
+      "zone": "01_Spawn",
+      "location_cm": [
+        700.0,
+        -100.0,
+        5.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        169.2600828802616
+      ],
+      "scale": [
+        1.0836719274520874,
+        1.0836719274520874,
+        1.0836719274520874
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed",
+      "asset": "LavaFissure_8m",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -900.0,
+        300.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -6.558561728594384
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.001",
+      "asset": "LavaFissure_8m",
+      "zone": "01_Spawn",
+      "location_cm": [
+        900.0,
+        -200.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -0.45261774135696164
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "CrystalCluster_Cyan_Placed",
+      "asset": "CrystalCluster_Cyan",
+      "zone": "01_Spawn",
+      "location_cm": [
+        720.0,
+        300.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        15
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed",
+      "asset": "CanyonWall_12m",
+      "zone": "01_Spawn",
+      "location_cm": [
+        -1150.0,
+        1200.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.093608021736145
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.001",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        -1150.0,
+        2500.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.962207019329071
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.002",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        -1150.0,
+        3800.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0797762870788574
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.003",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        -1150.0,
+        5100.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.8823300004005432
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.002",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        -839.9999,
+        2000.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        7.859612954608679
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.003",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        -839.9999,
+        3400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -1.9057897243514805
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.004",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        -839.9999,
+        4600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        8.750750878108093
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.004",
+      "asset": "CanyonWall_12m",
+      "zone": "01_Spawn",
+      "location_cm": [
+        1150.0,
+        1200.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0506373643875122
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.005",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        1150.0,
+        2500.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.8058666586875916
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.006",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        1150.0,
+        3800.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.9478672742843628
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.007",
+      "asset": "CanyonWall_12m",
+      "zone": "02_Training",
+      "location_cm": [
+        1150.0,
+        5100.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0951201915740967
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.005",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        839.9999,
+        2000.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -0.05969021392622409
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.006",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        839.9999,
+        3400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        6.0574027735435365
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.007",
+      "asset": "LavaFissure_8m",
+      "zone": "02_Training",
+      "location_cm": [
+        839.9999,
+        4600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -1.8895306180125822
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "EnergyBarrier_Placed",
+      "asset": "EnergyBarrier",
+      "zone": "02_Training",
+      "location_cm": [
+        0.0,
+        1800.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "RouteBridge_Placed",
+      "asset": "RouteBridge",
+      "zone": "02_Training",
+      "location_cm": [
+        0.0,
+        2100.0,
+        2.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "TrainingTarget_Shield_Placed",
+      "asset": "TrainingTarget_Shield",
+      "zone": "02_Training",
+      "location_cm": [
+        -380.0,
+        2600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        12
+      ],
+      "scale": [
+        1.149999976158142,
+        1.149999976158142,
+        1.149999976158142
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.002",
+      "asset": "MissionBeacon",
+      "zone": "02_Training",
+      "location_cm": [
+        235.6,
+        2400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ]
+    },
+    {
+      "object": "CrystalCluster_Cyan_Placed.001",
+      "asset": "CrystalCluster_Cyan",
+      "zone": "02_Training",
+      "location_cm": [
+        -722.0,
+        2750.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        347.5713788612431
+      ],
+      "scale": [
+        1.100000023841858,
+        1.100000023841858,
+        1.100000023841858
+      ]
+    },
+    {
+      "object": "TrainingTarget_Fire_Placed",
+      "asset": "TrainingTarget_Fire",
+      "zone": "02_Training",
+      "location_cm": [
+        380.0,
+        3180.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -12
+      ],
+      "scale": [
+        1.149999976158142,
+        1.149999976158142,
+        1.149999976158142
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.003",
+      "asset": "MissionBeacon",
+      "zone": "02_Training",
+      "location_cm": [
+        -235.6,
+        2980.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ]
+    },
+    {
+      "object": "CrystalCluster_Amber_Placed",
+      "asset": "CrystalCluster_Amber",
+      "zone": "02_Training",
+      "location_cm": [
+        722.0,
+        3330.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        98.6039500488556
+      ],
+      "scale": [
+        1.100000023841858,
+        1.100000023841858,
+        1.100000023841858
+      ]
+    },
+    {
+      "object": "TrainingTarget_Wave_Placed",
+      "asset": "TrainingTarget_Wave",
+      "zone": "02_Training",
+      "location_cm": [
+        -380.0,
+        3759.9998,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        12
+      ],
+      "scale": [
+        1.149999976158142,
+        1.149999976158142,
+        1.149999976158142
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.004",
+      "asset": "MissionBeacon",
+      "zone": "02_Training",
+      "location_cm": [
+        235.6,
+        3559.9998,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ]
+    },
+    {
+      "object": "CrystalCluster_Cyan_Placed.002",
+      "asset": "CrystalCluster_Cyan",
+      "zone": "02_Training",
+      "location_cm": [
+        -722.0,
+        3909.9998,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        177.97240702507077
+      ],
+      "scale": [
+        1.100000023841858,
+        1.100000023841858,
+        1.100000023841858
+      ]
+    },
+    {
+      "object": "TrainingTarget_Laser_Placed",
+      "asset": "TrainingTarget_Laser",
+      "zone": "02_Training",
+      "location_cm": [
+        380.0,
+        4340.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -12
+      ],
+      "scale": [
+        1.149999976158142,
+        1.149999976158142,
+        1.149999976158142
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.005",
+      "asset": "MissionBeacon",
+      "zone": "02_Training",
+      "location_cm": [
+        -235.6,
+        4140.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6499999761581421,
+        0.6499999761581421,
+        0.6499999761581421
+      ]
+    },
+    {
+      "object": "CrystalCluster_Amber_Placed.001",
+      "asset": "CrystalCluster_Amber",
+      "zone": "02_Training",
+      "location_cm": [
+        722.0,
+        4490.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        149.60785405959962
+      ],
+      "scale": [
+        1.100000023841858,
+        1.100000023841858,
+        1.100000023841858
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.003",
+      "asset": "BasaltRock_B",
+      "zone": "02_Training",
+      "location_cm": [
+        -600.0,
+        2200.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        172.63182143683264
+      ],
+      "scale": [
+        0.8758206963539124,
+        0.8758206963539124,
+        0.8758206963539124
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.008",
+      "asset": "GlowPlant",
+      "zone": "02_Training",
+      "location_cm": [
+        -500.0,
+        2300.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        2.3610192333860036
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.004",
+      "asset": "BasaltRock_B",
+      "zone": "02_Training",
+      "location_cm": [
+        600.0,
+        2600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        352.43862312099463
+      ],
+      "scale": [
+        0.8284289836883545,
+        0.8284289836883545,
+        0.8284289836883545
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.009",
+      "asset": "GlowPlant",
+      "zone": "02_Training",
+      "location_cm": [
+        700.0,
+        2700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        318.8457291778406
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.005",
+      "asset": "BasaltRock_B",
+      "zone": "02_Training",
+      "location_cm": [
+        -600.0,
+        3300.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        333.8876030681111
+      ],
+      "scale": [
+        0.8706691265106201,
+        0.8706691265106201,
+        0.8706691265106201
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.010",
+      "asset": "GlowPlant",
+      "zone": "02_Training",
+      "location_cm": [
+        -500.0,
+        3400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        319.108739887176
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.006",
+      "asset": "BasaltRock_B",
+      "zone": "02_Training",
+      "location_cm": [
+        600.0,
+        3700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        239.27495501491944
+      ],
+      "scale": [
+        0.8268414735794067,
+        0.8268414735794067,
+        0.8268414735794067
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.011",
+      "asset": "GlowPlant",
+      "zone": "02_Training",
+      "location_cm": [
+        700.0,
+        3800.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        353.38791142176547
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.007",
+      "asset": "BasaltRock_B",
+      "zone": "02_Training",
+      "location_cm": [
+        -600.0,
+        4500.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        263.9112770332127
+      ],
+      "scale": [
+        0.9782737493515015,
+        0.9782737493515015,
+        0.9782737493515015
+      ]
+    },
+    {
+      "object": "GlowPlant_Placed.012",
+      "asset": "GlowPlant",
+      "zone": "02_Training",
+      "location_cm": [
+        -500.0,
+        4600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        174.81692638722657
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "ScoutRobot_Placed",
+      "asset": "ScoutRobot",
+      "zone": "02_Training",
+      "location_cm": [
+        160.0,
+        3500.0,
+        35.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -12
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "ScoutRobot_Placed.001",
+      "asset": "ScoutRobot",
+      "zone": "02_Training",
+      "location_cm": [
+        -150.0,
+        4400.0,
+        50.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        18
+      ],
+      "scale": [
+        0.8500000238418579,
+        0.8500000238418579,
+        0.8500000238418579
+      ]
+    },
+    {
+      "object": "EnergyBarrier_Placed.001",
+      "asset": "EnergyBarrier",
+      "zone": "02_Training",
+      "location_cm": [
+        0.0,
+        4900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "ArenaPlatform_Placed",
+      "asset": "ArenaPlatform",
+      "zone": "03_Arena",
+      "location_cm": [
+        0.0,
+        6700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "StarCore_Placed",
+      "asset": "StarCore",
+      "zone": "03_Arena",
+      "location_cm": [
+        0.0,
+        6700.0,
+        40.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "Boss_StarcoreGuardian_Placed",
+      "asset": "Boss_StarcoreGuardian",
+      "zone": "03_Arena",
+      "location_cm": [
+        0.0,
+        7169.9995,
+        40.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        910.0001,
+        6700.0,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.001",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        697.1005,
+        7284.9365,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -50
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.002",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        158.0198,
+        7596.1753,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -10
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.003",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        -455.0,
+        7488.083,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        30
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.004",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        -855.1203,
+        7011.2383,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        70
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.005",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        -855.1203,
+        6388.7617,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        110
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "AlienPillar_Placed.006",
+      "asset": "AlienPillar",
+      "zone": "03_Arena",
+      "location_cm": [
+        855.1203,
+        6388.7617,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        250
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "EnergyPylon_Placed",
+      "asset": "EnergyPylon",
+      "zone": "03_Arena",
+      "location_cm": [
+        540.6404,
+        7078.5605,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -55
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "EnergyPylon_Placed.001",
+      "asset": "EnergyPylon",
+      "zone": "03_Arena",
+      "location_cm": [
+        -540.6404,
+        7078.5605,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        55
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "EnergyPylon_Placed.002",
+      "asset": "EnergyPylon",
+      "zone": "03_Arena",
+      "location_cm": [
+        -540.6404,
+        6321.4395,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        125
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "EnergyPylon_Placed.003",
+      "asset": "EnergyPylon",
+      "zone": "03_Arena",
+      "location_cm": [
+        540.6404,
+        6321.4395,
+        38.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        235
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.008",
+      "asset": "CanyonWall_12m",
+      "zone": "03_Arena",
+      "location_cm": [
+        -1200.0,
+        6600.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        90
+      ],
+      "scale": [
+        1.25,
+        1.0,
+        0.949999988079071
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.008",
+      "asset": "LavaFissure_8m",
+      "zone": "03_Arena",
+      "location_cm": [
+        -1050.0,
+        7000.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "CrystalCluster_Amber_Placed.002",
+      "asset": "CrystalCluster_Amber",
+      "zone": "03_Arena",
+      "location_cm": [
+        -820.0,
+        7800.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        20
+      ],
+      "scale": [
+        1.2000000476837158,
+        1.2000000476837158,
+        1.2000000476837158
+      ]
+    },
+    {
+      "object": "CrystalCluster_Cyan_Placed.003",
+      "asset": "CrystalCluster_Cyan",
+      "zone": "03_Arena",
+      "location_cm": [
+        -750.0,
+        5600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.008",
+      "asset": "BasaltRock_B",
+      "zone": "03_Arena",
+      "location_cm": [
+        -900.0,
+        5700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        51.70740414804265
+      ],
+      "scale": [
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.009",
+      "asset": "BasaltRock_B",
+      "zone": "03_Arena",
+      "location_cm": [
+        -900.0,
+        7900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        333.92682745570374
+      ],
+      "scale": [
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.009",
+      "asset": "CanyonWall_12m",
+      "zone": "03_Arena",
+      "location_cm": [
+        1200.0,
+        6600.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        -90
+      ],
+      "scale": [
+        1.25,
+        1.0,
+        0.949999988079071
+      ]
+    },
+    {
+      "object": "LavaFissure_8m_Placed.009",
+      "asset": "LavaFissure_8m",
+      "zone": "03_Arena",
+      "location_cm": [
+        1050.0,
+        7000.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "CrystalCluster_Amber_Placed.003",
+      "asset": "CrystalCluster_Amber",
+      "zone": "03_Arena",
+      "location_cm": [
+        820.0,
+        7800.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        20
+      ],
+      "scale": [
+        1.2000000476837158,
+        1.2000000476837158,
+        1.2000000476837158
+      ]
+    },
+    {
+      "object": "CrystalCluster_Cyan_Placed.004",
+      "asset": "CrystalCluster_Cyan",
+      "zone": "03_Arena",
+      "location_cm": [
+        750.0,
+        5600.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.010",
+      "asset": "BasaltRock_B",
+      "zone": "03_Arena",
+      "location_cm": [
+        900.0,
+        5700.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        83.8903538509972
+      ],
+      "scale": [
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142
+      ]
+    },
+    {
+      "object": "BasaltRock_B_Placed.011",
+      "asset": "BasaltRock_B",
+      "zone": "03_Arena",
+      "location_cm": [
+        900.0,
+        7900.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        23.777313779879293
+      ],
+      "scale": [
+        1.399999976158142,
+        1.399999976158142,
+        1.399999976158142
+      ]
+    },
+    {
+      "object": "MissionBeacon_Placed.006",
+      "asset": "MissionBeacon",
+      "zone": "03_Arena",
+      "location_cm": [
+        300.0,
+        5400.0,
+        0.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "object": "CanyonWall_12m_Placed.010",
+      "asset": "CanyonWall_12m",
+      "zone": "03_Arena",
+      "location_cm": [
+        0.0,
+        8100.0,
+        -10.0
+      ],
+      "rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.649999976158142,
+        1.0,
+        1.100000023841858
+      ]
+    }
+  ],
+  "exports": [
+    {
+      "file": "fbx/scenes/01_Spawn_Layout.fbx",
+      "objects": 23,
+      "triangles": 17626
+    },
+    {
+      "file": "fbx/scenes/02_Training_Layout.fbx",
+      "objects": 41,
+      "triangles": 31666
+    },
+    {
+      "file": "fbx/scenes/03_Arena_Layout.fbx",
+      "objects": 29,
+      "triangles": 23080
+    },
+    {
+      "file": "fbx/scenes/AlienPlanet_FullLayout.fbx",
+      "objects": 93,
+      "triangles": 72372
+    }
+  ]
+}

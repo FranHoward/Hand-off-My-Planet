@@ -1,0 +1,166 @@
+{
+  "id": "first_planet",
+  "title": "Unknown Planet Onboarding",
+  "description": "Event-driven tutorial for Shield, Fire, Wave, and Laser. Each step waits for its own gameplay confirmation.",
+  "ability_controls": {
+    "shield": "Hold your right hand open and steady with the palm facing the camera to activate Shield. Release the pose to stop Shield.",
+    "fire": "Make a right-hand fist, then push forward to cast Fire.",
+    "wave": "Swipe your right hand horizontally to cast Wave.",
+    "laser": "Pinch your right thumb and index finger together and hold to use Laser. Aim with the pinch center; release the pinch to stop Laser."
+  },
+  "stages": [
+    {
+      "id": "welcome",
+      "name": "Welcome to the Unknown Planet",
+      "order": 1,
+      "expected_event": "game_started",
+      "instruction": "Welcome, explorer! I'm COSMO. We're on an unknown planet. Wait for the game to confirm that exploration has started.",
+      "completion_line": "Exploration started.",
+      "companion_state": "speaking",
+      "hints": [
+        "I'm waiting for the game to finish starting before we begin movement.",
+        "We will learn one action at a time, with confirmation from the game."
+      ],
+      "help_topics": {
+        "where": "Check the current game state for our planet and mission.",
+        "move": "Movement comes next, after the game confirms it has started."
+      }
+    },
+    {
+      "id": "movement",
+      "name": "Basic Movement",
+      "order": 2,
+      "expected_event": "movement_completed",
+      "instruction": "Push your open left hand toward the camera to move forward, or pull it toward your body to move backward. Make a left-hand fist to stop; turn your head to steer. I'll wait for gameplay confirmation.",
+      "completion_line": "Movement confirmed.",
+      "companion_state": "speaking",
+      "hints": [
+        "Push your open left hand toward the camera to move forward. Make a left-hand fist to stop.",
+        "I'm waiting for movement confirmation from the game; telling me you moved won't complete this step."
+      ],
+      "help_topics": {
+        "move": "Push or pull your open left hand to move, make a left-hand fist to stop, and turn your head to steer. I'll wait for the game to confirm movement.",
+        "stuck": "Check the movement controls shown by the game."
+      }
+    },
+    {
+      "id": "shield",
+      "name": "Shield Tutorial",
+      "order": 3,
+      "expected_event": "shield_activated",
+      "instruction": "{shield_control} I'll wait for gameplay confirmation.",
+      "completion_line": "Shield activation confirmed.",
+      "companion_state": "speaking",
+      "hints": [
+        "{shield_control}",
+        "I'm waiting for the game to confirm Shield activation. A spoken claim won't complete this step."
+      ],
+      "help_topics": {
+        "shield": "{shield_control} I'll wait for the game to confirm activation."
+      },
+      "ability": "shield"
+    },
+    {
+      "id": "fire",
+      "name": "Fire Tutorial",
+      "order": 4,
+      "expected_event": "fire_activated",
+      "instruction": "{fire_control} I'll wait for gameplay confirmation.",
+      "completion_line": "Fire activation confirmed.",
+      "companion_state": "speaking",
+      "hints": [
+        "{fire_control}",
+        "I'm waiting for the game to confirm Fire activation. A spoken claim won't complete this step."
+      ],
+      "help_topics": {
+        "fire": "{fire_control} I'll wait for the game to confirm activation."
+      },
+      "ability": "fire"
+    },
+    {
+      "id": "wave",
+      "name": "Wave Tutorial",
+      "order": 5,
+      "expected_event": "wave_activated",
+      "instruction": "{wave_control} I'll wait for gameplay confirmation.",
+      "completion_line": "Wave activation confirmed.",
+      "companion_state": "speaking",
+      "hints": [
+        "{wave_control}",
+        "I'm waiting for the game to confirm Wave activation. A spoken claim won't complete this step."
+      ],
+      "help_topics": {
+        "wave": "{wave_control} I'll wait for the game to confirm activation."
+      },
+      "ability": "wave"
+    },
+    {
+      "id": "laser",
+      "name": "Laser Tutorial",
+      "order": 6,
+      "expected_event": "laser_activated",
+      "instruction": "{laser_control} I'll wait for gameplay confirmation.",
+      "completion_line": "Laser activation confirmed.",
+      "companion_state": "speaking",
+      "hints": [
+        "{laser_control}",
+        "I'm waiting for the game to confirm Laser activation. A spoken claim won't complete this step."
+      ],
+      "help_topics": {
+        "laser": "{laser_control} I'll wait for the game to confirm activation."
+      },
+      "ability": "laser"
+    },
+    {
+      "id": "scan_enemy",
+      "name": "Enemy Scanning",
+      "order": 7,
+      "expected_event": "enemy_scanned",
+      "instruction": "Aim the crosshair at an enemy, then hold only your right index finger extended for 0.6 seconds to start scanning. Keep the target in view until the scan completes. I'll wait for the confirmed scan.",
+      "completion_line": "Enemy scan confirmed.",
+      "companion_state": "scanning",
+      "hints": [
+        "Aim the crosshair at an enemy and hold only your right index finger extended for 0.6 seconds. Keep aiming until the scan completes; release and repeat the gesture if interrupted.",
+        "I won't infer enemy weaknesses or a successful scan from what you say."
+      ],
+      "help_topics": {
+        "scan": "Aim the crosshair at an enemy, hold only your right index finger extended for 0.6 seconds, and keep the target in view until gameplay confirms the scan.",
+        "enemy": "I can report the current target from game state; no enemy weaknesses have been configured."
+      }
+    },
+    {
+      "id": "boss_prep",
+      "name": "Boss Battle Preparation",
+      "order": 8,
+      "expected_event": "boss_encountered",
+      "instruction": "Proceed to the boss encounter when ready. I'll wait for the game to confirm the encounter.",
+      "completion_line": "Boss encounter confirmed.",
+      "companion_state": "warning",
+      "hints": [
+        "Check your current mission and target in game state before proceeding.",
+        "Shield, Fire, Wave, and Laser are the supported combat abilities. Their effects and combat rules must come from the gameplay team."
+      ],
+      "help_topics": {
+        "boss": "Follow the game's objective for reaching the boss encounter. I'll wait for gameplay confirmation.",
+        "danger": "I can report danger and ability availability from game state without assuming a combat outcome."
+      }
+    },
+    {
+      "id": "complete",
+      "name": "Tutorial Complete",
+      "order": 9,
+      "expected_event": "tutorial_completed",
+      "instruction": "All four ability lessons are confirmed. Wait for the game to confirm tutorial completion.",
+      "completion_line": "Tutorial complete. You're cleared for the unknown, explorer!",
+      "companion_state": "celebrating",
+      "hints": [
+        "I'm waiting for the final tutorial completion event from the game.",
+        "No additional combat action is required by this tutorial step."
+      ],
+      "help_topics": {
+        "done": "I'll mark the tutorial complete only after the game's confirmation.",
+        "next": "Wait for the game's final tutorial confirmation."
+      }
+    }
+  ]
+}

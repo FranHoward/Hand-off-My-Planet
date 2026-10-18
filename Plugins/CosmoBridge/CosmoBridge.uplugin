@@ -1,0 +1,24 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "COSMO AI Blueprint Bridge",
+  "Description": "Blueprint HTTP client for the COSMO tutorial and companion service.",
+  "Category": "AI",
+  "CanContainContent": false,
+  "EnabledByDefault": true,
+  "Plugins": [
+    { "Name": "AudioCapture", "Enabled": true },
+    { "Name": "GestureBridge", "Enabled": true },
+    { "Name": "EnhancedInput", "Enabled": true },
+    { "Name": "Niagara", "Enabled": true },
+    { "Name": "TextToSpeech", "Enabled": true }
+  ],
+  "Modules": [
+    {
+      "Name": "CosmoBridge",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

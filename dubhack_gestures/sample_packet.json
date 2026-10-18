@@ -1,0 +1,69 @@
+{
+  "version": 3,
+  "session_id": "synthetic-stop-pinch-example",
+  "frame_id": 13,
+  "timestamp_ms": 390,
+  "held_actions": [
+    "Laser"
+  ],
+  "events": [],
+  "triggered_actions": [],
+  "left_hand": "STOP",
+  "left_hand_actions": [
+    "STOP"
+  ],
+  "right_hand": "LASER",
+  "head_direction": "NONE",
+  "raw_yaw": 5.0,
+  "calibrated_yaw": 0.0,
+  "smoothed_yaw": 0.0,
+  "yaw_unit": "degrees",
+  "head_neutral_yaw": 5.0,
+  "recognition_confidence": {
+    "left_hand": {
+      "handedness": null,
+      "pose": null,
+      "method": "rule",
+      "model_label": null,
+      "model_score": null
+    },
+    "right_hand": {
+      "handedness": null,
+      "pose": null,
+      "method": "rule",
+      "model_label": null,
+      "model_score": null
+    },
+    "head": null
+  },
+  "move_axis": 0.0,
+  "turn_axis": 0.0,
+  "pointer": [
+    0.71,
+    0.41
+  ],
+  "movement": "Stop",
+  "look": "Center",
+  "calibrated": {
+    "left_hand": false,
+    "head": true
+  },
+  "tracking": {
+    "left_hand": true,
+    "right_hand": true,
+    "face": true
+  },
+  "debug": {
+    "left_scale_ratio": null,
+    "left_stop": true,
+    "head_offset": 0.0,
+    "left_pose": "FIST",
+    "right_pose": "PINCH",
+    "fire_armed": false,
+    "fire_locked": false,
+    "fire_scale": 0.1,
+    "fire_baseline": null,
+    "fire_push_ratio": null,
+    "fire_required_ratio": 1.15
+  }
+}

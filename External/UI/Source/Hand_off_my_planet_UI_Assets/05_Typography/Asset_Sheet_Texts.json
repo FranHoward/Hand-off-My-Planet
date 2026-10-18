@@ -1,0 +1,6202 @@
+{
+  "styles": [
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 30,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Rubik Wet Paint",
+        "style": "Regular"
+      },
+      "fontSize": 150,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 98
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 2
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.7200000286102295,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.25,
+            "g": 0.949999988079071,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#40F2FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": null,
+      "delivery": "Rendered as main title PNG; no font needed."
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.9200000166893005,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.699999988079071,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#B2D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 54,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 96,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.7599999904632568,
+            "g": 0.8600000143051147,
+            "b": 0.9300000071525574
+          },
+          "boundVariables": {},
+          "hex": "#C2DBED"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.2199999988079071,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:8"
+            }
+          },
+          "hex": "#FF381F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.08235294371843338,
+            "g": 0.658823549747467,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#15A8FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9803921580314636,
+            "g": 0.9960784316062927,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6899999976158142,
+            "g": 0.46000000834465027,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#B075FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.7599999904632568,
+            "g": 0.8600000143051147,
+            "b": 0.9300000071525574
+          },
+          "boundVariables": {},
+          "hex": "#C2DBED"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8799999952316284,
+            "g": 0.9599999785423279,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:3"
+            }
+          },
+          "hex": "#E0F5FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.25,
+            "g": 0.8600000143051147,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:4"
+            }
+          },
+          "hex": "#40DBFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.550000011920929,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:7"
+            }
+          },
+          "hex": "#FF8C1F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.2199999988079071,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:8"
+            }
+          },
+          "hex": "#FF381F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    }
+  ],
+  "texts": [
+    {
+      "id": "9:2",
+      "name": "Value_COMBAT_HUD_120_SEC_RUN",
+      "root": "4:11",
+      "text": "COMBAT HUD / 120 SEC RUN",
+      "rect": [
+        18,
+        8,
+        108,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2779
+        ],
+        [
+          0,
+          1,
+          8
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:7",
+      "name": "Label_GUARDIAN",
+      "root": "4:11",
+      "text": "GUARDIAN",
+      "rect": [
+        31,
+        36,
+        57,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2792
+        ],
+        [
+          0,
+          1,
+          36
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:2"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:8",
+      "name": "Label_HP",
+      "root": "4:11",
+      "text": "HP",
+      "rect": [
+        31,
+        46,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2792
+        ],
+        [
+          0,
+          1,
+          46
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 30
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:2"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:11",
+      "name": "Value_HP",
+      "root": "4:11",
+      "text": "100",
+      "rect": [
+        131,
+        53,
+        22,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2892
+        ],
+        [
+          0,
+          1,
+          53
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "style": 31
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:2"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:12",
+      "name": "Label_ENERGY",
+      "root": "4:11",
+      "text": "ENERGY",
+      "rect": [
+        31,
+        68,
+        27,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2792
+        ],
+        [
+          0,
+          1,
+          68
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:2"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:15",
+      "name": "Value_Energy",
+      "root": "4:11",
+      "text": "100",
+      "rect": [
+        131,
+        75,
+        22,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2892
+        ],
+        [
+          0,
+          1,
+          75
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "style": 32
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:2"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:20",
+      "name": "Label_BOSS_340_HP",
+      "root": "4:11",
+      "text": "BOSS // 340 HP",
+      "rect": [
+        484,
+        36,
+        89,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3245
+        ],
+        [
+          0,
+          1,
+          36
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "style": 33
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:4"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:21",
+      "name": "Label_PHASE_I",
+      "root": "4:11",
+      "text": "PHASE I",
+      "rect": [
+        484,
+        48,
+        32,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3245
+        ],
+        [
+          0,
+          1,
+          48
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:4"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:24",
+      "name": "Label_HOSTILES_2_3",
+      "root": "4:11",
+      "text": "HOSTILES 2/3",
+      "rect": [
+        484,
+        70,
+        55,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3245
+        ],
+        [
+          0,
+          1,
+          70
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:4"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:29",
+      "name": "Label_OBJECTIVE",
+      "root": "4:11",
+      "text": "OBJECTIVE",
+      "rect": [
+        135,
+        119,
+        45,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2896
+        ],
+        [
+          0,
+          1,
+          119
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": 34
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:6"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:30",
+      "name": "Label_ELIMINATE_HOSTILES",
+      "root": "4:11",
+      "text": "ELIMINATE HOSTILES",
+      "rect": [
+        144.5,
+        151,
+        115,
+        17
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2905.5
+        ],
+        [
+          0,
+          1,
+          151
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "style": 35
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:6"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:35",
+      "name": "Label_TIME",
+      "root": "4:11",
+      "text": "TIME",
+      "rect": [
+        583,
+        123,
+        18,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3344
+        ],
+        [
+          0,
+          1,
+          123
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 30
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:8"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:36",
+      "name": "Value_Timer",
+      "root": "4:11",
+      "text": "01:45",
+      "rect": [
+        583,
+        139,
+        35,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3344
+        ],
+        [
+          0,
+          1,
+          139
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 36
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:8"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:42",
+      "name": "Label_TARGET_READY",
+      "root": "4:11",
+      "text": "TARGET READY",
+      "rect": [
+        221,
+        307.5,
+        54,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2982
+        ],
+        [
+          0,
+          1,
+          307.5
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:10"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:47",
+      "name": "Value_Fire_Slot",
+      "root": "4:11",
+      "text": "01",
+      "rect": [
+        154,
+        375,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2915
+        ],
+        [
+          0,
+          1,
+          375
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 10
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:11"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:48",
+      "name": "Label_FIRE",
+      "root": "4:11",
+      "text": "FIRE",
+      "rect": [
+        154,
+        386,
+        24,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2915
+        ],
+        [
+          0,
+          1,
+          386
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 11
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:11"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:49",
+      "name": "Value_14_EN",
+      "root": "4:11",
+      "text": "14 EN",
+      "rect": [
+        154,
+        396,
+        23,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2915
+        ],
+        [
+          0,
+          1,
+          396
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:11"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:50",
+      "name": "Value_1_0_SEC",
+      "root": "4:11",
+      "text": "1.0 SEC",
+      "rect": [
+        152,
+        413,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2913
+        ],
+        [
+          0,
+          1,
+          413
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:11"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:55",
+      "name": "Value_Wave_Slot",
+      "root": "4:11",
+      "text": "02",
+      "rect": [
+        254,
+        375,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3015
+        ],
+        [
+          0,
+          1,
+          375
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 14
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:13"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:56",
+      "name": "Label_WAVE",
+      "root": "4:11",
+      "text": "WAVE",
+      "rect": [
+        254,
+        386,
+        35,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3015
+        ],
+        [
+          0,
+          1,
+          386
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:13"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:57",
+      "name": "Value_25_EN",
+      "root": "4:11",
+      "text": "25 EN",
+      "rect": [
+        254,
+        395,
+        23,
+        12
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3015
+        ],
+        [
+          0,
+          1,
+          395
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:13"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:58",
+      "name": "Value_4_0_SEC",
+      "root": "4:11",
+      "text": "4.0 SEC",
+      "rect": [
+        254,
+        413,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3015
+        ],
+        [
+          0,
+          1,
+          413
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:13"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:63",
+      "name": "Value_Laser_Slot",
+      "root": "4:11",
+      "text": "03",
+      "rect": [
+        354,
+        375,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3115
+        ],
+        [
+          0,
+          1,
+          375
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 17
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:16"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:64",
+      "name": "Label_LASER",
+      "root": "4:11",
+      "text": "LASER",
+      "rect": [
+        354,
+        386,
+        38,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3115
+        ],
+        [
+          0,
+          1,
+          386
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:16"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:65",
+      "name": "Value_18_EN_S",
+      "root": "4:11",
+      "text": "18 EN/S",
+      "rect": [
+        354,
+        396,
+        32,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3115
+        ],
+        [
+          0,
+          1,
+          396
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:16"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:66",
+      "name": "Value_MAX_2_5_SEC",
+      "root": "4:11",
+      "text": "MAX 2.5 SEC",
+      "rect": [
+        354,
+        413,
+        49,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3115
+        ],
+        [
+          0,
+          1,
+          413
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 18
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:16"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:71",
+      "name": "Value_Shield_Slot",
+      "root": "4:11",
+      "text": "04",
+      "rect": [
+        454,
+        375,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3215
+        ],
+        [
+          0,
+          1,
+          375
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 19
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:19"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:72",
+      "name": "Label_SHIELD",
+      "root": "4:11",
+      "text": "SHIELD",
+      "rect": [
+        454,
+        386,
+        41,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3215
+        ],
+        [
+          0,
+          1,
+          386
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:19"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:73",
+      "name": "Value_10_10_EN_S",
+      "root": "4:11",
+      "text": "10 + 10 EN/S",
+      "rect": [
+        454,
+        396,
+        54,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3215
+        ],
+        [
+          0,
+          1,
+          396
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:19"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:74",
+      "name": "Value_5_0_SEC",
+      "root": "4:11",
+      "text": "5.0 SEC",
+      "rect": [
+        454,
+        413,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3215
+        ],
+        [
+          0,
+          1,
+          413
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:11",
+        "103:19"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_01_CombatHUD",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:75",
+      "name": "Label_ABILITY_CHIPS_GESTURE_INPUT",
+      "root": "4:77",
+      "text": "ABILITY CHIPS / GESTURE INPUT",
+      "rect": [
+        24,
+        20,
+        218,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3566
+        ],
+        [
+          0,
+          1,
+          20
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "style": 37
+        }
+      ],
+      "ancestors": [
+        "4:77"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:80",
+      "name": "Value_01",
+      "root": "4:77",
+      "text": "01",
+      "rect": [
+        33,
+        65,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          65
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 10
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:22"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:81",
+      "name": "Label_FIRE",
+      "root": "4:77",
+      "text": "FIRE",
+      "rect": [
+        33,
+        76,
+        24,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          76
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 11
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:22"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:82",
+      "name": "Label_DAMAGE_24_BURN_3_3",
+      "root": "4:77",
+      "text": "DAMAGE 24 + BURN 3×3",
+      "rect": [
+        33,
+        172,
+        90,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          172
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:22"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:83",
+      "name": "Value_14_EN_1_0_SEC",
+      "root": "4:77",
+      "text": "14 EN / 1.0 SEC",
+      "rect": [
+        33,
+        183,
+        67,
+        15
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          183
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:22"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:84",
+      "name": "Label_GESTURE_A_SINGLE_TARGET",
+      "root": "4:77",
+      "text": "GESTURE A  ·  SINGLE TARGET",
+      "rect": [
+        38,
+        106,
+        121,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3580
+        ],
+        [
+          0,
+          1,
+          106
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:22"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:89",
+      "name": "Value_02",
+      "root": "4:77",
+      "text": "02",
+      "rect": [
+        362,
+        60,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          60
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 14
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:25"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:90",
+      "name": "Label_ENERGY_WAVE",
+      "root": "4:77",
+      "text": "ENERGY WAVE",
+      "rect": [
+        362,
+        76,
+        84,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          76
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 38
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:25"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:91",
+      "name": "Label_DAMAGE_30_ARC_80",
+      "root": "4:77",
+      "text": "DAMAGE 30 / ARC 80°",
+      "rect": [
+        362,
+        177,
+        85,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          177
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:25"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:92",
+      "name": "Value_25_EN_4_0_SEC",
+      "root": "4:77",
+      "text": "25 EN / 4.0 SEC",
+      "rect": [
+        362,
+        189,
+        67,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          189
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:25"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:93",
+      "name": "Label_GESTURE_B_MULTI_TARGET",
+      "root": "4:77",
+      "text": "GESTURE B  ·  MULTI TARGET",
+      "rect": [
+        367,
+        106,
+        117,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3909
+        ],
+        [
+          0,
+          1,
+          106
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 26,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:25"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:98",
+      "name": "Value_03",
+      "root": "4:77",
+      "text": "03",
+      "rect": [
+        33,
+        230,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          230
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 17
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:28"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:99",
+      "name": "Label_LASER",
+      "root": "4:77",
+      "text": "LASER",
+      "rect": [
+        33,
+        246,
+        38,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          246
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:28"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:100",
+      "name": "Label_DAMAGE_36_DPS_24M",
+      "root": "4:77",
+      "text": "DAMAGE 36 DPS / 24M",
+      "rect": [
+        33,
+        347,
+        85,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          347
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:28"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:101",
+      "name": "Value_18_EN_S_MAX_2_5_SEC",
+      "root": "4:77",
+      "text": "18 EN/S / MAX 2.5 SEC",
+      "rect": [
+        33,
+        359,
+        94,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3575
+        ],
+        [
+          0,
+          1,
+          359
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "style": 18
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:28"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:102",
+      "name": "Label_GESTURE_C_HOLD_TO_AIM",
+      "root": "4:77",
+      "text": "GESTURE C  ·  HOLD TO AIM",
+      "rect": [
+        38,
+        276,
+        112,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3580
+        ],
+        [
+          0,
+          1,
+          276
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 25,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:28"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:107",
+      "name": "Value_04",
+      "root": "4:77",
+      "text": "04",
+      "rect": [
+        362,
+        230,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          230
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 19
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:31"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:108",
+      "name": "Label_SHIELD",
+      "root": "4:77",
+      "text": "SHIELD",
+      "rect": [
+        362,
+        246,
+        41,
+        11
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          246
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:31"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:109",
+      "name": "Label_FRONT_100_OTHER_75",
+      "root": "4:77",
+      "text": "FRONT 100% / OTHER 75%",
+      "rect": [
+        362,
+        347,
+        99,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          347
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:31"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:110",
+      "name": "Value_10_10_EN_S_5_0_SEC",
+      "root": "4:77",
+      "text": "10 + 10 EN/S / 5.0 SEC",
+      "rect": [
+        362,
+        359,
+        99,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3904
+        ],
+        [
+          0,
+          1,
+          359
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:31"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:111",
+      "name": "Label_GESTURE_D_HOLD_TO_BLOCK",
+      "root": "4:77",
+      "text": "GESTURE D  ·  HOLD TO BLOCK",
+      "rect": [
+        367,
+        276,
+        121,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3909
+        ],
+        [
+          0,
+          1,
+          276
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 27,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:31"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:116",
+      "name": "Label_TRACKING",
+      "root": "4:77",
+      "text": "TRACKING",
+      "rect": [
+        38,
+        404,
+        36,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3580
+        ],
+        [
+          0,
+          1,
+          404
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:34"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:117",
+      "name": "Label_CONFIRMED",
+      "root": "4:77",
+      "text": "CONFIRMED",
+      "rect": [
+        149,
+        404,
+        41,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3691
+        ],
+        [
+          0,
+          1,
+          404
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:34"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:118",
+      "name": "Label_COOLDOWN",
+      "root": "4:77",
+      "text": "COOLDOWN",
+      "rect": [
+        276,
+        404,
+        36,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3818
+        ],
+        [
+          0,
+          1,
+          404
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 8,
+          "style": 39
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:34"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:119",
+      "name": "Label_LOW_ENERGY",
+      "root": "4:77",
+      "text": "LOW ENERGY",
+      "rect": [
+        394,
+        404,
+        45,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3936
+        ],
+        [
+          0,
+          1,
+          404
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:34"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:120",
+      "name": "Label_GESTURE_LOST",
+      "root": "4:77",
+      "text": "GESTURE LOST",
+      "rect": [
+        525,
+        404,
+        54,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          4067
+        ],
+        [
+          0,
+          1,
+          404
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 30
+        }
+      ],
+      "ancestors": [
+        "4:77",
+        "103:34"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_02_Skills_Gestures",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:121",
+      "name": "Label_GAME_BUTTON_INVENTORY",
+      "root": "4:157",
+      "text": "GAME BUTTON INVENTORY",
+      "rect": [
+        24,
+        18,
+        182,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2785
+        ],
+        [
+          0,
+          1,
+          563
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "style": 37
+        }
+      ],
+      "ancestors": [
+        "4:157"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_03_MenuButtons",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:122",
+      "name": "Label_MAIN_MENU",
+      "root": "4:157",
+      "text": "MAIN MENU",
+      "rect": [
+        24,
+        48,
+        55,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2785
+        ],
+        [
+          0,
+          1,
+          593
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": 23
+        }
+      ],
+      "ancestors": [
+        "4:157"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_03_MenuButtons",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:143",
+      "name": "Label_PAUSE",
+      "root": "4:157",
+      "text": "PAUSE",
+      "rect": [
+        245,
+        48,
+        34,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3006
+        ],
+        [
+          0,
+          1,
+          593
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 23
+        }
+      ],
+      "ancestors": [
+        "4:157"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_03_MenuButtons",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:169",
+      "name": "Label_RESULTS",
+      "root": "4:157",
+      "text": "RESULTS",
+      "rect": [
+        466,
+        48,
+        47,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3227
+        ],
+        [
+          0,
+          1,
+          593
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 23
+        }
+      ],
+      "ancestors": [
+        "4:157"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_03_MenuButtons",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:201",
+      "name": "Label_COMBAT_STATUS_CONTEXT_PROMPTS",
+      "root": "4:194",
+      "text": "COMBAT STATUS / CONTEXT PROMPTS",
+      "rect": [
+        24,
+        20,
+        265,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3566
+        ],
+        [
+          0,
+          1,
+          565
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 31,
+          "style": 37
+        }
+      ],
+      "ancestors": [
+        "4:194"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:206",
+      "name": "Label_FIRE_READY",
+      "root": "4:194",
+      "text": "FIRE READY",
+      "rect": [
+        37,
+        63,
+        51,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          608
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 45
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:36"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:207",
+      "name": "Label_Basic_attack_available",
+      "root": "4:194",
+      "text": "Basic attack available",
+      "rect": [
+        37,
+        81,
+        99,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:36"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:212",
+      "name": "Label_WAVE_READY",
+      "root": "4:194",
+      "text": "WAVE READY",
+      "rect": [
+        359,
+        63,
+        51,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          608
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 46
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:38"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:213",
+      "name": "Label_Multi_target_attack_available",
+      "root": "4:194",
+      "text": "Multi-target attack available",
+      "rect": [
+        359,
+        81,
+        130,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          626
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 29,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:38"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:218",
+      "name": "Label_LASER_LOCKED",
+      "root": "4:194",
+      "text": "LASER LOCKED",
+      "rect": [
+        37,
+        128,
+        62,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          673
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 47
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:40"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:219",
+      "name": "Label_Continuous_hit_confirmed",
+      "root": "4:194",
+      "text": "Continuous hit confirmed",
+      "rect": [
+        37,
+        146,
+        108,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          691
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 24,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:40"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:224",
+      "name": "Label_SHIELD_ACTIVE",
+      "root": "4:194",
+      "text": "SHIELD ACTIVE",
+      "rect": [
+        359,
+        128,
+        67,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          673
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "style": 48
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:42"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:225",
+      "name": "Label_Incoming_damage_reduced",
+      "root": "4:194",
+      "text": "Incoming damage reduced",
+      "rect": [
+        359,
+        146,
+        103,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          691
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:42"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:230",
+      "name": "Label_LOW_ENERGY",
+      "root": "4:194",
+      "text": "LOW ENERGY",
+      "rect": [
+        37,
+        193,
+        51,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          738
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 48
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:44"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:231",
+      "name": "Value_Below_20_EN",
+      "root": "4:194",
+      "text": "Below 20 EN",
+      "rect": [
+        37,
+        211,
+        49,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          756
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:44"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:236",
+      "name": "Label_SHIELD_BREAK",
+      "root": "4:194",
+      "text": "SHIELD BREAK",
+      "rect": [
+        359,
+        193,
+        62,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          738
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 49
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:46"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:237",
+      "name": "Label_Energy_depleted",
+      "root": "4:194",
+      "text": "Energy depleted",
+      "rect": [
+        359,
+        211,
+        67,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          756
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:46"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:242",
+      "name": "Label_CORE_EXPOSED",
+      "root": "4:194",
+      "text": "CORE EXPOSED",
+      "rect": [
+        37,
+        258,
+        62,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          803
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 45
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:48"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:243",
+      "name": "Label_Laser_damage_25",
+      "root": "4:194",
+      "text": "Laser damage +25%",
+      "rect": [
+        37,
+        276,
+        76,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          821
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:48"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:248",
+      "name": "Label_WAVE_ATTACK",
+      "root": "4:194",
+      "text": "WAVE ATTACK",
+      "rect": [
+        359,
+        258,
+        56,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          803
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 49
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:50"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:249",
+      "name": "Label_Shield_or_interrupt",
+      "root": "4:194",
+      "text": "Shield or interrupt",
+      "rect": [
+        359,
+        276,
+        85,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          821
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 19,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:50"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:254",
+      "name": "Label_INTERRUPTED_15",
+      "root": "4:194",
+      "text": "INTERRUPTED +15",
+      "rect": [
+        37,
+        323,
+        77,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          868
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "style": 46
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:52"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:255",
+      "name": "Label_Boss_attack_cancelled",
+      "root": "4:194",
+      "text": "Boss attack cancelled",
+      "rect": [
+        37,
+        341,
+        94,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3579
+        ],
+        [
+          0,
+          1,
+          886
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:52"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:260",
+      "name": "Label_FINAL_PHASE",
+      "root": "4:194",
+      "text": "FINAL PHASE",
+      "rect": [
+        359,
+        323,
+        56,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          868
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 49
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:54"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:261",
+      "name": "Label_Damage_increased_40",
+      "root": "4:194",
+      "text": "Damage increased +40%",
+      "rect": [
+        359,
+        341,
+        94,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3901
+        ],
+        [
+          0,
+          1,
+          886
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 21,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:54"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:266",
+      "name": "Value_00",
+      "root": "4:194",
+      "text": "00",
+      "rect": [
+        38,
+        394,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3580
+        ],
+        [
+          0,
+          1,
+          939
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:56"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:267",
+      "name": "Label_90_CORE_UNSTABLE",
+      "root": "4:194",
+      "text": "90  CORE UNSTABLE",
+      "rect": [
+        250,
+        394,
+        76,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3792
+        ],
+        [
+          0,
+          1,
+          939
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:56"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:268",
+      "name": "Label_105_FINAL_OPENING",
+      "root": "4:194",
+      "text": "105  FINAL OPENING",
+      "rect": [
+        392,
+        394,
+        81,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3934
+        ],
+        [
+          0,
+          1,
+          939
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:56"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:269",
+      "name": "Label_115_LAST_HIT",
+      "root": "4:194",
+      "text": "115  LAST HIT",
+      "rect": [
+        538,
+        394,
+        58,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          4080
+        ],
+        [
+          0,
+          1,
+          939
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "style": 30
+        }
+      ],
+      "ancestors": [
+        "4:194",
+        "103:56"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_04_Status_Prompts",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:275",
+      "name": "Label_TARGETING_DEFENSE_MODALS",
+      "root": "4:258",
+      "text": "TARGETING / DEFENSE / MODALS",
+      "rect": [
+        24,
+        20,
+        226,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2785
+        ],
+        [
+          0,
+          1,
+          1110
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "style": 37
+        }
+      ],
+      "ancestors": [
+        "4:258"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:282",
+      "name": "Label_LASER_LOCK",
+      "root": "4:258",
+      "text": "LASER LOCK",
+      "rect": [
+        78,
+        224,
+        51,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2839
+        ],
+        [
+          0,
+          1,
+          1314
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 41
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:58"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:291",
+      "name": "Label_ENERGY_WAVE_80",
+      "root": "4:258",
+      "text": "ENERGY WAVE // 80°",
+      "rect": [
+        105,
+        411,
+        92,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          2866
+        ],
+        [
+          0,
+          1,
+          1501
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 18,
+          "style": 42
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:59"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:296",
+      "name": "Label_RESTART_MISSION",
+      "root": "4:258",
+      "text": "RESTART MISSION?",
+      "rect": [
+        414,
+        81,
+        131,
+        14
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1171
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "style": 37
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:67"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:297",
+      "name": "Label_Current_combat_progress",
+      "root": "4:258",
+      "text": "Current combat progress",
+      "rect": [
+        414,
+        116,
+        103,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1206
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 23,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:67"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:298",
+      "name": "Label_will_be_lost",
+      "root": "4:258",
+      "text": "will be lost.",
+      "rect": [
+        414,
+        132,
+        58,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1222
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:67"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:313",
+      "name": "Label_BOSS_340_HP",
+      "root": "4:258",
+      "text": "BOSS // 340 HP",
+      "rect": [
+        414,
+        304,
+        72,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1394
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "style": 44
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:64"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:314",
+      "name": "Label_FINAL_PHASE",
+      "root": "4:258",
+      "text": "FINAL PHASE",
+      "rect": [
+        414,
+        330,
+        115,
+        18
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1420
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 50
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:64"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:315",
+      "name": "Label_DAMAGE_40",
+      "root": "4:258",
+      "text": "DAMAGE +40%",
+      "rect": [
+        414,
+        360,
+        56,
+        10
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1450
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 51
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:64"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "9:316",
+      "name": "Label_CORE_EXPOSED",
+      "root": "4:258",
+      "text": "CORE EXPOSED",
+      "rect": [
+        414,
+        379,
+        54,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3175
+        ],
+        [
+          0,
+          1,
+          1469
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "4:258",
+        "103:64"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_05_Targeting_Modals",
+      "purpose": "asset_sheet_text"
+    },
+    {
+      "id": "4:290",
+      "name": "Label_SOURCE_COMPONENTS_EDITABLE",
+      "root": "4:289",
+      "text": "SOURCE COMPONENTS / EDITABLE",
+      "rect": [
+        20,
+        16,
+        217,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          3562
+        ],
+        [
+          0,
+          1,
+          1106
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "style": 52
+        }
+      ],
+      "ancestors": [
+        "4:289"
+      ],
+      "pageId": "106:3",
+      "screen": "UI_06_ButtonStyles",
+      "purpose": "asset_sheet_text"
+    }
+  ]
+}

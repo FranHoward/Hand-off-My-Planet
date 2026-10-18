@@ -1,0 +1,59 @@
+{
+  "screen": "UI_06_ButtonStyles",
+  "rootNodeId": "4:289",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "102:30",
+      "file": "03_UI_Asset_Sheets/UI_06_ButtonStyles/Buttons/Button_Style_Primary__102-30.png",
+      "category": "Buttons",
+      "position": {
+        "x": 20,
+        "y": 50
+      },
+      "size": [
+        300,
+        48
+      ]
+    },
+    {
+      "id": "102:32",
+      "file": "03_UI_Asset_Sheets/UI_06_ButtonStyles/Buttons/Button_Style_Secondary__102-32.png",
+      "category": "Buttons",
+      "position": {
+        "x": 342,
+        "y": 50
+      },
+      "size": [
+        300,
+        48
+      ]
+    },
+    {
+      "id": "102:34",
+      "file": "03_UI_Asset_Sheets/UI_06_ButtonStyles/Buttons/Button_Style_Caution__102-34.png",
+      "category": "Buttons",
+      "position": {
+        "x": 20,
+        "y": 122
+      },
+      "size": [
+        300,
+        48
+      ]
+    },
+    {
+      "id": "102:36",
+      "file": "03_UI_Asset_Sheets/UI_06_ButtonStyles/Buttons/Button_Style_Danger__102-36.png",
+      "category": "Buttons",
+      "position": {
+        "x": 342,
+        "y": 122
+      },
+      "size": [
+        300,
+        48
+      ]
+    }
+  ]
+}

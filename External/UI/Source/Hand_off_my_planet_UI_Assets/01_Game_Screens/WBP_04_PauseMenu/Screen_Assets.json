@@ -1,0 +1,98 @@
+{
+  "screen": "WBP_04_PauseMenu",
+  "rootNodeId": "46:75",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "46:76",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "46:78",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Panels_HUD/PauseMenu_Overlay_1__46-78.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "46:80",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Panels_HUD/PauseMenu_Panel_Pause__46-80.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 640,
+        "y": 140
+      },
+      "size": [
+        640,
+        780
+      ]
+    },
+    {
+      "id": "46:83",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Buttons/Button_RESUME__46-83.png",
+      "category": "Buttons",
+      "position": {
+        "x": 823,
+        "y": 324
+      },
+      "size": [
+        215,
+        50
+      ]
+    },
+    {
+      "id": "46:89",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Buttons/Button_RESTART__46-89.png",
+      "category": "Buttons",
+      "position": {
+        "x": 823,
+        "y": 413
+      },
+      "size": [
+        215,
+        49
+      ]
+    },
+    {
+      "id": "46:95",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Buttons/Button_SETTINGS__46-95.png",
+      "category": "Buttons",
+      "position": {
+        "x": 830,
+        "y": 509
+      },
+      "size": [
+        208,
+        42
+      ]
+    },
+    {
+      "id": "46:101",
+      "file": "01_Game_Screens/WBP_04_PauseMenu/Buttons/Button_MAIN_MENU__46-101.png",
+      "category": "Buttons",
+      "position": {
+        "x": 823,
+        "y": 590
+      },
+      "size": [
+        215,
+        50
+      ]
+    }
+  ]
+}

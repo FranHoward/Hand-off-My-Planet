@@ -1,0 +1,77 @@
+[9:75 | Label_ABILITY_CHIPS_GESTURE_INPUT | asset_sheet_text]
+ABILITY CHIPS / GESTURE INPUT
+
+[9:80 | Value_01 | asset_sheet_text]
+01
+
+[9:81 | Label_FIRE | asset_sheet_text]
+FIRE
+
+[9:82 | Label_DAMAGE_24_BURN_3_3 | asset_sheet_text]
+DAMAGE 24 + BURN 3×3
+
+[9:83 | Value_14_EN_1_0_SEC | asset_sheet_text]
+14 EN / 1.0 SEC
+
+[9:84 | Label_GESTURE_A_SINGLE_TARGET | asset_sheet_text]
+GESTURE A  ·  SINGLE TARGET
+
+[9:89 | Value_02 | asset_sheet_text]
+02
+
+[9:90 | Label_ENERGY_WAVE | asset_sheet_text]
+ENERGY WAVE
+
+[9:91 | Label_DAMAGE_30_ARC_80 | asset_sheet_text]
+DAMAGE 30 / ARC 80°
+
+[9:92 | Value_25_EN_4_0_SEC | asset_sheet_text]
+25 EN / 4.0 SEC
+
+[9:93 | Label_GESTURE_B_MULTI_TARGET | asset_sheet_text]
+GESTURE B  ·  MULTI TARGET
+
+[9:98 | Value_03 | asset_sheet_text]
+03
+
+[9:99 | Label_LASER | asset_sheet_text]
+LASER
+
+[9:100 | Label_DAMAGE_36_DPS_24M | asset_sheet_text]
+DAMAGE 36 DPS / 24M
+
+[9:101 | Value_18_EN_S_MAX_2_5_SEC | asset_sheet_text]
+18 EN/S / MAX 2.5 SEC
+
+[9:102 | Label_GESTURE_C_HOLD_TO_AIM | asset_sheet_text]
+GESTURE C  ·  HOLD TO AIM
+
+[9:107 | Value_04 | asset_sheet_text]
+04
+
+[9:108 | Label_SHIELD | asset_sheet_text]
+SHIELD
+
+[9:109 | Label_FRONT_100_OTHER_75 | asset_sheet_text]
+FRONT 100% / OTHER 75%
+
+[9:110 | Value_10_10_EN_S_5_0_SEC | asset_sheet_text]
+10 + 10 EN/S / 5.0 SEC
+
+[9:111 | Label_GESTURE_D_HOLD_TO_BLOCK | asset_sheet_text]
+GESTURE D  ·  HOLD TO BLOCK
+
+[9:116 | Label_TRACKING | asset_sheet_text]
+TRACKING
+
+[9:117 | Label_CONFIRMED | asset_sheet_text]
+CONFIRMED
+
+[9:118 | Label_COOLDOWN | asset_sheet_text]
+COOLDOWN
+
+[9:119 | Label_LOW_ENERGY | asset_sheet_text]
+LOW ENERGY
+
+[9:120 | Label_GESTURE_LOST | asset_sheet_text]
+GESTURE LOST

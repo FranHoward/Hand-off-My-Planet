@@ -1,0 +1,17 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "Codex Blueprint Tools",
+  "Description": "One-shot editor automation for wiring the gesture-controlled character blueprint.",
+  "Category": "Editor",
+  "EnabledByDefault": false,
+  "CanContainContent": false,
+  "Modules": [
+    {
+      "Name": "CodexBlueprintTools",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

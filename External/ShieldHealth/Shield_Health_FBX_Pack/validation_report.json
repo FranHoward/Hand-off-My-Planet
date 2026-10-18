@@ -1,0 +1,49 @@
+[
+  {
+    "asset": "EnergyShield.fbx",
+    "status": "PASS",
+    "vertices": 4432,
+    "triangles": 7868,
+    "dimensions_cm": [
+      115.71,
+      32.0,
+      152.25
+    ],
+    "materials": [
+      "M_Props_Atlas",
+      "M_Shield_Field_Transparent"
+    ],
+    "uv": "present",
+    "boundary_edges": 0,
+    "pivot_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "embedded_png_count": 4,
+    "notes": "Validated by Blender FBX re-import. Unreal Engine is not available for an in-engine test."
+  },
+  {
+    "asset": "HealthPickup.fbx",
+    "status": "PASS",
+    "vertices": 2084,
+    "triangles": 4032,
+    "dimensions_cm": [
+      35.2,
+      29.5,
+      47.22
+    ],
+    "materials": [
+      "M_Props_Atlas"
+    ],
+    "uv": "present",
+    "boundary_edges": 0,
+    "pivot_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "embedded_png_count": 4,
+    "notes": "Validated by Blender FBX re-import. Unreal Engine is not available for an in-engine test."
+  }
+]

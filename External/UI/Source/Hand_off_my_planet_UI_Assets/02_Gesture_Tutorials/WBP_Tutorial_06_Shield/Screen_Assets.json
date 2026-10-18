@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_Tutorial_06_Shield",
+  "rootNodeId": "80:183",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:184",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:191",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_06_Shield/Panels_HUD/Tutorial_06_Shield_Panel_Outline_1__80-191.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:196",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_06_Shield/Images/Tutorial_06_Shield_Gesture_Right_Open__80-196.png",
+      "category": "Images",
+      "position": {
+        "x": 178,
+        "y": 178
+      },
+      "size": [
+        521,
+        626
+      ]
+    }
+  ]
+}

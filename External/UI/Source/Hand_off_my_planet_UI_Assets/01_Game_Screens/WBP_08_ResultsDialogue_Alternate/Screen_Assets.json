@@ -1,0 +1,72 @@
+{
+  "screen": "WBP_08_ResultsDialogue_Alternate",
+  "rootNodeId": "46:111",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "46:112",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "46:116",
+      "file": "01_Game_Screens/WBP_08_ResultsDialogue_Alternate/Panels_HUD/ResultsDialogue_Alternate_Panel_Results__46-116.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 544,
+        "y": 270
+      },
+      "size": [
+        720,
+        390
+      ]
+    },
+    {
+      "id": "46:118",
+      "file": "01_Game_Screens/WBP_08_ResultsDialogue_Alternate/Buttons/Button_PLAY_AGAIN__46-118.png",
+      "category": "Buttons",
+      "position": {
+        "x": 638,
+        "y": 753
+      },
+      "size": [
+        204,
+        48
+      ]
+    },
+    {
+      "id": "46:124",
+      "file": "01_Game_Screens/WBP_08_ResultsDialogue_Alternate/Buttons/Button_VIEW_STATS__46-124.png",
+      "category": "Buttons",
+      "position": {
+        "x": 865,
+        "y": 760
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "46:130",
+      "file": "01_Game_Screens/WBP_08_ResultsDialogue_Alternate/Buttons/Button_MAIN_MENU__46-130.png",
+      "category": "Buttons",
+      "position": {
+        "x": 1085,
+        "y": 760
+      },
+      "size": [
+        190,
+        34
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[80:223 | Text_Action_Label | game_text]
+Release your fingers
+
+[80:224 | Text_Action_Label | game_text]
+LASER DEACTIVATED

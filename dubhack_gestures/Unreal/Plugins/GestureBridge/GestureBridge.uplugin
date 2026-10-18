@@ -1,0 +1,17 @@
+{
+  "FileVersion": 3,
+  "Version": 2,
+  "VersionName": "2.0 (JSON v3)",
+  "FriendlyName": "Gesture JSON Blueprint Bridge",
+  "Description": "Concurrent left-hand movement, right-hand combat and head look via JSON v3.",
+  "Category": "Input",
+  "CanContainContent": false,
+  "EnabledByDefault": true,
+  "Modules": [
+    {
+      "Name": "GestureBridge",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

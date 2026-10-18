@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_Tutorial_07_LaserActivate",
+  "rootNodeId": "80:198",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:199",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:206",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_07_LaserActivate/Panels_HUD/Tutorial_07_LaserActivate_Panel_Outline_1__80-206.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:209",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_07_LaserActivate/Images/Tutorial_07_LaserActivate_Gesture_Right_Pinch__80-209.png",
+      "category": "Images",
+      "position": {
+        "x": 178,
+        "y": 178
+      },
+      "size": [
+        521,
+        626
+      ]
+    }
+  ]
+}

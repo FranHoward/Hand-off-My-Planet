@@ -1,0 +1,6 @@
+[80:134 | Text_Instruction_01 | game_text]
+Move left hand away from the camera 
+
+
+[80:135 | Text_Action_Label | game_text]
+MOVE BACKWARD

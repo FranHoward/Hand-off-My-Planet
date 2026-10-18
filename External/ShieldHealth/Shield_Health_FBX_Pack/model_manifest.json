@@ -1,0 +1,49 @@
+{
+  "blender": "4.5.14 LTS",
+  "units": "centimeters",
+  "front_axis": "-Y",
+  "models": [
+    {
+      "file": "EnergyShield.fbx",
+      "mesh": "SM_EnergyShield",
+      "vertices": 4432,
+      "triangles": 7868,
+      "dimensions_cm": [
+        115.71,
+        32.0,
+        152.25
+      ],
+      "pivot_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "material_slots": [
+        "M_Props_Atlas",
+        "M_Shield_Field_Transparent"
+      ],
+      "description": "Cyan hex energy shield. Center pivot, +Y rear handle. Optional translucent field in its own material slot."
+    },
+    {
+      "file": "HealthPickup.fbx",
+      "mesh": "SM_HealthPickup",
+      "vertices": 2084,
+      "triangles": 4032,
+      "dimensions_cm": [
+        35.2,
+        29.5,
+        47.222
+      ],
+      "pivot_cm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "material_slots": [
+        "M_Props_Atlas"
+      ],
+      "description": "Red armored health capsule with warm-white plus and orange reservoirs. Bottom-center pivot; static pickup mesh."
+    }
+  ],
+  "preview_note": "Health pickup is displayed at 3x scale in the lineup; FBX is actual size."
+}

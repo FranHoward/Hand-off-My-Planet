@@ -1,0 +1,11 @@
+[80:265 | Text_Result_State | game_text]
+VICTORY / DEFEAT
+
+[80:267 | Text_Result_Data_Placeholder | game_text]
+RESULT DATA / TIME / DAMAGE / ACCURACY
+
+[80:279 | Text_Label | button_label_baked_into_png]
+VIEW STATS
+
+[80:285 | Text_Label | button_label_baked_into_png]
+MAIN MENU

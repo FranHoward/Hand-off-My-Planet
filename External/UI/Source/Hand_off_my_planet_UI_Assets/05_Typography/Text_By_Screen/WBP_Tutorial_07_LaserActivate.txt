@@ -1,0 +1,6 @@
+[80:207 | Text_Instruction_01 | game_text]
+Pinch your thumb and index finger together 
+
+
+[80:208 | Text_Action_Label | game_text]
+LASER ACTIVATED

@@ -1,0 +1,3945 @@
+{
+  "styles": [
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 30,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Rubik Wet Paint",
+        "style": "Regular"
+      },
+      "fontSize": 150,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 98
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 2
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.7200000286102295,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.25,
+            "g": 0.949999988079071,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#40F2FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": null,
+      "delivery": "Rendered as main title PNG; no font needed."
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 18
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 0.9200000166893005,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.699999988079071,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#B2D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 54,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 96,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 36,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.7599999904632568,
+            "g": 0.8600000143051147,
+            "b": 0.9300000071525574
+          },
+          "boundVariables": {},
+          "hex": "#C2DBED"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6600000262260437,
+            "g": 0.7799999713897705,
+            "b": 0.8799999952316284
+          },
+          "boundVariables": {},
+          "hex": "#A8C7E0"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.2199999988079071,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:8"
+            }
+          },
+          "hex": "#FF381F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.08235294371843338,
+            "g": 0.658823549747467,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#15A8FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9803921580314636,
+            "g": 0.9960784316062927,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 9,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 7,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.6899999976158142,
+            "g": 0.46000000834465027,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#B075FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.7599999904632568,
+            "g": 0.8600000143051147,
+            "b": 0.9300000071525574
+          },
+          "boundVariables": {},
+          "hex": "#C2DBED"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 0.8399999737739563,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#00D6FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.9800000190734863,
+            "g": 0.9950000047683716,
+            "b": 1
+          },
+          "boundVariables": {},
+          "hex": "#FAFEFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0,
+            "g": 1,
+            "b": 0.6399999856948853
+          },
+          "boundVariables": {},
+          "hex": "#00FFA3"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Medium"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Medium.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.1599999964237213,
+            "b": 0.18000000715255737
+          },
+          "boundVariables": {},
+          "hex": "#FF292E"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "IBM Plex Mono",
+        "style": "Regular"
+      },
+      "fontSize": 8,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 4
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.6600000262260437,
+            "b": 0.05999999865889549
+          },
+          "boundVariables": {},
+          "hex": "#FFA80F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/IBMPlexMono-Regular.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.8799999952316284,
+            "g": 0.9599999785423279,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:3"
+            }
+          },
+          "hex": "#E0F5FF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 0.25,
+            "g": 0.8600000143051147,
+            "b": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:4"
+            }
+          },
+          "hex": "#40DBFF"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.550000011920929,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:7"
+            }
+          },
+          "hex": "#FF8C1F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    },
+    {
+      "fontName": {
+        "family": "Orbitron",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 5
+      },
+      "fills": [
+        {
+          "type": "SOLID",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "color": {
+            "r": 1,
+            "g": 0.2199999988079071,
+            "b": 0.11999999731779099
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:4:8"
+            }
+          },
+          "hex": "#FF381F"
+        }
+      ],
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE",
+      "fontFile": "Fonts/Orbitron-SemiBold.ttf"
+    }
+  ],
+  "texts": [
+    {
+      "id": "46:36",
+      "name": "Text_Cosmo_Intro",
+      "root": "46:31",
+      "text": "\"Hey! Hey, wake up!\"  \n\"Oh, thank the stars. You're alive!\"  \n\"I'm COSMO. Your ship's AI.\"  \n\"We crashed. Badly.\"  \n\"See that light? That's our ticket home.\"  \n\"Come on, partner. Let's move!\"\n",
+      "rect": [
+        206,
+        288,
+        1426,
+        479
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          4706
+        ],
+        [
+          0,
+          1,
+          1530
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "CENTER",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 192,
+          "style": 7
+        }
+      ],
+      "ancestors": [
+        "46:31",
+        "80:59"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_02_IntroDialogue",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:295",
+      "name": "Text_Cosmo_Victory",
+      "root": "80:289",
+      "text": "\"WE DID IT!\"  \n\"Haha! I knew you could do it!\"  \n\"Look at that. The Star Core is ours.\"  \n \"Not bad for our first day on an alien planet.\"  \n\"Now... let's go home, partner.\"\n\n",
+      "rect": [
+        119,
+        339.391,
+        1675,
+        318.293
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          4619
+        ],
+        [
+          0,
+          1,
+          2917.391357421875
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "CENTER",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 175,
+          "style": 7
+        }
+      ],
+      "ancestors": [
+        "80:289",
+        "80:293"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_05_Victory",
+      "purpose": "game_text"
+    },
+    {
+      "id": "46:115",
+      "name": "Text_Victory_Title",
+      "root": "80:289",
+      "text": "VICTORY",
+      "rect": [
+        696,
+        140,
+        528,
+        120
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          5196
+        ],
+        [
+          0,
+          1,
+          2718
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 8
+        }
+      ],
+      "ancestors": [
+        "80:289"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_05_Victory",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:309",
+      "name": "Text_Cosmo_GameOver",
+      "root": "80:303",
+      "text": "OH NO! WE WERE SO CLOSE!”\n“Hey, don’t worry! We’ll get it next time.”\n“That Star Core isn’t going anywhere.”\n“We’ve learned a lot from this mission.”\n“Come on, partner. Let’s give it another shot!”",
+      "rect": [
+        122.983,
+        294.917,
+        1666.017,
+        305.664
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          4622.9833984375
+        ],
+        [
+          0,
+          1,
+          4136.91650390625
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "CENTER",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 197,
+          "style": 7
+        }
+      ],
+      "ancestors": [
+        "80:303",
+        "80:307"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_06_GameOver",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:311",
+      "name": "Text_GameOver_Title",
+      "root": "80:303",
+      "text": "GAME OVER",
+      "rect": [
+        603,
+        140,
+        708,
+        120
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          5103
+        ],
+        [
+          0,
+          1,
+          3982
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 9,
+          "style": 8
+        }
+      ],
+      "ancestors": [
+        "80:303"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_06_GameOver",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:6",
+      "name": "Value_Fire_Slot",
+      "root": "46:44",
+      "text": "01",
+      "rect": [
+        380,
+        861,
+        18,
+        20
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1112
+        ],
+        [
+          0,
+          1,
+          4143
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 10
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:43"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:7",
+      "name": "Label_FIRE",
+      "root": "46:44",
+      "text": "FIRE",
+      "rect": [
+        481,
+        932,
+        54,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1213
+        ],
+        [
+          0,
+          1,
+          4214
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 11
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:43"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:8",
+      "name": "Value_14_EN",
+      "root": "46:44",
+      "text": "14 EN",
+      "rect": [
+        481,
+        957,
+        52,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1213
+        ],
+        [
+          0,
+          1,
+          4239
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:43"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:9",
+      "name": "Value_1_0_SEC",
+      "root": "46:44",
+      "text": "1.0 SEC",
+      "rect": [
+        772,
+        709,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1504
+        ],
+        [
+          0,
+          1,
+          3991
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 13
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:43"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:15",
+      "name": "Value_Wave_Slot",
+      "root": "46:44",
+      "text": "02",
+      "rect": [
+        579,
+        861,
+        17,
+        20
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1311
+        ],
+        [
+          0,
+          1,
+          4143
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 14
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:45"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:16",
+      "name": "Label_WAVE",
+      "root": "46:44",
+      "text": "WAVE",
+      "rect": [
+        708,
+        932,
+        78,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1440
+        ],
+        [
+          0,
+          1,
+          4214
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:45"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:17",
+      "name": "Value_25_EN",
+      "root": "46:44",
+      "text": "25 EN",
+      "rect": [
+        708,
+        955,
+        51,
+        29
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1440
+        ],
+        [
+          0,
+          1,
+          4237
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:45"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:18",
+      "name": "Value_4_0_SEC",
+      "root": "46:44",
+      "text": "4.0 SEC",
+      "rect": [
+        874,
+        709,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1606
+        ],
+        [
+          0,
+          1,
+          3991
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 16
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:45"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:24",
+      "name": "Value_Laser_Slot",
+      "root": "46:44",
+      "text": "03",
+      "rect": [
+        777,
+        861,
+        18,
+        20
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1509
+        ],
+        [
+          0,
+          1,
+          4143
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 17
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:48"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:25",
+      "name": "Label_LASER",
+      "root": "46:44",
+      "text": "LASER",
+      "rect": [
+        934,
+        932,
+        86,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1666
+        ],
+        [
+          0,
+          1,
+          4214
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 5,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:48"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:26",
+      "name": "Value_18_EN_S",
+      "root": "46:44",
+      "text": "18 EN/S",
+      "rect": [
+        934,
+        957,
+        73,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1666
+        ],
+        [
+          0,
+          1,
+          4239
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:48"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:27",
+      "name": "Value_MAX_2_5_SEC",
+      "root": "46:44",
+      "text": "MAX 2.5 SEC",
+      "rect": [
+        974,
+        709,
+        49,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1706
+        ],
+        [
+          0,
+          1,
+          3991
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 18
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:48"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:33",
+      "name": "Value_Shield_Slot",
+      "root": "46:44",
+      "text": "04",
+      "rect": [
+        976,
+        861,
+        18,
+        20
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1708
+        ],
+        [
+          0,
+          1,
+          4143
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 19
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:51"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:35",
+      "name": "Label_SHIELD",
+      "root": "46:44",
+      "text": "SHIELD",
+      "rect": [
+        1161,
+        932,
+        93,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1893
+        ],
+        [
+          0,
+          1,
+          4214
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "style": 15
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:51"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:36",
+      "name": "Value_10_10_EN_S",
+      "root": "46:44",
+      "text": "10 + 10 EN/S",
+      "rect": [
+        1161,
+        957,
+        122,
+        27
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1893
+        ],
+        [
+          0,
+          1,
+          4239
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 12
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:51"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:37",
+      "name": "Value_5_0_SEC",
+      "root": "46:44",
+      "text": "5.0 SEC",
+      "rect": [
+        1074,
+        709,
+        32,
+        6
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1806
+        ],
+        [
+          0,
+          1,
+          3991
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 7,
+          "style": 20
+        }
+      ],
+      "ancestors": [
+        "46:44",
+        "105:54",
+        "105:51"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_03_GameplayHUD",
+      "purpose": "game_text"
+    },
+    {
+      "id": "46:81",
+      "name": "Text_Pause_Title",
+      "root": "46:75",
+      "text": "MISSION PAUSED",
+      "rect": [
+        672,
+        168,
+        576,
+        18
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1266
+        ],
+        [
+          0,
+          1,
+          4674
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 14,
+          "style": 21
+        }
+      ],
+      "ancestors": [
+        "46:75",
+        "105:25"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_04_PauseMenu",
+      "purpose": "game_text"
+    },
+    {
+      "id": "46:82",
+      "name": "Text_Pause_Subtitle",
+      "root": "46:75",
+      "text": "COMBAT STATE PRESERVED",
+      "rect": [
+        816,
+        235,
+        183,
+        17
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1410
+        ],
+        [
+          0,
+          1,
+          4741
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 22,
+          "style": 22
+        }
+      ],
+      "ancestors": [
+        "46:75",
+        "105:25"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_04_PauseMenu",
+      "purpose": "game_text"
+    },
+    {
+      "id": "46:117",
+      "name": "Text_Cosmo_Results",
+      "root": "46:111",
+      "text": "\"WE DID IT!\"  \n> \"Haha! I knew you could do it!\"  \n> \"Look at that. The Star Core is ours.\"  \n> \"Not bad for our first day on an alien planet.\"  \n> \"Now... let's go home, partner.\"",
+      "rect": [
+        628,
+        298,
+        664,
+        378
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1270
+        ],
+        [
+          0,
+          1,
+          7542
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 180,
+          "style": 27
+        }
+      ],
+      "ancestors": [
+        "46:111",
+        "105:29"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_08_ResultsDialogue_Alternate",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:265",
+      "name": "Text_Result_State",
+      "root": "80:261",
+      "text": "VICTORY / DEFEAT",
+      "rect": [
+        715,
+        142,
+        467,
+        50
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1357
+        ],
+        [
+          0,
+          1,
+          6097
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 16,
+          "style": 28
+        }
+      ],
+      "ancestors": [
+        "80:261",
+        "105:36"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_07_ResultsSummary_Template",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:267",
+      "name": "Text_Result_Data_Placeholder",
+      "root": "80:261",
+      "text": "RESULT DATA / TIME / DAMAGE / ACCURACY",
+      "rect": [
+        628,
+        298,
+        664,
+        23
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          1270
+        ],
+        [
+          0,
+          1,
+          6253
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 38,
+          "style": 1
+        }
+      ],
+      "ancestors": [
+        "80:261",
+        "105:36"
+      ],
+      "pageId": "0:1",
+      "screen": "WBP_07_ResultsSummary_Template",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:110",
+      "name": "Text_Action_Label",
+      "root": "80:87",
+      "text": "MOVE FORWARD",
+      "rect": [
+        278,
+        850,
+        394,
+        63
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          7384
+        ],
+        [
+          0,
+          1,
+          2092
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 12,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:87",
+        "104:4",
+        "104:6"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_01_MoveForward",
+      "purpose": "game_text"
+    },
+    {
+      "id": "83:2",
+      "name": "Text_Instruction_Primary",
+      "root": "80:87",
+      "text": "Move your left hand toward the camera",
+      "rect": [
+        728,
+        491,
+        1054,
+        149
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          7834
+        ],
+        [
+          0,
+          1,
+          1733
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:87",
+        "104:4",
+        "104:6"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_01_MoveForward",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:134",
+      "name": "Text_Instruction_01",
+      "root": "80:125",
+      "text": "Move left hand away from the camera \n",
+      "rect": [
+        783,
+        485,
+        994,
+        77
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          9849
+        ],
+        [
+          0,
+          1,
+          1727
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 37,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:125",
+        "104:9",
+        "104:11"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_02_MoveBackward",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:135",
+      "name": "Text_Action_Label",
+      "root": "80:125",
+      "text": "MOVE BACKWARD",
+      "rect": [
+        212,
+        850,
+        431,
+        66
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          9278
+        ],
+        [
+          0,
+          1,
+          2092
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:125",
+        "104:9",
+        "104:11"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_02_MoveBackward",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:151",
+      "name": "Text_Instruction_01",
+      "root": "80:142",
+      "text": "Make a fist with your left hand\n\n",
+      "rect": [
+        773,
+        533,
+        984,
+        139
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          11799
+        ],
+        [
+          0,
+          1,
+          1775
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 33,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:142",
+        "104:14",
+        "104:16"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_03_StopMovement",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:152",
+      "name": "Text_Action_Label",
+      "root": "80:142",
+      "text": "STAY STILL",
+      "rect": [
+        306,
+        824,
+        431,
+        66
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          11332
+        ],
+        [
+          0,
+          1,
+          2066
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 10,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:142",
+        "104:14",
+        "104:16"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_03_StopMovement",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:236",
+      "name": "Text_Instruction_01",
+      "root": "80:227",
+      "text": "Make a fist and push your right hand forward",
+      "rect": [
+        699,
+        515,
+        988,
+        156
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          15645
+        ],
+        [
+          0,
+          1,
+          3082
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:227",
+        "104:19",
+        "104:21"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_04_Fire",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:237",
+      "name": "Text_Action_Label",
+      "root": "80:227",
+      "text": "FIRE LAUNCHED",
+      "rect": [
+        279,
+        785,
+        567,
+        65
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          15225
+        ],
+        [
+          0,
+          1,
+          3352
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 13,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:227",
+        "104:19",
+        "104:21"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_04_Fire",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:165",
+      "name": "Text_Instruction_01",
+      "root": "80:156",
+      "text": "Swipe your right hand horizontally \n",
+      "rect": [
+        699,
+        545,
+        1054,
+        149
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          7805
+        ],
+        [
+          0,
+          1,
+          3112
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 36,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:156",
+        "104:24",
+        "104:26"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_05_Wave",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:166",
+      "name": "Text_Action_Label",
+      "root": "80:156",
+      "text": "ENERGY WAVE",
+      "rect": [
+        234,
+        804,
+        396,
+        81
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          7340
+        ],
+        [
+          0,
+          1,
+          3371
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 11,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:156",
+        "104:24",
+        "104:26"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_05_Wave",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:194",
+      "name": "Text_Instruction_01",
+      "root": "80:183",
+      "text": "Keep your right hand still \n",
+      "rect": [
+        743,
+        491,
+        895,
+        158
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          9809
+        ],
+        [
+          0,
+          1,
+          3058
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 28,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:183",
+        "104:29",
+        "104:31"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_06_Shield",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:195",
+      "name": "Text_Action_Label",
+      "root": "80:183",
+      "text": "SHIELD",
+      "rect": [
+        319,
+        785,
+        211,
+        65
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          9385
+        ],
+        [
+          0,
+          1,
+          3352
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 6,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:183",
+        "104:29",
+        "104:31"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_06_Shield",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:207",
+      "name": "Text_Instruction_01",
+      "root": "80:198",
+      "text": "Pinch your thumb and index finger together \n",
+      "rect": [
+        662,
+        491,
+        1229,
+        195
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          11688
+        ],
+        [
+          0,
+          1,
+          3058
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 44,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:198",
+        "104:34",
+        "104:36"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_07_LaserActivate",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:208",
+      "name": "Text_Action_Label",
+      "root": "80:198",
+      "text": "LASER ACTIVATED",
+      "rect": [
+        188,
+        792,
+        501,
+        65
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          11214
+        ],
+        [
+          0,
+          1,
+          3359
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 15,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:198",
+        "104:34",
+        "104:36"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_07_LaserActivate",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:223",
+      "name": "Text_Action_Label",
+      "root": "80:214",
+      "text": "Release your fingers",
+      "rect": [
+        772,
+        518,
+        895,
+        158
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          13758
+        ],
+        [
+          0,
+          1,
+          3085
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 20,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:214",
+        "104:39",
+        "104:41"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_08_LaserDeactivate",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:224",
+      "name": "Text_Action_Label",
+      "root": "80:214",
+      "text": "LASER DEACTIVATED",
+      "rect": [
+        205,
+        792,
+        567,
+        65
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          13191
+        ],
+        [
+          0,
+          1,
+          3359
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 17,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:214",
+        "104:39",
+        "104:41"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_08_LaserDeactivate",
+      "purpose": "game_text"
+    },
+    {
+      "id": "80:253",
+      "name": "Text_Instruction_01",
+      "root": "80:242",
+      "text": "Turn your head left and right\n",
+      "rect": [
+        527,
+        797,
+        1054,
+        149
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          7633
+        ],
+        [
+          0,
+          1,
+          4689
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "NONE",
+      "segments": [
+        {
+          "start": 0,
+          "end": 30,
+          "style": 29
+        }
+      ],
+      "ancestors": [
+        "80:242",
+        "104:44",
+        "104:46"
+      ],
+      "pageId": "106:2",
+      "screen": "WBP_Tutorial_09_HeadTurn",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:44",
+      "name": "Text_HP_Label",
+      "root": "80:260",
+      "text": "HP",
+      "rect": [
+        2,
+        0,
+        9,
+        9
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          303
+        ],
+        [
+          0,
+          1,
+          3458
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 2,
+          "style": 30
+        }
+      ],
+      "ancestors": [
+        "80:260"
+      ],
+      "pageId": "106:5",
+      "screen": "HUD_HP_Unplaced",
+      "purpose": "game_text"
+    },
+    {
+      "id": "47:47",
+      "name": "Value_HP",
+      "root": "80:260",
+      "text": "100",
+      "rect": [
+        95,
+        6,
+        22,
+        13
+      ],
+      "transform": [
+        [
+          1,
+          0,
+          396
+        ],
+        [
+          0,
+          1,
+          3464
+        ]
+      ],
+      "rotation": 0,
+      "hidden": false,
+      "guide": false,
+      "opacity": 1,
+      "align": "LEFT",
+      "vertical": "TOP",
+      "autoResize": "WIDTH_AND_HEIGHT",
+      "segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "style": 31
+        }
+      ],
+      "ancestors": [
+        "80:260"
+      ],
+      "pageId": "106:5",
+      "screen": "HUD_HP_Unplaced",
+      "purpose": "game_text"
+    }
+  ]
+}

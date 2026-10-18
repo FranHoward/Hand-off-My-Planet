@@ -1,0 +1,74 @@
+[9:201 | Label_COMBAT_STATUS_CONTEXT_PROMPTS | asset_sheet_text]
+COMBAT STATUS / CONTEXT PROMPTS
+
+[9:206 | Label_FIRE_READY | asset_sheet_text]
+FIRE READY
+
+[9:207 | Label_Basic_attack_available | asset_sheet_text]
+Basic attack available
+
+[9:212 | Label_WAVE_READY | asset_sheet_text]
+WAVE READY
+
+[9:213 | Label_Multi_target_attack_available | asset_sheet_text]
+Multi-target attack available
+
+[9:218 | Label_LASER_LOCKED | asset_sheet_text]
+LASER LOCKED
+
+[9:219 | Label_Continuous_hit_confirmed | asset_sheet_text]
+Continuous hit confirmed
+
+[9:224 | Label_SHIELD_ACTIVE | asset_sheet_text]
+SHIELD ACTIVE
+
+[9:225 | Label_Incoming_damage_reduced | asset_sheet_text]
+Incoming damage reduced
+
+[9:230 | Label_LOW_ENERGY | asset_sheet_text]
+LOW ENERGY
+
+[9:231 | Value_Below_20_EN | asset_sheet_text]
+Below 20 EN
+
+[9:236 | Label_SHIELD_BREAK | asset_sheet_text]
+SHIELD BREAK
+
+[9:237 | Label_Energy_depleted | asset_sheet_text]
+Energy depleted
+
+[9:242 | Label_CORE_EXPOSED | asset_sheet_text]
+CORE EXPOSED
+
+[9:243 | Label_Laser_damage_25 | asset_sheet_text]
+Laser damage +25%
+
+[9:248 | Label_WAVE_ATTACK | asset_sheet_text]
+WAVE ATTACK
+
+[9:249 | Label_Shield_or_interrupt | asset_sheet_text]
+Shield or interrupt
+
+[9:254 | Label_INTERRUPTED_15 | asset_sheet_text]
+INTERRUPTED +15
+
+[9:255 | Label_Boss_attack_cancelled | asset_sheet_text]
+Boss attack cancelled
+
+[9:260 | Label_FINAL_PHASE | asset_sheet_text]
+FINAL PHASE
+
+[9:261 | Label_Damage_increased_40 | asset_sheet_text]
+Damage increased +40%
+
+[9:266 | Value_00 | asset_sheet_text]
+00
+
+[9:267 | Label_90_CORE_UNSTABLE | asset_sheet_text]
+90  CORE UNSTABLE
+
+[9:268 | Label_105_FINAL_OPENING | asset_sheet_text]
+105  FINAL OPENING
+
+[9:269 | Label_115_LAST_HIT | asset_sheet_text]
+115  LAST HIT

@@ -1,0 +1,105 @@
+{
+  "version": 3,
+  "target": "unreal_blueprint",
+  "udp_port": 5052,
+  "disconnect_timeout_ms": 400,
+  "event_max_age_ms": 500,
+  "bindings": [
+    {
+      "action": "MoveForward",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "left_push"
+    },
+    {
+      "action": "MoveBackward",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "left_pull"
+    },
+    {
+      "action": "Shield",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_open_palm"
+    },
+    {
+      "action": "Fire",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_fist_then_push"
+    },
+    {
+      "action": "Wave",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_horizontal_swipe"
+    },
+    {
+      "action": "Laser",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_thumb_index_pinch"
+    },
+    {
+      "action": "TurnLeft",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "head_left"
+    },
+    {
+      "action": "TurnRight",
+      "key": "",
+      "mode": "hold",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "head_right"
+    },
+    {
+      "action": "Scan",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_point_hold_600ms"
+    },
+    {
+      "action": "Hint",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "right_v_hold_1000ms"
+    },
+    {
+      "action": "Repeat",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "left_v_hold_1000ms"
+    },
+    {
+      "action": "Retry",
+      "key": "",
+      "mode": "press",
+      "cooldown_ms": 0,
+      "enabled": true,
+      "input": "both_palms_hold_1500ms_results_only"
+    }
+  ]
+}

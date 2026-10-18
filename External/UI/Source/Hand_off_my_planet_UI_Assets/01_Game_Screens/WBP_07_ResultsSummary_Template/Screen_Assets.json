@@ -1,0 +1,59 @@
+{
+  "screen": "WBP_07_ResultsSummary_Template",
+  "rootNodeId": "80:261",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:262",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:266",
+      "file": "01_Game_Screens/WBP_07_ResultsSummary_Template/Panels_HUD/ResultsSummary_Template_Panel_Result_Data__80-266.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 600,
+        "y": 270
+      },
+      "size": [
+        720,
+        390
+      ]
+    },
+    {
+      "id": "80:274",
+      "file": "01_Game_Screens/WBP_07_ResultsSummary_Template/Buttons/Button_VIEW_STATS__80-274.png",
+      "category": "Buttons",
+      "position": {
+        "x": 865,
+        "y": 760
+      },
+      "size": [
+        190,
+        34
+      ]
+    },
+    {
+      "id": "80:280",
+      "file": "01_Game_Screens/WBP_07_ResultsSummary_Template/Buttons/Button_MAIN_MENU__80-280.png",
+      "category": "Buttons",
+      "position": {
+        "x": 1085,
+        "y": 760
+      },
+      "size": [
+        190,
+        34
+      ]
+    }
+  ]
+}

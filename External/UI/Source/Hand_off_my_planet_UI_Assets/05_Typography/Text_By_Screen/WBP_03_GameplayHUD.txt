@@ -1,0 +1,47 @@
+[47:6 | Value_Fire_Slot | game_text]
+01
+
+[47:7 | Label_FIRE | game_text]
+FIRE
+
+[47:8 | Value_14_EN | game_text]
+14 EN
+
+[47:9 | Value_1_0_SEC | game_text]
+1.0 SEC
+
+[47:15 | Value_Wave_Slot | game_text]
+02
+
+[47:16 | Label_WAVE | game_text]
+WAVE
+
+[47:17 | Value_25_EN | game_text]
+25 EN
+
+[47:18 | Value_4_0_SEC | game_text]
+4.0 SEC
+
+[47:24 | Value_Laser_Slot | game_text]
+03
+
+[47:25 | Label_LASER | game_text]
+LASER
+
+[47:26 | Value_18_EN_S | game_text]
+18 EN/S
+
+[47:27 | Value_MAX_2_5_SEC | game_text]
+MAX 2.5 SEC
+
+[47:33 | Value_Shield_Slot | game_text]
+04
+
+[47:35 | Label_SHIELD | game_text]
+SHIELD
+
+[47:36 | Value_10_10_EN_S | game_text]
+10 + 10 EN/S
+
+[47:37 | Value_5_0_SEC | game_text]
+5.0 SEC

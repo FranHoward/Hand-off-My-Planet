@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+# Unreal assets and original art/model files must remain byte-for-byte intact.
+*.uasset binary
+*.umap binary
+*.ubulk binary
+*.uexp binary
+*.fbx binary
+*.blend binary
+*.task binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tga binary
+*.wav binary
+*.ttf binary
+*.otf binary

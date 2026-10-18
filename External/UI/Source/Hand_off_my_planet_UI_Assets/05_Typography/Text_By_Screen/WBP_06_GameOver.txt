@@ -1,0 +1,12 @@
+[80:309 | Text_Cosmo_GameOver | game_text]
+OH NO! WE WERE SO CLOSE!”
+“Hey, don’t worry! We’ll get it next time.”
+“That Star Core isn’t going anywhere.”
+“We’ve learned a lot from this mission.”
+“Come on, partner. Let’s give it another shot!”
+
+[80:311 | Text_GameOver_Title | game_text]
+GAME OVER
+
+[80:316 | Text_Label | button_label_baked_into_png]
+TRY AGAIN

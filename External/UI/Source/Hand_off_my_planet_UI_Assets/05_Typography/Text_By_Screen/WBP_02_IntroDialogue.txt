@@ -1,0 +1,8 @@
+[46:36 | Text_Cosmo_Intro | game_text]
+"Hey! Hey, wake up!"  
+"Oh, thank the stars. You're alive!"  
+"I'm COSMO. Your ship's AI."  
+"We crashed. Badly."  
+"See that light? That's our ticket home."  
+"Come on, partner. Let's move!"
+

@@ -1,0 +1,359 @@
+{
+  "method": "Blender FBX re-import; no Unreal Engine runtime available",
+  "results": [
+    {
+      "file": "fbx/assets/CrashedShip.fbx",
+      "status": "PASS",
+      "triangles": 2540,
+      "dimensions_cm": [
+        960.0,
+        890.0,
+        240.99
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/BasaltRock_A.fbx",
+      "status": "PASS",
+      "triangles": 100,
+      "dimensions_cm": [
+        288.94,
+        188.54,
+        244.18
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/BasaltRock_B.fbx",
+      "status": "PASS",
+      "triangles": 100,
+      "dimensions_cm": [
+        428.35,
+        232.7,
+        128.6
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/VolcanicGround_24m.fbx",
+      "status": "PASS",
+      "triangles": 646,
+      "dimensions_cm": [
+        2400.0,
+        2400.0,
+        104.38
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/GlowPlant.fbx",
+      "status": "PASS",
+      "triangles": 1210,
+      "dimensions_cm": [
+        88.05,
+        88.52,
+        137.18
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/MissionBeacon.fbx",
+      "status": "PASS",
+      "triangles": 1168,
+      "dimensions_cm": [
+        121.24,
+        137.39,
+        218.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/CrystalCluster_Cyan.fbx",
+      "status": "PASS",
+      "triangles": 200,
+      "dimensions_cm": [
+        223.49,
+        145.49,
+        283.72
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/CrystalCluster_Amber.fbx",
+      "status": "PASS",
+      "triangles": 200,
+      "dimensions_cm": [
+        223.49,
+        147.19,
+        292.46
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/CanyonWall_12m.fbx",
+      "status": "PASS",
+      "triangles": 576,
+      "dimensions_cm": [
+        1389.96,
+        299.17,
+        869.36
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/EnergyBarrier.fbx",
+      "status": "PASS",
+      "triangles": 1076,
+      "dimensions_cm": [
+        490.0,
+        95.0,
+        395.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/TrainingTarget_Shield.fbx",
+      "status": "PASS",
+      "triangles": 1572,
+      "dimensions_cm": [
+        136.0,
+        114.21,
+        232.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/TrainingTarget_Fire.fbx",
+      "status": "PASS",
+      "triangles": 1588,
+      "dimensions_cm": [
+        136.0,
+        114.21,
+        232.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/TrainingTarget_Wave.fbx",
+      "status": "PASS",
+      "triangles": 2708,
+      "dimensions_cm": [
+        136.0,
+        114.21,
+        232.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/TrainingTarget_Laser.fbx",
+      "status": "PASS",
+      "triangles": 1756,
+      "dimensions_cm": [
+        136.0,
+        114.21,
+        232.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/ScoutRobot.fbx",
+      "status": "PASS",
+      "triangles": 1400,
+      "dimensions_cm": [
+        208.0,
+        115.91,
+        131.43
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/LavaFissure_8m.fbx",
+      "status": "PASS",
+      "triangles": 236,
+      "dimensions_cm": [
+        191.43,
+        804.98,
+        56.07
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/RouteBridge.fbx",
+      "status": "PASS",
+      "triangles": 904,
+      "dimensions_cm": [
+        482.0,
+        610.0,
+        48.42
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/ArenaPlatform.fbx",
+      "status": "PASS",
+      "triangles": 5756,
+      "dimensions_cm": [
+        2040.0,
+        2320.0,
+        122.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/AlienPillar.fbx",
+      "status": "PASS",
+      "triangles": 482,
+      "dimensions_cm": [
+        164.54,
+        186.87,
+        578.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/StarCore.fbx",
+      "status": "PASS",
+      "triangles": 3156,
+      "dimensions_cm": [
+        222.94,
+        217.68,
+        283.5
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/EnergyPylon.fbx",
+      "status": "PASS",
+      "triangles": 750,
+      "dimensions_cm": [
+        157.76,
+        157.76,
+        212.17
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/Boss_StarcoreGuardian.fbx",
+      "status": "PASS",
+      "triangles": 2580,
+      "dimensions_cm": [
+        558.12,
+        239.43,
+        619.57
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/FXM_FireBolt.fbx",
+      "status": "PASS",
+      "triangles": 170,
+      "dimensions_cm": [
+        44.23,
+        103.89,
+        46.14
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/FXM_WaveOrb.fbx",
+      "status": "PASS",
+      "triangles": 1040,
+      "dimensions_cm": [
+        112.8,
+        112.8,
+        112.8
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/FXM_WaveRing.fbx",
+      "status": "PASS",
+      "triangles": 768,
+      "dimensions_cm": [
+        209.0,
+        209.0,
+        7.79
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/FXM_CrystalShard.fbx",
+      "status": "PASS",
+      "triangles": 18,
+      "dimensions_cm": [
+        19.83,
+        19.02,
+        48.46
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/assets/FXM_TealBeamEndpoint.fbx",
+      "status": "PASS",
+      "triangles": 600,
+      "dimensions_cm": [
+        85.0,
+        8.71,
+        85.0
+      ],
+      "boundary_edges": 0,
+      "embedded_maps": 4
+    },
+    {
+      "file": "fbx/scenes/01_Spawn_Layout.fbx",
+      "status": "PASS",
+      "objects": 23,
+      "triangles": 17626,
+      "placement_transforms": "preserved"
+    },
+    {
+      "file": "fbx/scenes/02_Training_Layout.fbx",
+      "status": "PASS",
+      "objects": 41,
+      "triangles": 31666,
+      "placement_transforms": "preserved"
+    },
+    {
+      "file": "fbx/scenes/03_Arena_Layout.fbx",
+      "status": "PASS",
+      "objects": 29,
+      "triangles": 23080,
+      "placement_transforms": "preserved"
+    },
+    {
+      "file": "fbx/scenes/AlienPlanet_FullLayout.fbx",
+      "status": "PASS",
+      "objects": 93,
+      "triangles": 72372,
+      "placement_transforms": "preserved"
+    }
+  ],
+  "asset_count": 27,
+  "scene_count": 4
+}

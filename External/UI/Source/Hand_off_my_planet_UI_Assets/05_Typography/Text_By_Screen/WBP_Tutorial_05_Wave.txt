@@ -1,0 +1,6 @@
+[80:165 | Text_Instruction_01 | game_text]
+Swipe your right hand horizontally 
+
+
+[80:166 | Text_Action_Label | game_text]
+ENERGY WAVE

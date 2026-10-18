@@ -1,0 +1,32 @@
+[
+  {
+    "expected": "OPEN_PALM",
+    "actual": "OPEN_PALM",
+    "hands": 1
+  },
+  {
+    "expected": "FIST",
+    "actual": "FIST",
+    "hands": 1
+  },
+  {
+    "expected": "PINCH",
+    "actual": "PINCH",
+    "hands": 1
+  },
+  {
+    "expected": "TWO_FINGERS",
+    "actual": "TWO_FINGERS",
+    "hands": 1
+  },
+  {
+    "expected": "POINT",
+    "actual": "POINT",
+    "hands": 1
+  },
+  {
+    "expected": "DOUBLE_PALM",
+    "actual": "DOUBLE_PALM",
+    "hands": 2
+  }
+]

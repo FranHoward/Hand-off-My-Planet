@@ -1,0 +1,28 @@
+﻿asset_id,zone,fbx_file,type,triangles,width_cm,depth_cm,height_cm,description
+CrashedShip,01_Spawn,fbx/assets/CrashedShip.fbx,StaticMesh,2540,960.0,890.0,240.992,Damaged 9-meter exploration lander with asymmetric broken wing and hot exhaust.
+BasaltRock_A,Shared,fbx/assets/BasaltRock_A.fbx,StaticMesh,100,288.936,188.543,244.181,"Faceted volcanic rock. Base pivot, variation-ready."
+BasaltRock_B,Shared,fbx/assets/BasaltRock_B.fbx,StaticMesh,100,428.347,232.703,128.597,"Faceted volcanic rock. Base pivot, variation-ready."
+VolcanicGround_24m,Shared,fbx/assets/VolcanicGround_24m.fbx,StaticMesh,646,2400.0,2400.0,104.377,24 x 24 m ground tile; flat central walking lane. Tile seam elevation zero.
+GlowPlant,01_Spawn,fbx/assets/GlowPlant.fbx,StaticMesh,1210,88.055,88.525,137.184,Teal bioluminescent plant with seven crystalline shoots.
+MissionBeacon,01_Spawn,fbx/assets/MissionBeacon.fbx,StaticMesh,1168,121.244,137.391,218.0,Diegetic cyan arrow terminal with amber status indicators; static screen geometry.
+CrystalCluster_Cyan,02_Training,fbx/assets/CrystalCluster_Cyan.fbx,StaticMesh,200,223.492,145.489,283.723,"Five faceted energy crystals on volcanic base. Environmental crystals, no freeze gameplay."
+CrystalCluster_Amber,02_Training,fbx/assets/CrystalCluster_Amber.fbx,StaticMesh,200,223.492,147.191,292.46,"Five faceted energy crystals on volcanic base. Environmental crystals, no freeze gameplay."
+CanyonWall_12m,02_Training,fbx/assets/CanyonWall_12m.fbx,StaticMesh,576,1389.955,299.174,869.363,12 m columnar basalt wall module with orange mineral faults.
+EnergyBarrier,02_Training,fbx/assets/EnergyBarrier.fbx,StaticMesh,1076,490.0,95.0,395.0,4 m gate with separate transparent field material; opening/blocking logic is external.
+TrainingTarget_Shield,02_Training,fbx/assets/TrainingTarget_Shield.fbx,StaticMesh,1572,136.0,114.207,232.0,Shield training target with geometric ability icon and three status indicators.
+TrainingTarget_Fire,02_Training,fbx/assets/TrainingTarget_Fire.fbx,StaticMesh,1588,136.0,114.207,232.0,Fire training target with geometric ability icon and three status indicators.
+TrainingTarget_Wave,02_Training,fbx/assets/TrainingTarget_Wave.fbx,StaticMesh,2708,136.0,114.207,232.0,Wave training target with geometric ability icon and three status indicators.
+TrainingTarget_Laser,02_Training,fbx/assets/TrainingTarget_Laser.fbx,StaticMesh,1756,136.0,114.207,232.0,Laser training target with geometric ability icon and three status indicators.
+ScoutRobot,02_Training,fbx/assets/ScoutRobot.fbx,StaticMesh,1400,208.0,115.905,131.429,Hover scout robot; actor movement and attacks can be driven by Blueprint. Static mesh prototype.
+LavaFissure_8m,Shared,fbx/assets/LavaFissure_8m.fbx,StaticMesh,236,191.433,804.984,56.075,Orange lava fault strip; place outside the clear player path.
+RouteBridge,Shared,fbx/assets/RouteBridge.fbx,StaticMesh,904,482.0,610.0,48.425,4.8 m wide walking bridge with illuminated edge strips.
+ArenaPlatform,03_Arena,fbx/assets/ArenaPlatform.fbx,StaticMesh,5756,2040.0,2320.0,122.0,20 m diameter combat floor with entry ramp and concentric energy rings.
+AlienPillar,03_Arena,fbx/assets/AlienPillar.fbx,StaticMesh,482,164.545,186.87,578.0,5.8 m basalt obelisk with three readable geometric cyan runes.
+StarCore,03_Arena,fbx/assets/StarCore.fbx,StaticMesh,3156,222.943,217.683,283.5,Floating cyan star core in an orbital charging cradle. Energy and orbit motion require Blueprint.
+EnergyPylon,03_Arena,fbx/assets/EnergyPylon.fbx,StaticMesh,750,157.758,157.758,212.165,Forked charging pylon; use its top center as a beam endpoint.
+Boss_StarcoreGuardian,03_Arena,fbx/assets/Boss_StarcoreGuardian.fbx,StaticMesh,2580,558.125,239.43,619.572,"6.2 m volcanic guardian with orange exposed heart and angular horns. Static boss prototype, no rig or animation."
+FXM_FireBolt,VFX_Meshes,fbx/assets/FXM_FireBolt.fbx,StaticMesh,170,44.233,103.887,46.143,Orange projectile mesh facing -Y. Assign to Niagara Mesh Renderer; trails and sparks are not included.
+FXM_WaveOrb,VFX_Meshes,fbx/assets/FXM_WaveOrb.fbx,StaticMesh,1040,112.8,112.8,112.8,"Purple wave/gravity orb mesh. Refraction, distortion and pulse timing are engine effects."
+FXM_WaveRing,VFX_Meshes,fbx/assets/FXM_WaveRing.fbx,StaticMesh,768,209.0,209.0,7.794,Unit-radius purple expanding ring mesh. Animate scale/opacity in Niagara.
+FXM_CrystalShard,VFX_Meshes,fbx/assets/FXM_CrystalShard.fbx,StaticMesh,18,19.829,19.021,48.458,Cyan crystal debris mesh for environmental bursts or shield hits; not an added combat ability.
+FXM_TealBeamEndpoint,VFX_Meshes,fbx/assets/FXM_TealBeamEndpoint.fbx,StaticMesh,600,85.0,8.712,85.0,Teal endpoint mesh for Laser or star-core charging/repair. Niagara beam and particles are separate.

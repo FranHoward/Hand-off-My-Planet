@@ -1,0 +1,33 @@
+{
+  "screen": "HUD_HP_Unplaced",
+  "rootNodeId": "80:260",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "47:45",
+      "file": "04_Unplaced_Assets/HUD_HP_Unplaced/Panels_HUD/HUD_HP_Unplaced_HP_Track__47-45.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 0,
+        "y": 9
+      },
+      "size": [
+        92,
+        7
+      ]
+    },
+    {
+      "id": "47:46",
+      "file": "04_Unplaced_Assets/HUD_HP_Unplaced/Panels_HUD/HUD_HP_Unplaced_HP_Fill__47-46.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": -5,
+        "y": 4
+      },
+      "size": [
+        102,
+        17
+      ]
+    }
+  ]
+}

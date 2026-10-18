@@ -1,0 +1,8 @@
+{
+  "archive": "AlienPlanet_ThreeZones_FBX_Pack(1).zip",
+  "sha256": "C98B4F33384EFB26EFDF6B5BCBD31DD6C6C45D60CA4D794AFA7B8CA7FA1E751F",
+  "imported_meshes": 27,
+  "source_layout_instances": 93,
+  "coordinate_mapping": "Blender (X,Y,Z) to Unreal (X,-Y,Z); yaw sign reversed",
+  "scripts_executed_from_archive": false
+}

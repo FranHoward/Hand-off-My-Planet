@@ -1,0 +1,23 @@
+[
+  {
+    "file": "Fonts/IBMPlexMono-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Regular.ttf",
+    "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+  },
+  {
+    "file": "Fonts/IBMPlexMono-Medium.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/ibmplexmono/IBMPlexMono-Medium.ttf",
+    "sha256": "a9b4c49bb299e05b5f6c481e7fb5e78943d2793249a0c8874ab574a2d1ea6755"
+  },
+  {
+    "file": "Fonts/Orbitron-SemiBold.ttf",
+    "source": "https://fonts.gstatic.com/s/orbitron/v35/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmBoWg2.ttf",
+    "stylesheet": "https://fonts.googleapis.com/css?family=Orbitron:600",
+    "sha256": "c1e111091d510e67d0dec460a74054b85253722fb572525187c8d8e8b5c70323"
+  },
+  {
+    "file": "Fonts/Source/Orbitron-Variable.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd"
+  }
+]

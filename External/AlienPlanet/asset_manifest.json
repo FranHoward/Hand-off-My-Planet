@@ -1,0 +1,495 @@
+{
+  "units": "centimeters",
+  "forward": "-Y",
+  "up": "+Z",
+  "blender": "4.5.14 LTS",
+  "assets": [
+    {
+      "id": "CrashedShip",
+      "file": "fbx/assets/CrashedShip.fbx",
+      "type": "StaticMesh",
+      "zone": "01_Spawn",
+      "vertices": 1320,
+      "triangles": 2540,
+      "dimensions_cm": [
+        960.0,
+        890.0,
+        240.992
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Damaged 9-meter exploration lander with asymmetric broken wing and hot exhaust."
+    },
+    {
+      "id": "BasaltRock_A",
+      "file": "fbx/assets/BasaltRock_A.fbx",
+      "type": "StaticMesh",
+      "zone": "Shared",
+      "vertices": 54,
+      "triangles": 100,
+      "dimensions_cm": [
+        288.936,
+        188.543,
+        244.181
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Faceted volcanic rock. Base pivot, variation-ready."
+    },
+    {
+      "id": "BasaltRock_B",
+      "file": "fbx/assets/BasaltRock_B.fbx",
+      "type": "StaticMesh",
+      "zone": "Shared",
+      "vertices": 54,
+      "triangles": 100,
+      "dimensions_cm": [
+        428.347,
+        232.703,
+        128.597
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Faceted volcanic rock. Base pivot, variation-ready."
+    },
+    {
+      "id": "VolcanicGround_24m",
+      "file": "fbx/assets/VolcanicGround_24m.fbx",
+      "type": "StaticMesh",
+      "zone": "Shared",
+      "vertices": 337,
+      "triangles": 646,
+      "dimensions_cm": [
+        2400.0,
+        2400.0,
+        104.377
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "complex static or box",
+      "description": "24 x 24 m ground tile; flat central walking lane. Tile seam elevation zero."
+    },
+    {
+      "id": "GlowPlant",
+      "file": "fbx/assets/GlowPlant.fbx",
+      "type": "StaticMesh",
+      "zone": "01_Spawn",
+      "vertices": 635,
+      "triangles": 1210,
+      "dimensions_cm": [
+        88.055,
+        88.525,
+        137.184
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Teal bioluminescent plant with seven crystalline shoots."
+    },
+    {
+      "id": "MissionBeacon",
+      "file": "fbx/assets/MissionBeacon.fbx",
+      "type": "StaticMesh",
+      "zone": "01_Spawn",
+      "vertices": 602,
+      "triangles": 1168,
+      "dimensions_cm": [
+        121.244,
+        137.391,
+        218.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Diegetic cyan arrow terminal with amber status indicators; static screen geometry."
+    },
+    {
+      "id": "CrystalCluster_Cyan",
+      "file": "fbx/assets/CrystalCluster_Cyan.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 122,
+      "triangles": 200,
+      "dimensions_cm": [
+        223.492,
+        145.489,
+        283.723
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Five faceted energy crystals on volcanic base. Environmental crystals, no freeze gameplay."
+    },
+    {
+      "id": "CrystalCluster_Amber",
+      "file": "fbx/assets/CrystalCluster_Amber.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 122,
+      "triangles": 200,
+      "dimensions_cm": [
+        223.492,
+        147.191,
+        292.46
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Five faceted energy crystals on volcanic base. Environmental crystals, no freeze gameplay."
+    },
+    {
+      "id": "CanyonWall_12m",
+      "file": "fbx/assets/CanyonWall_12m.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 330,
+      "triangles": 576,
+      "dimensions_cm": [
+        1389.955,
+        299.174,
+        869.363
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "complex static",
+      "description": "12 m columnar basalt wall module with orange mineral faults."
+    },
+    {
+      "id": "EnergyBarrier",
+      "file": "fbx/assets/EnergyBarrier.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 592,
+      "triangles": 1076,
+      "dimensions_cm": [
+        490.0,
+        95.0,
+        395.0
+      ],
+      "materials": [
+        "M_Planet_Atlas",
+        "M_EnergyField_Transparent"
+      ],
+      "collision_hint": "Box Collision in Blueprint",
+      "description": "4 m gate with separate transparent field material; opening/blocking logic is external."
+    },
+    {
+      "id": "TrainingTarget_Shield",
+      "file": "fbx/assets/TrainingTarget_Shield.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 802,
+      "triangles": 1572,
+      "dimensions_cm": [
+        136.0,
+        114.207,
+        232.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Shield training target with geometric ability icon and three status indicators."
+    },
+    {
+      "id": "TrainingTarget_Fire",
+      "file": "fbx/assets/TrainingTarget_Fire.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 810,
+      "triangles": 1588,
+      "dimensions_cm": [
+        136.0,
+        114.207,
+        232.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Fire training target with geometric ability icon and three status indicators."
+    },
+    {
+      "id": "TrainingTarget_Wave",
+      "file": "fbx/assets/TrainingTarget_Wave.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 1368,
+      "triangles": 2708,
+      "dimensions_cm": [
+        136.0,
+        114.207,
+        232.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Wave training target with geometric ability icon and three status indicators."
+    },
+    {
+      "id": "TrainingTarget_Laser",
+      "file": "fbx/assets/TrainingTarget_Laser.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 900,
+      "triangles": 1756,
+      "dimensions_cm": [
+        136.0,
+        114.207,
+        232.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Laser training target with geometric ability icon and three status indicators."
+    },
+    {
+      "id": "ScoutRobot",
+      "file": "fbx/assets/ScoutRobot.fbx",
+      "type": "StaticMesh",
+      "zone": "02_Training",
+      "vertices": 730,
+      "triangles": 1400,
+      "dimensions_cm": [
+        208.0,
+        115.905,
+        131.429
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Hover scout robot; actor movement and attacks can be driven by Blueprint. Static mesh prototype."
+    },
+    {
+      "id": "LavaFissure_8m",
+      "file": "fbx/assets/LavaFissure_8m.fbx",
+      "type": "StaticMesh",
+      "zone": "Shared",
+      "vertices": 136,
+      "triangles": 236,
+      "dimensions_cm": [
+        191.433,
+        804.984,
+        56.075
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none / damage volume separate",
+      "description": "Orange lava fault strip; place outside the clear player path."
+    },
+    {
+      "id": "RouteBridge",
+      "file": "fbx/assets/RouteBridge.fbx",
+      "type": "StaticMesh",
+      "zone": "Shared",
+      "vertices": 472,
+      "triangles": 904,
+      "dimensions_cm": [
+        482.0,
+        610.0,
+        48.425
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "box",
+      "description": "4.8 m wide walking bridge with illuminated edge strips."
+    },
+    {
+      "id": "ArenaPlatform",
+      "file": "fbx/assets/ArenaPlatform.fbx",
+      "type": "StaticMesh",
+      "zone": "03_Arena",
+      "vertices": 2984,
+      "triangles": 5756,
+      "dimensions_cm": [
+        2040.0,
+        2320.0,
+        122.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "complex static; do not use a single convex hull",
+      "description": "20 m diameter combat floor with entry ramp and concentric energy rings."
+    },
+    {
+      "id": "AlienPillar",
+      "file": "fbx/assets/AlienPillar.fbx",
+      "type": "StaticMesh",
+      "zone": "03_Arena",
+      "vertices": 259,
+      "triangles": 482,
+      "dimensions_cm": [
+        164.545,
+        186.87,
+        578.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "5.8 m basalt obelisk with three readable geometric cyan runes."
+    },
+    {
+      "id": "StarCore",
+      "file": "fbx/assets/StarCore.fbx",
+      "type": "StaticMesh",
+      "zone": "03_Arena",
+      "vertices": 1596,
+      "triangles": 3156,
+      "dimensions_cm": [
+        222.943,
+        217.683,
+        283.5
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Floating cyan star core in an orbital charging cradle. Energy and orbit motion require Blueprint."
+    },
+    {
+      "id": "EnergyPylon",
+      "file": "fbx/assets/EnergyPylon.fbx",
+      "type": "StaticMesh",
+      "zone": "03_Arena",
+      "vertices": 387,
+      "triangles": 750,
+      "dimensions_cm": [
+        157.758,
+        157.758,
+        212.165
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "Forked charging pylon; use its top center as a beam endpoint."
+    },
+    {
+      "id": "Boss_StarcoreGuardian",
+      "file": "fbx/assets/Boss_StarcoreGuardian.fbx",
+      "type": "StaticMesh",
+      "zone": "03_Arena",
+      "vertices": 1386,
+      "triangles": 2580,
+      "dimensions_cm": [
+        558.125,
+        239.43,
+        619.572
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "simple convex",
+      "description": "6.2 m volcanic guardian with orange exposed heart and angular horns. Static boss prototype, no rig or animation."
+    },
+    {
+      "id": "FXM_FireBolt",
+      "file": "fbx/assets/FXM_FireBolt.fbx",
+      "type": "StaticMesh",
+      "zone": "VFX_Meshes",
+      "vertices": 97,
+      "triangles": 170,
+      "dimensions_cm": [
+        44.233,
+        103.887,
+        46.143
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none",
+      "description": "Orange projectile mesh facing -Y. Assign to Niagara Mesh Renderer; trails and sparks are not included."
+    },
+    {
+      "id": "FXM_WaveOrb",
+      "file": "fbx/assets/FXM_WaveOrb.fbx",
+      "type": "StaticMesh",
+      "zone": "VFX_Meshes",
+      "vertices": 518,
+      "triangles": 1040,
+      "dimensions_cm": [
+        112.8,
+        112.8,
+        112.8
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none",
+      "description": "Purple wave/gravity orb mesh. Refraction, distortion and pulse timing are engine effects."
+    },
+    {
+      "id": "FXM_WaveRing",
+      "file": "fbx/assets/FXM_WaveRing.fbx",
+      "type": "StaticMesh",
+      "zone": "VFX_Meshes",
+      "vertices": 384,
+      "triangles": 768,
+      "dimensions_cm": [
+        209.0,
+        209.0,
+        7.794
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none",
+      "description": "Unit-radius purple expanding ring mesh. Animate scale/opacity in Niagara."
+    },
+    {
+      "id": "FXM_CrystalShard",
+      "file": "fbx/assets/FXM_CrystalShard.fbx",
+      "type": "StaticMesh",
+      "zone": "VFX_Meshes",
+      "vertices": 11,
+      "triangles": 18,
+      "dimensions_cm": [
+        19.829,
+        19.021,
+        48.458
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none",
+      "description": "Cyan crystal debris mesh for environmental bursts or shield hits; not an added combat ability."
+    },
+    {
+      "id": "FXM_TealBeamEndpoint",
+      "file": "fbx/assets/FXM_TealBeamEndpoint.fbx",
+      "type": "StaticMesh",
+      "zone": "VFX_Meshes",
+      "vertices": 312,
+      "triangles": 600,
+      "dimensions_cm": [
+        85.0,
+        8.712,
+        85.0
+      ],
+      "materials": [
+        "M_Planet_Atlas"
+      ],
+      "collision_hint": "none",
+      "description": "Teal endpoint mesh for Laser or star-core charging/repair. Niagara beam and particles are separate."
+    }
+  ]
+}

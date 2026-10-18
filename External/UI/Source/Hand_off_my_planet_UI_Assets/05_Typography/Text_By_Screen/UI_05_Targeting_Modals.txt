@@ -1,0 +1,35 @@
+[9:275 | Label_TARGETING_DEFENSE_MODALS | asset_sheet_text]
+TARGETING / DEFENSE / MODALS
+
+[9:282 | Label_LASER_LOCK | asset_sheet_text]
+LASER LOCK
+
+[9:291 | Label_ENERGY_WAVE_80 | asset_sheet_text]
+ENERGY WAVE // 80°
+
+[9:296 | Label_RESTART_MISSION | asset_sheet_text]
+RESTART MISSION?
+
+[9:297 | Label_Current_combat_progress | asset_sheet_text]
+Current combat progress
+
+[9:298 | Label_will_be_lost | asset_sheet_text]
+will be lost.
+
+[9:303 | Label_CONFIRM | button_label_baked_into_png]
+CONFIRM
+
+[9:308 | Label_CANCEL | button_label_baked_into_png]
+CANCEL
+
+[9:313 | Label_BOSS_340_HP | asset_sheet_text]
+BOSS // 340 HP
+
+[9:314 | Label_FINAL_PHASE | asset_sheet_text]
+FINAL PHASE
+
+[9:315 | Label_DAMAGE_40 | asset_sheet_text]
+DAMAGE +40%
+
+[9:316 | Label_CORE_EXPOSED | asset_sheet_text]
+CORE EXPOSED

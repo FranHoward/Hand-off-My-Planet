@@ -1,0 +1,5 @@
+[47:44 | Text_HP_Label | game_text]
+HP
+
+[47:47 | Value_HP | game_text]
+100

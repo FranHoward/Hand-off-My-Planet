@@ -1,0 +1,46 @@
+{
+  "screen": "WBP_Tutorial_08_LaserDeactivate",
+  "rootNodeId": "80:214",
+  "assetPathsRelativeToZipRoot": true,
+  "assets": [
+    {
+      "id": "80:215",
+      "file": "00_Common/Images/Space_Background_1920x1080.png",
+      "category": "Images",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "id": "80:222",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_08_LaserDeactivate/Panels_HUD/Tutorial_08_LaserDeactivate_Panel_Outline_1__80-222.png",
+      "category": "Panels_HUD",
+      "position": {
+        "x": 88,
+        "y": 127
+      },
+      "size": [
+        1736,
+        811
+      ]
+    },
+    {
+      "id": "80:225",
+      "file": "02_Gesture_Tutorials/WBP_Tutorial_08_LaserDeactivate/Images/Tutorial_08_LaserDeactivate_Gesture_Right_Open__80-225.png",
+      "category": "Images",
+      "position": {
+        "x": 178,
+        "y": 178
+      },
+      "size": [
+        521,
+        626
+      ]
+    }
+  ]
+}
