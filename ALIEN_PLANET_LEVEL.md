@@ -4,7 +4,7 @@
 
 The default game and editor map is `/Game/AlienPlanet/Lvl_AlienPlanet`. Open the project and click Play to enter with the completed `BP_FirstPersonCharacterAI`. Keyboard/mouse and gesture inputs share the actual combat rules. Level objectives, training, combat, death retries, and completion remain available when the COSMO service is offline.
 
-The scene pack's 27 individual models and four atlases have been imported into `Content/AlienPlanet`. The layout was restored from the source `scene_layout.json` and adjusted for traversal and combat: the spacecraft was moved left to keep the central route clear; the static boss placeholder was replaced with an animated boss bound to an ABP; platform ramps retain their actual geometry collision; rock walls block the route edges; and plants and glowing decorations do not block movement. Lava is an environmental visual beside the route, with no added contact damage in the beginner area.
+The scene pack's 27 individual models and four atlases have been imported into `Content/AlienPlanet`. The layout was restored from the source `scene_layout.json` and adjusted for traversal and combat: the spacecraft was moved left to keep the central route clear; the static boss placeholder was replaced with an animated boss bound to an ABP; platform ramps retain their actual geometry collision; rock walls block the route edges; and plants and glowing decorations do not block movement. Lava is an environmental visual beside the route, with no added contact damage in the beginner area. 
 
 ## Route and Encounters
 
